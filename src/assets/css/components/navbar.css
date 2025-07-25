@@ -3,29 +3,29 @@
             width: 750px;
             max-width: 85%;
         }
-        
+
         .nav-section-label {
             font-weight: 600;
             letter-spacing: 0.5px;
             text-transform: uppercase;
         }
-        
+
         .nav-link {
             padding: 8px 15px;
             margin: 2px 0;
             border-radius: 5px;
             transition: all 0.2s;
         }
-        
+
         .nav-link:hover {
             background-color: rgba(0, 0, 0, 0.05);
         }
-        
+
         .nav-link i {
             width: 20px;
             text-align: center;
         }
-        
+
         .offcanvas-body {
             padding: 20px;
         }
