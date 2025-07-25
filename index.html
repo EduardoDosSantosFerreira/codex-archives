@@ -17,244 +17,258 @@
 
     <main class="container my-5">
 
-<!-- Seção de Comandos CMD -->
-<section class="mb-5">
-    <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-terminal"></i> Comandos CMD/PowerShell</h2>
+        <!-- Seção de Comandos CMD -->
+        <section class="mb-5">
+            <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-terminal"></i> Comandos CMD/PowerShell</h2>
 
-    <!-- Subseção: Gerenciamento do Sistema -->
-    <h3 class="h4 mt-4 mb-3"><i class="bi bi-pc-display"></i> Gerenciamento do Sistema</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Desempenho do Sistema</h4>
-                    <div class="code-block mb-2">
-                        powercfg.exe /hibernate off <span class="text-muted"># Desativa hibernação para liberar espaço</span>
+            <!-- Subseção: Gerenciamento do Sistema -->
+            <h3 class="h4 mt-4 mb-3"><i class="bi bi-pc-display"></i> Gerenciamento do Sistema</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Desempenho do Sistema</h4>
+                            <div class="code-block mb-2">
+                                powercfg.exe /hibernate off <span class="text-muted"># Desativa hibernação para liberar
+                                    espaço</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 <span
+                                    class="text-muted"># Esquema Ultimate Performance</span>
+                            </div>
+                            <div class="code-block">
+                                wpr -cancel <span class="text-muted"># Para rastreamentos de desempenho em
+                                    execução</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 <span class="text-muted"># Esquema Ultimate Performance</span>
-                    </div>
-                    <div class="code-block">
-                        wpr -cancel <span class="text-muted"># Para rastreamentos de desempenho em execução</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Atualizações e Pacotes</h4>
+                            <div class="code-block mb-2">
+                                winget upgrade --all <span class="text-muted"># Atualiza todos os pacotes
+                                    instalados</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                choco upgrade all <span class="text-muted"># Atualiza todos os pacotes Chocolatey</span>
+                            </div>
+                            <div class="code-block">
+                                sfc /scannow <span class="text-muted"># Verifica e repara arquivos do sistema</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Atualizações e Pacotes</h4>
-                    <div class="code-block mb-2">
-                        winget upgrade --all <span class="text-muted"># Atualiza todos os pacotes instalados</span>
+            <!-- Subseção: Rede e Conectividade -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-wifi"></i> Rede e Conectividade</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Diagnóstico de Rede</h4>
+                            <div class="code-block mb-2">
+                                ipconfig /all <span class="text-muted"># Mostra toda configuração de rede</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                netsh wlan show profiles <span class="text-muted"># Lista redes Wi-Fi salvas</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                ping google.com -t <span class="text-muted"># Ping contínuo (Ctrl+C para parar)</span>
+                            </div>
+                            <div class="code-block">
+                                tracert 8.8.8.8 <span class="text-muted"># Rastreia rota até o destino</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        choco upgrade all <span class="text-muted"># Atualiza todos os pacotes Chocolatey</span>
-                    </div>
-                    <div class="code-block">
-                        sfc /scannow <span class="text-muted"># Verifica e repara arquivos do sistema</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Gerenciamento de Rede</h4>
+                            <div class="code-block mb-2">
+                                netsh interface ip show config <span class="text-muted"># Mostra configurações IP</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                netsh winsock reset <span class="text-muted"># Reseta catálogo Winsock</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                netstat -ano <span class="text-muted"># Mostra conexões e ports abertos</span>
+                            </div>
+                            <div class="code-block">
+                                nslookup example.com <span class="text-muted"># Consulta DNS</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Subseção: Rede e Conectividade -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-wifi"></i> Rede e Conectividade</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Diagnóstico de Rede</h4>
-                    <div class="code-block mb-2">
-                        ipconfig /all <span class="text-muted"># Mostra toda configuração de rede</span>
+            <!-- Subseção: Gerenciamento de Arquivos -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-folder"></i> Arquivos e Discos</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Operações com Arquivos</h4>
+                            <div class="code-block mb-2">
+                                robocopy C:\origem D:\destino /MIR /NP /LOG:log.txt <span class="text-muted"># Cópia
+                                    avançada</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                del /S /Q *.tmp <span class="text-muted"># Remove todos arquivos .tmp</span>
+                            </div>
+                            <div class="code-block">
+                                tree /F /A > arvore.txt <span class="text-muted"># Gera árvore de diretórios</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        netsh wlan show profiles <span class="text-muted"># Lista redes Wi-Fi salvas</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        ping google.com -t <span class="text-muted"># Ping contínuo (Ctrl+C para parar)</span>
-                    </div>
-                    <div class="code-block">
-                        tracert 8.8.8.8 <span class="text-muted"># Rastreia rota até o destino</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Gerenciamento de Disco</h4>
+                            <div class="code-block mb-2">
+                                chkdsk /f /r C: <span class="text-muted"># Verifica e repara disco</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                defrag C: /U /V <span class="text-muted"># Desfragmenta disco com relatório</span>
+                            </div>
+                            <div class="code-block">
+                                fsutil file createnew grande_arquivo.txt 1073741824 <span class="text-muted"># Cria
+                                    arquivo de 1GB</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Gerenciamento de Rede</h4>
-                    <div class="code-block mb-2">
-                        netsh interface ip show config <span class="text-muted"># Mostra configurações IP</span>
+            <!-- Subseção: Processos e Serviços -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-gear"></i> Processos e Serviços</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Gerenciamento de Processos</h4>
+                            <div class="code-block mb-2">
+                                tasklist /svc <span class="text-muted"># Lista processos e serviços</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                taskkill /IM chrome.exe /F <span class="text-muted"># Força fechamento do Chrome</span>
+                            </div>
+                            <div class="code-block">
+                                wmic process get name,processid,commandline <span class="text-muted"># Lista detalhada
+                                    de processos</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        netsh winsock reset <span class="text-muted"># Reseta catálogo Winsock</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        netstat -ano <span class="text-muted"># Mostra conexões e ports abertos</span>
-                    </div>
-                    <div class="code-block">
-                        nslookup example.com <span class="text-muted"># Consulta DNS</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Controle de Serviços</h4>
+                            <div class="code-block mb-2">
+                                sc queryex type= service state= all <span class="text-muted"># Lista todos
+                                    serviços</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                net start <span class="text-muted"># Lista serviços em execução</span>
+                            </div>
+                            <div class="code-block">
+                                sc config "servicename" start= delayed-auto <span class="text-muted"># Configura
+                                    serviço</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Subseção: Gerenciamento de Arquivos -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-folder"></i> Arquivos e Discos</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Operações com Arquivos</h4>
-                    <div class="code-block mb-2">
-                        robocopy C:\origem D:\destino /MIR /NP /LOG:log.txt <span class="text-muted"># Cópia avançada</span>
+            <!-- Subseção: Utilitários Avançados -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-tools"></i> Utilitários Avançados</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Informações do Sistema</h4>
+                            <div class="code-block mb-2">
+                                systeminfo <span class="text-muted"># Detalhes completos do sistema</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                wmic bios get serialnumber <span class="text-muted"># Número de série da BIOS</span>
+                            </div>
+                            <div class="code-block">
+                                powercfg /energy <span class="text-muted"># Diagnóstico de energia</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        del /S /Q *.tmp <span class="text-muted"># Remove todos arquivos .tmp</span>
-                    </div>
-                    <div class="code-block">
-                        tree /F /A > arvore.txt <span class="text-muted"># Gera árvore de diretórios</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Comandos Úteis Diversos</h4>
+                            <div class="code-block mb-2">
+                                shutdown /r /t 0 <span class="text-muted"># Reinicia o PC imediatamente</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                cipher /w:C <span class="text-muted"># Sobrescreve espaço livre no disco</span>
+                            </div>
+                            <div class="code-block">
+                                whoami /all <span class="text-muted"># Mostra informações do usuário atual</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Gerenciamento de Disco</h4>
-                    <div class="code-block mb-2">
-                        chkdsk /f /r C: <span class="text-muted"># Verifica e repara disco</span>
+            <!-- Subseção: PowerShell -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-filetype-psd1"></i> Comandos PowerShell</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Administração do Sistema</h4>
+                            <div class="code-block mb-2">
+                                Get-WindowsUpdateLog <span class="text-muted"># Log de atualizações</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                Get-Process | Sort-Object CPU -Descending <span class="text-muted"># Processos por uso
+                                    CPU</span>
+                            </div>
+                            <div class="code-block">
+                                Get-NetTCPConnection -State Established <span class="text-muted"># Conexões
+                                    ativas</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        defrag C: /U /V <span class="text-muted"># Desfragmenta disco com relatório</span>
-                    </div>
-                    <div class="code-block">
-                        fsutil file createnew grande_arquivo.txt 1073741824 <span class="text-muted"># Cria arquivo de 1GB</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Utilitários PowerShell</h4>
+                            <div class="code-block mb-2">
+                                Get-ChildItem -Recurse | Measure-Object -Property Length -Sum <span class="text-muted">#
+                                    Tamanho total de arquivos</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                Test-NetConnection google.com -Port 80 <span class="text-muted"># Testa porta
+                                    específica</span>
+                            </div>
+                            <div class="code-block">
+                                Get-HotFix | Sort-Object InstalledOn -Descending <span class="text-muted"># Updates
+                                    instalados</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- Subseção: Processos e Serviços -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-gear"></i> Processos e Serviços</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Gerenciamento de Processos</h4>
-                    <div class="code-block mb-2">
-                        tasklist /svc <span class="text-muted"># Lista processos e serviços</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        taskkill /IM chrome.exe /F <span class="text-muted"># Força fechamento do Chrome</span>
-                    </div>
-                    <div class="code-block">
-                        wmic process get name,processid,commandline <span class="text-muted"># Lista detalhada de processos</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Controle de Serviços</h4>
-                    <div class="code-block mb-2">
-                        sc queryex type= service state= all <span class="text-muted"># Lista todos serviços</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        net start <span class="text-muted"># Lista serviços em execução</span>
-                    </div>
-                    <div class="code-block">
-                        sc config "servicename" start= delayed-auto <span class="text-muted"># Configura serviço</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Subseção: Utilitários Avançados -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-tools"></i> Utilitários Avançados</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Informações do Sistema</h4>
-                    <div class="code-block mb-2">
-                        systeminfo <span class="text-muted"># Detalhes completos do sistema</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        wmic bios get serialnumber <span class="text-muted"># Número de série da BIOS</span>
-                    </div>
-                    <div class="code-block">
-                        powercfg /energy <span class="text-muted"># Diagnóstico de energia</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Comandos Úteis Diversos</h4>
-                    <div class="code-block mb-2">
-                        shutdown /r /t 0 <span class="text-muted"># Reinicia o PC imediatamente</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        cipher /w:C <span class="text-muted"># Sobrescreve espaço livre no disco</span>
-                    </div>
-                    <div class="code-block">
-                        whoami /all <span class="text-muted"># Mostra informações do usuário atual</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Subseção: PowerShell -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-filetype-psd1"></i> Comandos PowerShell</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Administração do Sistema</h4>
-                    <div class="code-block mb-2">
-                        Get-WindowsUpdateLog <span class="text-muted"># Log de atualizações</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        Get-Process | Sort-Object CPU -Descending <span class="text-muted"># Processos por uso CPU</span>
-                    </div>
-                    <div class="code-block">
-                        Get-NetTCPConnection -State Established <span class="text-muted"># Conexões ativas</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Utilitários PowerShell</h4>
-                    <div class="code-block mb-2">
-                        Get-ChildItem -Recurse | Measure-Object -Property Length -Sum <span class="text-muted"># Tamanho total de arquivos</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        Test-NetConnection google.com -Port 80 <span class="text-muted"># Testa porta específica</span>
-                    </div>
-                    <div class="code-block">
-                        Get-HotFix | Sort-Object InstalledOn -Descending <span class="text-muted"># Updates instalados</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- Seção de Ativação do Windows -->
         <section class="mb-5">
@@ -265,7 +279,7 @@
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <h3 class="h5 card-title">Windows 7</h3>
-                            
+
                             <a href="src/assets/dist/ativação_windows_7.txt" class="btn btn-primary mt-3" download>
                                 <i class="bi bi-download"></i> Baixar Script
                             </a>
@@ -277,7 +291,7 @@
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <h3 class="h5 card-title">Windows 8.1</h3>
-                            
+
                             <a href="src/assets/dist/ativação_windows_8.1.txt" class="btn btn-primary mt-3" download>
                                 <i class="bi bi-download"></i> Baixar Script
                             </a>
@@ -289,7 +303,7 @@
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <h3 class="h5 card-title">Windows 10</h3>
-                            
+
                             <a href="src/assets/dist/ativação_windows_10.txt" class="btn btn-primary mt-3" download>
                                 <i class="bi bi-download"></i> Baixar Script
                             </a>
@@ -301,7 +315,7 @@
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <h3 class="h5 card-title">Windows 11</h3>
-                            
+
                             <a href="src/assets/dist/ativação_windows_11.txt" class="btn btn-primary mt-3" download>
                                 <i class="bi bi-download"></i> Baixar Script
                             </a>
@@ -313,7 +327,7 @@
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <h3 class="h5 card-title">Windows 98</h3>
-                            
+
                             <a href="src/assets/dist/ativação_windows_98.txt" class="btn btn-primary mt-3" download>
                                 <i class="bi bi-download"></i> Baixar Script
                             </a>
@@ -325,8 +339,9 @@
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <h3 class="h5 card-title">Windows Server 2022</h3>
-                            
-                            <a href="src/assets/dist/ativação_windows_server_2022.txt" class="btn btn-primary mt-3" download>
+
+                            <a href="src/assets/dist/ativação_windows_server_2022.txt" class="btn btn-primary mt-3"
+                                download>
                                 <i class="bi bi-download"></i> Baixar Script
                             </a>
                         </div>
@@ -403,346 +418,834 @@
             </div>
         </section>
 
-<!-- Seção de Ferramentas para Desenvolvedores -->
-<section class="mb-5">
-    <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-code-square"></i> Ferramentas para Devs</h2>
+        <!-- Seção de Ferramentas para Desenvolvedores -->
+        <section class="mb-5">
+            <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-code-square"></i> Ferramentas para Devs</h2>
 
-    <!-- Subseção: Editores de Código -->
-    <h3 class="h4 mt-4 mb-3"><i class="bi bi-file-earmark-code"></i> Editores & IDEs</h3>
-    <div class="row g-4">
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-code-square text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">VS Code</h4>
-                    <p class="text-muted small">Editor da Microsoft</p>
-                    <a href="https://code.visualstudio.com/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
+            <!-- Subseção: Editores de Código -->
+            <h3 class="h4 mt-4 mb-3"><i class="bi bi-file-earmark-code"></i> Editores & IDEs</h3>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-code-square text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">VS Code</h4>
+                            <p class="text-muted small">Editor da Microsoft</p>
+                            <a href="https://code.visualstudio.com/" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-terminal text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">Cursor</h4>
+                            <p class="text-muted small">Editor com IA</p>
+                            <a href="https://www.cursor.com/" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-braces text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">Sublime Text</h4>
+                            <p class="text-muted small">Editor rápido e leve</p>
+                            <a href="https://www.sublimetext.com/" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-intersect text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">JetBrains</h4>
+                            <p class="text-muted small">IDEs profissionais</p>
+                            <a href="https://www.jetbrains.com/" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Website
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-terminal text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">Cursor</h4>
-                    <p class="text-muted small">Editor com IA</p>
-                    <a href="https://www.cursor.com/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
+            <!-- Subseção: Controle de Versão -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-git"></i> Controle de Versão</h3>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-git text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">Git</h4>
+                            <p class="text-muted small">Sistema de versionamento</p>
+                            <a href="https://git-scm.com/downloads" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-github text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">GitHub Desktop</h4>
+                            <p class="text-muted small">Cliente GUI para Git</p>
+                            <a href="https://desktop.github.com/" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-gitlab text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">GitLab</h4>
+                            <p class="text-muted small">Plataforma DevOps</p>
+                            <a href="https://about.gitlab.com/" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-box-arrow-up-right text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">Sourcetree</h4>
+                            <p class="text-muted small">Cliente Git da Atlassian</p>
+                            <a href="https://www.sourcetreeapp.com/" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-braces text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">Sublime Text</h4>
-                    <p class="text-muted small">Editor rápido e leve</p>
-                    <a href="https://www.sublimetext.com/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
+            <!-- Subseção: Ambientes de Execução -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-cpu"></i> Ambientes de Execução</h3>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-box-seam text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">Node.js</h4>
+                            <p class="text-muted small">JavaScript no servidor</p>
+                            <a href="https://nodejs.org/pt/download" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-filetype-py text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">Python</h4>
+                            <p class="text-muted small">Linguagem versátil</p>
+                            <a href="https://www.python.org/downloads/" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-filetype-java text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">JDK</h4>
+                            <p class="text-muted small">Java Development Kit</p>
+                            <a href="https://adoptium.net/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-dot text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">.NET SDK</h4>
+                            <p class="text-muted small">Plataforma Microsoft</p>
+                            <a href="https://dotnet.microsoft.com/download" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-intersect text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">JetBrains</h4>
-                    <p class="text-muted small">IDEs profissionais</p>
-                    <a href="https://www.jetbrains.com/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Website
-                    </a>
+            <!-- Subseção: Bancos de Dados -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-database"></i> Bancos de Dados</h3>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-server text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">MySQL</h4>
+                            <p class="text-muted small">Banco de dados relacional</p>
+                            <a href="https://dev.mysql.com/downloads/" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-file-earmark-binary text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">MongoDB</h4>
+                            <p class="text-muted small">Banco NoSQL</p>
+                            <a href="https://www.mongodb.com/try/download/community"
+                                class="btn btn-sm btn-outline-primary mt-2" target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-hdd-stack text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">PostgreSQL</h4>
+                            <p class="text-muted small">Banco relacional avançado</p>
+                            <a href="https://www.postgresql.org/download/" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-archive text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">SQLite</h4>
+                            <p class="text-muted small">Banco embutido</p>
+                            <a href="https://www.sqlite.org/download.html" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Subseção: Controle de Versão -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-git"></i> Controle de Versão</h3>
-    <div class="row g-4">
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-git text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">Git</h4>
-                    <p class="text-muted small">Sistema de versionamento</p>
-                    <a href="https://git-scm.com/downloads" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
+            <!-- Subseção: Ferramentas de Teste -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-bug"></i> Testes & Debug</h3>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-lightning-charge text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">Postman</h4>
+                            <p class="text-muted small">API Development</p>
+                            <a href="https://www.postman.com/downloads/" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-shield-check text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">Insomnia</h4>
+                            <p class="text-muted small">REST Client</p>
+                            <a href="https://insomnia.rest/download" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-tools text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">Jest</h4>
+                            <p class="text-muted small">Testing Framework</p>
+                            <a href="https://jestjs.io/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
+                                Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-bug text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">Cypress</h4>
+                            <p class="text-muted small">E2E Testing</p>
+                            <a href="https://www.cypress.io/" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Website
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-github text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">GitHub Desktop</h4>
-                    <p class="text-muted small">Cliente GUI para Git</p>
-                    <a href="https://desktop.github.com/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
+            <!-- Subseção: Utilitários -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-tools"></i> Utilitários</h3>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-file-zip text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">7-Zip</h4>
+                            <p class="text-muted small">Compactador de arquivos</p>
+                            <a href="https://www.7-zip.org/" class="btn btn-sm btn-outline-primary mt-2"
+                                target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-terminal text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">Windows Terminal</h4>
+                            <p class="text-muted small">Terminal moderno</p>
+                            <a href="https://apps.microsoft.com/detail/windows-terminal/9N0DX20HK701"
+                                class="btn btn-sm btn-outline-primary mt-2" target="_blank">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-filetype-json text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">JSON Formatter</h4>
+                            <p class="text-muted small">Visualizador JSON</p>
+                            <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa"
+                                class="btn btn-sm btn-outline-primary mt-2" target="_blank">
+                                Extensão
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-filetype-html text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h6 card-title mt-2">Live Server</h4>
+                            <p class="text-muted small">Servidor local para dev</p>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+                                class="btn btn-sm btn-outline-primary mt-2" target="_blank">
+                                Extensão
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-gitlab text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">GitLab</h4>
-                    <p class="text-muted small">Plataforma DevOps</p>
-                    <a href="https://about.gitlab.com/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Website
-                    </a>
+        <!-- Seção de IA e Assistentes Virtuais -->
+        <section class="mb-5">
+            <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-robot"></i> Inteligência Artificial e Assistentes</h2>
+
+            <div class="row g-4">
+                <!-- Categoria: Assistentes de Conversação -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="h5 mb-0"><i class="bi bi-chat-left-text"></i> Assistentes de Conversação</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>ChatGPT (OpenAI)</strong>
+                                        <div class="text-muted small">Melhor para: Redação criativa, explicação de
+                                            conceitos, geração de código</div>
+                                    </div>
+                                    <a href="https://chat.openai.com" target="_blank"
+                                        class="btn btn-sm btn-outline-primary">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Gemini (Google)</strong>
+                                        <div class="text-muted small">Melhor para: Integração com serviços Google,
+                                            pesquisa contextual, multimídia</div>
+                                    </div>
+                                    <a href="https://gemini.google.com" target="_blank"
+                                        class="btn btn-sm btn-outline-primary">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Claude (Anthropic)</strong>
+                                        <div class="text-muted small">Melhor para: Análise de documentos longos, ética
+                                            em IA, conversas naturais</div>
+                                    </div>
+                                    <a href="https://claude.ai" target="_blank"
+                                        class="btn btn-sm btn-outline-primary">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Perplexity</strong>
+                                        <div class="text-muted small">Melhor para: Pesquisa com fontes, respostas
+                                            precisas, atualidades</div>
+                                    </div>
+                                    <a href="https://www.perplexity.ai" target="_blank"
+                                        class="btn btn-sm btn-outline-primary">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>DeepSeek</strong>
+                                        <div class="text-muted small">Melhor para: Pesquisa técnica, contexto longo
+                                            (128K tokens), gratuito</div>
+                                    </div>
+                                    <a href="https://www.deepseek.com" target="_blank"
+                                        class="btn btn-sm btn-outline-primary">Acessar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria: IA para Desenvolvimento -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-success text-white">
+                            <h3 class="h5 mb-0"><i class="bi bi-code-slash"></i> IA para Desenvolvimento</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>GitHub Copilot</strong>
+                                        <div class="text-muted small">Melhor para: Autocompletar código, suporte
+                                            multi-linguagem</div>
+                                    </div>
+                                    <a href="https://github.com/features/copilot" target="_blank"
+                                        class="btn btn-sm btn-outline-success">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Amazon CodeWhisperer</strong>
+                                        <div class="text-muted small">Melhor para: Integração AWS, desenvolvimento cloud
+                                        </div>
+                                    </div>
+                                    <a href="https://aws.amazon.com/codewhisperer/" target="_blank"
+                                        class="btn btn-sm btn-outline-success">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Tabnine</strong>
+                                        <div class="text-muted small">Melhor para: Privacidade de código, modelos locais
+                                        </div>
+                                    </div>
+                                    <a href="https://www.tabnine.com/" target="_blank"
+                                        class="btn btn-sm btn-outline-success">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>SourceGraph Cody</strong>
+                                        <div class="text-muted small">Melhor para: Entendimento de codebase,
+                                            documentação</div>
+                                    </div>
+                                    <a href="https://about.sourcegraph.com/cody" target="_blank"
+                                        class="btn btn-sm btn-outline-success">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Phind</strong>
+                                        <div class="text-muted small">Melhor para: Solução de problemas de programação
+                                        </div>
+                                    </div>
+                                    <a href="https://www.phind.com/" target="_blank"
+                                        class="btn btn-sm btn-outline-success">Acessar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria: IA para Design e Criatividade -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-warning text-dark">
+                            <h3 class="h5 mb-0"><i class="bi bi-palette"></i> IA para Design e Criatividade</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Midjourney</strong>
+                                        <div class="text-muted small">Melhor para: Arte digital, conceitos visuais
+                                            criativos</div>
+                                    </div>
+                                    <a href="https://www.midjourney.com" target="_blank"
+                                        class="btn btn-sm btn-outline-warning">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>DALL-E 3</strong>
+                                        <div class="text-muted small">Melhor para: Geração de imagens realistas,
+                                            integração com ChatGPT</div>
+                                    </div>
+                                    <a href="https://openai.com/dall-e" target="_blank"
+                                        class="btn btn-sm btn-outline-warning">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Stable Diffusion</strong>
+                                        <div class="text-muted small">Melhor para: Modelos open-source, customização
+                                            avançada</div>
+                                    </div>
+                                    <a href="https://stablediffusionweb.com" target="_blank"
+                                        class="btn btn-sm btn-outline-warning">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Runway ML</strong>
+                                        <div class="text-muted small">Melhor para: Edição de vídeo com IA, efeitos
+                                            especiais</div>
+                                    </div>
+                                    <a href="https://runwayml.com" target="_blank"
+                                        class="btn btn-sm btn-outline-warning">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Adobe Firefly</strong>
+                                        <div class="text-muted small">Melhor para: Integração com Creative Cloud, design
+                                            profissional</div>
+                                    </div>
+                                    <a href="https://www.adobe.com/sensei/generative-ai/firefly.html" target="_blank"
+                                        class="btn btn-sm btn-outline-warning">Acessar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria: IA para Produtividade -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-info text-white">
+                            <h3 class="h5 mb-0"><i class="bi bi-speedometer2"></i> IA para Produtividade</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Notion AI</strong>
+                                        <div class="text-muted small">Melhor para: Organização de conhecimento,
+                                            gerenciamento de projetos</div>
+                                    </div>
+                                    <a href="https://www.notion.so/product/ai" target="_blank"
+                                        class="btn btn-sm btn-outline-info">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Grammarly</strong>
+                                        <div class="text-muted small">Melhor para: Correção gramatical, aprimoramento de
+                                            texto</div>
+                                    </div>
+                                    <a href="https://www.grammarly.com" target="_blank"
+                                        class="btn btn-sm btn-outline-info">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Otter.ai</strong>
+                                        <div class="text-muted small">Melhor para: Transcrição de reuniões, notas
+                                            automáticas</div>
+                                    </div>
+                                    <a href="https://otter.ai" target="_blank"
+                                        class="btn btn-sm btn-outline-info">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Fireflies</strong>
+                                        <div class="text-muted small">Melhor para: Análise de chamadas, integração com
+                                            calendário</div>
+                                    </div>
+                                    <a href="https://fireflies.ai" target="_blank"
+                                        class="btn btn-sm btn-outline-info">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Rewind AI</strong>
+                                        <div class="text-muted small">Melhor para: Memória digital, registro de
+                                            atividades</div>
+                                    </div>
+                                    <a href="https://www.rewind.ai" target="_blank"
+                                        class="btn btn-sm btn-outline-info">Acessar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria: IA para Pesquisa e Análise -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-danger text-white">
+                            <h3 class="h5 mb-0"><i class="bi bi-search"></i> IA para Pesquisa e Análise</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Elicit</strong>
+                                        <div class="text-muted small">Melhor para: Revisão de literatura acadêmica,
+                                            pesquisa científica</div>
+                                    </div>
+                                    <a href="https://elicit.org" target="_blank"
+                                        class="btn btn-sm btn-outline-danger">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Consensus</strong>
+                                        <div class="text-muted small">Melhor para: Respostas baseadas em evidências
+                                            científicas</div>
+                                    </div>
+                                    <a href="https://consensus.app" target="_blank"
+                                        class="btn btn-sm btn-outline-danger">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Scite</strong>
+                                        <div class="text-muted small">Melhor para: Análise de citações em artigos
+                                            científicos</div>
+                                    </div>
+                                    <a href="https://scite.ai" target="_blank"
+                                        class="btn btn-sm btn-outline-danger">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Wolfram Alpha</strong>
+                                        <div class="text-muted small">Melhor para: Computação matemática, dados
+                                            estruturados</div>
+                                    </div>
+                                    <a href="https://www.wolframalpha.com" target="_blank"
+                                        class="btn btn-sm btn-outline-danger">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Scholarcy</strong>
+                                        <div class="text-muted small">Melhor para: Resumo de artigos acadêmicos</div>
+                                    </div>
+                                    <a href="https://www.scholarcy.com" target="_blank"
+                                        class="btn btn-sm btn-outline-danger">Acessar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria: IA para Negócios -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-secondary text-white">
+                            <h3 class="h5 mb-0"><i class="bi bi-briefcase"></i> IA para Negócios</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>ChatGPT Enterprise</strong>
+                                        <div class="text-muted small">Melhor para: Soluções corporativas, privacidade de
+                                            dados</div>
+                                    </div>
+                                    <a href="https://openai.com/enterprise" target="_blank"
+                                        class="btn btn-sm btn-outline-secondary">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Jasper</strong>
+                                        <div class="text-muted small">Melhor para: Marketing de conteúdo, geração em
+                                            massa</div>
+                                    </div>
+                                    <a href="https://www.jasper.ai" target="_blank"
+                                        class="btn btn-sm btn-outline-secondary">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Copy.ai</strong>
+                                        <div class="text-muted small">Melhor para: Copywriting, textos comerciais</div>
+                                    </div>
+                                    <a href="https://www.copy.ai" target="_blank"
+                                        class="btn btn-sm btn-outline-secondary">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Gong</strong>
+                                        <div class="text-muted small">Melhor para: Análise de vendas, inteligência de
+                                            revenue</div>
+                                    </div>
+                                    <a href="https://www.gong.io" target="_blank"
+                                        class="btn btn-sm btn-outline-secondary">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Beautiful.ai</strong>
+                                        <div class="text-muted small">Melhor para: Apresentações profissionais
+                                            automatizadas</div>
+                                    </div>
+                                    <a href="https://www.beautiful.ai" target="_blank"
+                                        class="btn btn-sm btn-outline-secondary">Acessar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria: IA Especializada -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-dark text-white">
+                            <h3 class="h5 mb-0"><i class="bi bi-stars"></i> IA Especializada</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Khanmigo (Khan Academy)</strong>
+                                        <div class="text-muted small">Melhor para: Tutoria educacional personalizada
+                                        </div>
+                                    </div>
+                                    <a href="https://www.khanacademy.org/khan-labs" target="_blank"
+                                        class="btn btn-sm btn-outline-dark">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Hugging Face</strong>
+                                        <div class="text-muted small">Melhor para: Modelos de NLP open-source,
+                                            fine-tuning</div>
+                                    </div>
+                                    <a href="https://huggingface.co" target="_blank"
+                                        class="btn btn-sm btn-outline-dark">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>ElevenLabs</strong>
+                                        <div class="text-muted small">Melhor para: Síntese de voz realista, clones de
+                                            voz</div>
+                                    </div>
+                                    <a href="https://elevenlabs.io" target="_blank"
+                                        class="btn btn-sm btn-outline-dark">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Waymark</strong>
+                                        <div class="text-muted small">Melhor para: Criação automática de vídeos
+                                            comerciais</div>
+                                    </div>
+                                    <a href="https://waymark.com" target="_blank"
+                                        class="btn btn-sm btn-outline-dark">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>AlphaCode (DeepMind)</strong>
+                                        <div class="text-muted small">Melhor para: Competições de programação</div>
+                                    </div>
+                                    <a href="https://deepmind.google/technologies/alphacode/" target="_blank"
+                                        class="btn btn-sm btn-outline-dark">Acessar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria: IA Open Source -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="h5 mb-0"><i class="bi bi-github"></i> IA Open Source</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Llama 3 (Meta)</strong>
+                                        <div class="text-muted small">Melhor para: Modelos auto-hospedados, customização
+                                        </div>
+                                    </div>
+                                    <a href="https://ai.meta.com/llama/" target="_blank"
+                                        class="btn btn-sm btn-outline-primary">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Mistral AI</strong>
+                                        <div class="text-muted small">Melhor para: Eficiência computacional, modelos
+                                            compactos</div>
+                                    </div>
+                                    <a href="https://mistral.ai" target="_blank"
+                                        class="btn btn-sm btn-outline-primary">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>Ollama</strong>
+                                        <div class="text-muted small">Melhor para: Execução local de modelos LLM</div>
+                                    </div>
+                                    <a href="https://ollama.ai" target="_blank"
+                                        class="btn btn-sm btn-outline-primary">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>LocalAI</strong>
+                                        <div class="text-muted small">Melhor para: API local compatível com OpenAI</div>
+                                    </div>
+                                    <a href="https://github.com/go-skynet/LocalAI" target="_blank"
+                                        class="btn btn-sm btn-outline-primary">Acessar</a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>GPT4All</strong>
+                                        <div class="text-muted small">Melhor para: Execução offline em hardware consumer
+                                        </div>
+                                    </div>
+                                    <a href="https://gpt4all.io" target="_blank"
+                                        class="btn btn-sm btn-outline-primary">Acessar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-box-arrow-up-right text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">Sourcetree</h4>
-                    <p class="text-muted small">Cliente Git da Atlassian</p>
-                    <a href="https://www.sourcetreeapp.com/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Subseção: Ambientes de Execução -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-cpu"></i> Ambientes de Execução</h3>
-    <div class="row g-4">
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-box-seam text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">Node.js</h4>
-                    <p class="text-muted small">JavaScript no servidor</p>
-                    <a href="https://nodejs.org/pt/download" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-filetype-py text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">Python</h4>
-                    <p class="text-muted small">Linguagem versátil</p>
-                    <a href="https://www.python.org/downloads/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-filetype-java text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">JDK</h4>
-                    <p class="text-muted small">Java Development Kit</p>
-                    <a href="https://adoptium.net/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-dot text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">.NET SDK</h4>
-                    <p class="text-muted small">Plataforma Microsoft</p>
-                    <a href="https://dotnet.microsoft.com/download" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Subseção: Bancos de Dados -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-database"></i> Bancos de Dados</h3>
-    <div class="row g-4">
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-server text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">MySQL</h4>
-                    <p class="text-muted small">Banco de dados relacional</p>
-                    <a href="https://dev.mysql.com/downloads/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-file-earmark-binary text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">MongoDB</h4>
-                    <p class="text-muted small">Banco NoSQL</p>
-                    <a href="https://www.mongodb.com/try/download/community" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-hdd-stack text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">PostgreSQL</h4>
-                    <p class="text-muted small">Banco relacional avançado</p>
-                    <a href="https://www.postgresql.org/download/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-archive text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">SQLite</h4>
-                    <p class="text-muted small">Banco embutido</p>
-                    <a href="https://www.sqlite.org/download.html" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Subseção: Ferramentas de Teste -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-bug"></i> Testes & Debug</h3>
-    <div class="row g-4">
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-lightning-charge text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">Postman</h4>
-                    <p class="text-muted small">API Development</p>
-                    <a href="https://www.postman.com/downloads/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-shield-check text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">Insomnia</h4>
-                    <p class="text-muted small">REST Client</p>
-                    <a href="https://insomnia.rest/download" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-tools text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">Jest</h4>
-                    <p class="text-muted small">Testing Framework</p>
-                    <a href="https://jestjs.io/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Website
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-bug text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">Cypress</h4>
-                    <p class="text-muted small">E2E Testing</p>
-                    <a href="https://www.cypress.io/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Website
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Subseção: Utilitários -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-tools"></i> Utilitários</h3>
-    <div class="row g-4">
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-file-zip text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">7-Zip</h4>
-                    <p class="text-muted small">Compactador de arquivos</p>
-                    <a href="https://www.7-zip.org/" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-terminal text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">Windows Terminal</h4>
-                    <p class="text-muted small">Terminal moderno</p>
-                    <a href="https://apps.microsoft.com/detail/windows-terminal/9N0DX20HK701" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-filetype-json text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">JSON Formatter</h4>
-                    <p class="text-muted small">Visualizador JSON</p>
-                    <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Extensão
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-            <div class="card h-100">
-                <div class="card-body text-center">
-                    <i class="bi bi-filetype-html text-primary" style="font-size: 2rem;"></i>
-                    <h4 class="h6 card-title mt-2">Live Server</h4>
-                    <p class="text-muted small">Servidor local para dev</p>
-                    <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" class="btn btn-sm btn-outline-primary mt-2" target="_blank">
-                        Extensão
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
     </main>
 
