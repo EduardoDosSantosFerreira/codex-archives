@@ -8,9 +8,140 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="src/assets/css/index.css">
+    <link rel="stylesheet" href="src/assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: #fffcf0;">
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-archive me-1"></i>Codex Archives
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <i class="bi bi-list-task me-2"></i>Menu
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                        <!-- Grupo Windows -->
+                        <li class="nav-item mb-2">
+                            <div class="nav-section-label text-muted small mb-1">WINDOWS</div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-terminal me-2"></i>Comandos CMD/PowerShell
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-key-fill me-2"></i>Ativação do Windows
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-windows me-2"></i>Windows Microsoft
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Grupo Linux -->
+                        <li class="nav-item mb-2">
+                            <div class="nav-section-label text-muted small mb-1">LINUX</div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-ubuntu me-2"></i>Distribuições Linux
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Grupo Downloads -->
+                        <li class="nav-item mb-2">
+                            <div class="nav-section-label text-muted small mb-1">DOWNLOADS</div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-download me-2"></i>Downloads
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Grupo Desenvolvimento -->
+                        <li class="nav-item mb-2">
+                            <div class="nav-section-label text-muted small mb-1">DESENVOLVIMENTO</div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-code-slash me-2"></i>Ferramentas para Devs
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Grupo IA -->
+                        <li class="nav-item">
+                            <div class="nav-section-label text-muted small mb-1">INTELIGÊNCIA ARTIFICIAL</div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-robot me-2"></i>IA e Assistentes
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Segurança Digital -->
+                        <li class="nav-item">
+                            <div class="nav-section-label text-muted small mb-1">Segurança Digital</div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-robot me-2"></i>Antivírus Gratuitos
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-robot me-2"></i>VPNs Confiáveis
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-robot me-2"></i>Gerenciadores de Senhas
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-robot me-2"></i>Encriptação
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-robot me-2"></i>Análise de Rede
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <div class="text-center">
         <img src="src/assets/img/ophanim.png" width="500px" class="img-fluid" alt="">
     </div>
@@ -344,6 +475,293 @@
                                 download>
                                 <i class="bi bi-download"></i> Baixar Script
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Windows e Ferramentas Microsoft -->
+        <section class="mb-5">
+            <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-windows"></i> Windows Microsoft</h2>
+
+            <!-- Subseção: Versões do Windows -->
+            <h3 class="h4 mt-4 mb-3"><i class="bi bi-pc-display"></i> Versões do Windows</h3>
+            <div class="row g-4">
+                <!-- Windows 11 -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/1200px-Windows_11_logo.svg.png"
+                                height="50" class="mb-2" alt="Windows 11 Logo">
+                            <h4 class="h6 card-title">Windows 11</h4>
+                            <p class="text-muted small">Última versão com nova interface e Android apps</p>
+                            <div class="btn-group w-100">
+                                <a href="https://www.microsoft.com/software-download/windows11"
+                                    class="btn btn-sm btn-outline-primary" target="_blank">Download</a>
+                                <a href="https://www.microsoft.com/windows/windows-11-specifications"
+                                    class="btn btn-sm btn-outline-secondary" target="_blank">Requisitos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Windows 10 -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png"
+                                height="30" class="mb-2" alt="Windows 10 Logo">
+                            <h4 class="h6 card-title">Windows 10</h4>
+                            <p class="text-muted small">Estável e ainda suportado até 2025</p>
+                            <div class="btn-group w-100">
+                                <a href="https://www.microsoft.com/software-download/windows10"
+                                    class="btn btn-sm btn-outline-primary" target="_blank">Download</a>
+                                <a href="https://www.microsoft.com/windows/windows-10-specifications"
+                                    class="btn btn-sm btn-outline-secondary" target="_blank">Requisitos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Windows Server -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/1200px-Windows_11_logo.svg.png"
+                                height="50" class="mb-2" alt="Windows Server Logo">
+                            <h4 class="h6 card-title">Windows Server 2022</h4>
+                            <p class="text-muted small">Para servidores empresariais</p>
+                            <a href="https://www.microsoft.com/windows-server" class="btn btn-sm btn-outline-dark"
+                                target="_blank">Site Oficial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Seção de Distribuições Linux -->
+        <section class="mb-5">
+            <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-ubuntu"></i> Distribuições Linux</h2>
+
+            <!-- Subseção: Para Iniciantes -->
+            <h3 class="h4 mt-4 mb-3"><i class="bi bi-person-fill"></i> Para Iniciantes</h3>
+            <div class="row g-4">
+                <!-- Ubuntu -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/Logo-ubuntu_cof-orange-hex.svg.png" height="50"
+                                class="mb-2" alt="Ubuntu Logo">
+                            <h4 class="h6 card-title">Ubuntu</h4>
+                            <p class="text-muted small">Amigável, suporte amplo, baseado em Debian.</p>
+                            <a href="https://ubuntu.com/download" class="btn btn-sm btn-outline-primary"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linux Mint -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/Linux_Mint.svg.png" height="50" class="mb-2"
+                                alt="Linux Mint Logo">
+                            <h4 class="h6 card-title">Linux Mint</h4>
+                            <p class="text-muted small">Alternativa ao Windows, estável e intuitivo.</p>
+                            <a href="https://linuxmint.com/download.php" class="btn btn-sm btn-outline-primary"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zorin OS -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/zorin.png" height="50" class="mb-2" alt="Zorin OS Logo">
+                            <h4 class="h6 card-title">Zorin OS</h4>
+                            <p class="text-muted small">Layout familiar para usuários Windows.</p>
+                            <a href="https://zorin.com/os/download/" class="btn btn-sm btn-outline-primary"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subseção: Avançadas/Power Users -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-terminal"></i> Para Avançados</h3>
+            <div class="row g-4">
+                <!-- Arch Linux -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/arch.png" height="50" class="mb-2" alt="Arch Linux Logo">
+                            <h4 class="h6 card-title">Arch Linux</h4>
+                            <p class="text-muted small">Minimalista, rolling release, altamente customizável.</p>
+                            <a href="https://archlinux.org/download/" class="btn btn-sm btn-outline-danger"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gentoo -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/Gentoo_Linux_logo_matte.svg.png" height="50" class="mb-2"
+                                alt="Gentoo Logo">
+                            <h4 class="h6 card-title">Gentoo</h4>
+                            <p class="text-muted small">Otimizado para hardware específico.</p>
+                            <a href="https://www.gentoo.org/downloads/" class="btn btn-sm btn-outline-danger"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slackware -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/Slackware.svg.png" height="50" class="mb-2"
+                                alt="Slackware Logo">
+                            <h4 class="h6 card-title">Slackware</h4>
+                            <p class="text-muted small">Um dos mais antigos, foco em simplicidade.</p>
+                            <a href="http://www.slackware.com/getslack/" class="btn btn-sm btn-outline-danger"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subseção: Leves e Rápidas -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-speedometer2"></i> Leves & Rápidas</h3>
+            <div class="row g-4">
+                <!-- Lubuntu -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/ubunto.png" height="50" class="mb-2" alt="Lubuntu Logo">
+                            <h4 class="h6 card-title">Lubuntu</h4>
+                            <p class="text-muted small">Ubuntu com LXQt para PCs antigos.</p>
+                            <a href="https://lubuntu.me/downloads/" class="btn btn-sm btn-outline-success"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Puppy Linux -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/puppy.jpg" height="50" class="mb-2" alt="Puppy Linux Logo">
+                            <h4 class="h6 card-title">Puppy Linux</h4>
+                            <p class="text-muted small">Roda direto da RAM, 300MB </p>
+                            <a href="http://puppylinux.com/" class="btn btn-sm btn-outline-success"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AntiX -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/antix.jpg" height="50" class="mb-2" alt="AntiX Logo">
+                            <h4 class="h6 card-title">AntiX</h4>
+                            <p class="text-muted small">Para hardware muito antigo (Pentium III+).</p>
+                            <a href="https://antixlinux.com/download/" class="btn btn-sm btn-outline-success"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subseção: Privacidade & Segurança -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-shield-lock"></i> Privacidade & Segurança</h3>
+            <div class="row g-4">
+                <!-- Tails -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/tails.jpg" height="50" class="mb-2" alt="Tails Logo">
+                            <h4 class="h6 card-title">Tails</h4>
+                            <p class="text-muted small">Live OS focado em anonimato e privacidade.</p>
+                            <a href="https://tails.boum.org/" class="btn btn-sm btn-outline-dark"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kali Linux -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/Kali_Linux_2.0_wordmark.svg.png" height="40" class="mb-2"
+                                alt="Kali Linux Logo">
+                            <h4 class="h6 card-title">Kali Linux</h4>
+                            <p class="text-muted small">Pentesting e segurança cibernética.</p>
+                            <a href="https://www.kali.org/get-kali/" class="btn btn-sm btn-outline-dark"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Qubes OS -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/qubes.png" height="50" class="mb-2" alt="Qubes OS Logo">
+                            <h4 class="h6 card-title">Qubes OS</h4>
+                            <p class="text-muted small">Segurança por compartimentalização.</p>
+                            <a href="https://www.qubes-os.org/downloads/" class="btn btn-sm btn-outline-dark"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subseção: Alternativas Específicas -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-star"></i> Especiais</h3>
+            <div class="row g-4">
+                <!-- Pop!_OS (Para Devs/Gamers) -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/Pop_OS-Logo-nobg.png" height="50" class="mb-2"
+                                alt="Pop!_OS Logo">
+                            <h4 class="h6 card-title">Pop!_OS</h4>
+                            <p class="text-muted small">Otimizado para desenvolvedores e gamers.</p>
+                            <a href="https://pop.system76.com/" class="btn btn-sm btn-outline-info"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fedora (Inovação) -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/Fedora_icon_(2021).svg.png" height="50" class="mb-2"
+                                alt="Fedora Logo">
+                            <h4 class="h6 card-title">Fedora</h4>
+                            <p class="text-muted small">Base para Red Hat, foco em inovação.</p>
+                            <a href="https://fedoraproject.org/workstation/download/"
+                                class="btn btn-sm btn-outline-info" target="_blank">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NixOS (Reproducibilidade) -->
+                <div class="col-md-4 col-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="./src/assets/img/linux/nix.jpg" height="50" class="mb-2" alt="NixOS Logo">
+                            <h4 class="h6 card-title">NixOS</h4>
+                            <p class="text-muted small">Sistema declarativo e reproduzível.</p>
+                            <a href="https://nixos.org/download.html" class="btn btn-sm btn-outline-info"
+                                target="_blank">Download</a>
                         </div>
                     </div>
                 </div>
@@ -1247,6 +1665,231 @@
             </div>
         </section>
 
+        <!-- Seção de Segurança Cibernética -->
+        <section class="mb-5" id="cybersecurity">
+            <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-shield-lock"></i> Segurança Digital</h2>
+
+            <!-- Antivírus -->
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-shield-check"></i> Antivírus Gratuitos</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <img src="src/assets/img/securaty/mal.png" height="30" class="me-3" alt="Malwarebytes">
+                                <div>
+                                    <h4 class="h5 mb-1">Malwarebytes</h4>
+                                    <p class="text-muted small mb-2">Proteção contra malware, ransomware e exploits</p>
+                                    <a href="https://www.malwarebytes.com/" class="btn btn-sm btn-outline-primary"
+                                        target="_blank">Site Oficial</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <img src="src/assets/img/securaty/kas.png" height="30" class="me-3" alt="Kaspersky">
+                                <div>
+                                    <h4 class="h5 mb-1">Kaspersky Free</h4>
+                                    <p class="text-muted small mb-2">Proteção essencial sem custo</p>
+                                    <a href="https://www.kaspersky.com.br/free-antivirus"
+                                        class="btn btn-sm btn-outline-primary" target="_blank">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VPNs -->
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-lock"></i> VPNs Confiáveis</h3>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-shield text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h5 mt-2">ProtonVPN</h4>
+                            <p class="text-muted small">Serviço suíço com plano gratuito</p>
+                            <a href="https://protonvpn.com/" class="btn btn-sm btn-outline-primary"
+                                target="_blank">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-globe text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h5 mt-2">Windscribe</h4>
+                            <p class="text-muted small">10GB/mês no plano gratuito</p>
+                            <a href="https://windscribe.com/" class="btn btn-sm btn-outline-primary"
+                                target="_blank">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-incognito text-primary" style="font-size: 2rem;"></i>
+                            <h4 class="h5 mt-2">Mullvad</h4>
+                            <p class="text-muted small">Foco em privacidade radical</p>
+                            <a href="https://mullvad.net/" class="btn btn-sm btn-outline-primary"
+                                target="_blank">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gerenciadores de Senhas -->
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-key"></i> Gerenciadores de Senhas</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <img src="src/assets/img/securaty/bit.png" height="30" class="me-3" alt="Bitwarden">
+                                <div>
+                                    <h4 class="h5 mb-1">Bitwarden</h4>
+                                    <p class="text-muted small mb-2">Open-source com sincronização gratuita</p>
+                                    <div class="btn-group">
+                                        <a href="https://bitwarden.com/" class="btn btn-sm btn-outline-success"
+                                            target="_blank">Site</a>
+                                        <a href="https://github.com/bitwarden" class="btn btn-sm btn-outline-secondary"
+                                            target="_blank">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <img src="src/assets/img/securaty/kee.jpg" height="30" class="me-3" alt="KeePass">
+                                <div>
+                                    <h4 class="h5 mb-1">KeePass</h4>
+                                    <p class="text-muted small mb-2">Armazenamento local e open-source</p>
+                                    <a href="https://keepass.info/" class="btn btn-sm btn-outline-success"
+                                        target="_blank">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferramentas de Encriptação -->
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-file-lock"></i> Encriptação</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <img src="src/assets/img/securaty/VeraCrypt.png" height="30" class="me-3"
+                                    alt="VeraCrypt">
+                                <div>
+                                    <h4 class="h5 mb-1">VeraCrypt</h4>
+                                    <p class="text-muted small mb-2">Crie volumes encriptados</p>
+                                    <div class="btn-group">
+                                        <a href="https://www.veracrypt.fr/" class="btn btn-sm btn-outline-info"
+                                            target="_blank">Site</a>
+                                        <a href="https://github.com/veracrypt/VeraCrypt"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <i class="bi bi-file-earmark-lock text-primary"
+                                    style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <img src="src/assets/img/securaty/Cryptomator.png" height="30" class="me-3"
+                                    alt="VeraCrypt">
+
+                                <div>
+                                    <h4 class="h5 mb-1">Cryptomator</h4>
+                                    <p class="text-muted small mb-2">Encriptação para nuvem</p>
+                                    <a href="https://cryptomator.org/" class="btn btn-sm btn-outline-info"
+                                        target="_blank">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detecção de Vulnerabilidades -->
+            <div class="row g-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-bug"></i> Análise de Rede</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <img src="src/assets/img/securaty/nmap.jpg" height="30" class="me-3" alt="Nmap">
+                                <div>
+                                    <h4 class="h5 mb-1">Nmap</h4>
+                                    <p class="text-muted small mb-2">Mapeamento de rede e portas</p>
+                                    <div class="btn-group">
+                                        <a href="https://nmap.org/" class="btn btn-sm btn-outline-warning"
+                                            target="_blank">Site</a>
+                                        <a href="https://nmap.org/book/" class="btn btn-sm btn-outline-secondary"
+                                            target="_blank">Docs</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <img src="src/assets/img/securaty/wire.jpg" height="30" class="me-3" alt="Wireshark">
+                                <div>
+                                    <h4 class="h5 mb-1">Wireshark</h4>
+                                    <p class="text-muted small mb-2">Analisador de pacotes de rede</p>
+                                    <div class="btn-group">
+                                        <a href="https://www.wireshark.org/" class="btn btn-sm btn-outline-warning"
+                                            target="_blank">Download</a>
+                                        <a href="https://wiki.wireshark.org/SampleCaptures"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank">Exemplos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <br>
@@ -1254,17 +1897,15 @@
         <img src="src/assets/img/Jophiel.jpg" width="500px" class="img-fluid" alt="">
         <br>
         <br>
-        <h1>''Sabedoria a todos''</h1>
+        <h1 style="font-family: 'Charm', serif !important; font-size: 4rem;">''Sabedoria a todos''</h1>
     </div>
     <footer class="text-center py-4">
         <p>&copy; 2025 Codex. Todos os direitos reservados.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+    <!-- scripts -->
+    <script src="src/assets/js/bootstrap.min.js"></script>
+    <script src="src/assets/js/popper.min.js"></script>
+    <script src="src/assets/js/index.js"></script>
 </body>
 
 </html>
