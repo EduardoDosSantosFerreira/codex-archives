@@ -1,0 +1,17 @@
+Mais Seriais Genéricos para Windows 7
+
+ Windows 7 Home Premium                        RHPQ2-RMFJH-74XYM-BH4JX-XM76F                                                        
+ Windows 7 Home Basic                          YGFVB-QTFXQ-3H233-PTWTJ-YRYRV                                                        
+ Windows 7 Starter                             Y76XT-RXGXK-8TG6W-2B7Q8-42BB6                                                        
+ Windows 7 Ultimate                            Y9NXP-XT8MV-PT9BJ-YR4TR-3PG4V                                                    
+ Windows 7 Professional                        VKMK7-DRM7M-447QB-G3R9G-772W4                                                 
+ Windows 7 Enterprise                          33PXH-7Y6KF-2VJC9-XBBR8-HVTHH                             
+ Windows 7 Ultimate N                          BTK2V-DMT9J-RV8M9-G3TV4-FRH3B                                                        
+ Windows 7 Professional K                      MRPKT-YTG23-K7D7T-X2JMM-QY7MG 
+ Windows 7 Enterprise E                        C29WB-22CC8-VJ326-GHFJW-H9DH4                                                       
+ Windows 7 Home Premium N                      6P99N-YF42M-TPGBG-9VMJP-YKHCF                                                       
+
+---
+
+slmgr /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+slmgr /ato

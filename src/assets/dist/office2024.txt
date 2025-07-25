@@ -1,0 +1,4 @@
+ ATIVAÇÃO DO PACOTE OFFICE 2024
+
+Comando PowerShell:
+irm https://massgrave.dev/get | iex

@@ -1,0 +1,16 @@
+ Windows 8.1 Product Keys (Genéricos para Instalação):
+
+ Windows 8.1 (Core)                          334NH-RXG76-64THK-C7CKG-D3VPT                                                   
+ Windows 8.1 Pro                             XHQ8N-C3MCJ-RQXB6-WCHYG-C9WKB                                                   
+ Windows 8.1 Pro N                           JRBBN-4Q997-H4RM2-H3B7W-Q68KC                                                   
+ Windows 8.1 Enterprise                      MHF9N-XY6XB-WVXMC-BTDCT-MKKG7                                                   
+ Windows 8.1 Enterprise N                    TT4HM-HN7YT-62K67-RGRQJ-JFFXW                                                   
+ Windows 8.1 (Single Language)               Y9NXP-XT8MV-PT9BJ-YR4TR-3PG4V                                                   
+ Windows 8.1 (China only)                    N2434-X9D7W-8PF6X-8DV9T-8TYMD                                                   
+ Windows 8.1 Professional with Media Center  GBFNG-2X3TC-8R27F-RMKYB-JK7QT                                                   
+ Windows 8.1 Pro VL                          GCRJD-8NW9H-F2CDX-CCM8D-9D6T9                                                   
+ Windows 8.1 Standard                        FB4WR-32NVD-4RW79-XQFWH-CYQG3
+
+
+slmgr /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+slmgr /ato
