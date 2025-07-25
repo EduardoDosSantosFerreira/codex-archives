@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="src/assets/css/index.css">
+    <link rel="stylesheet" href="src/assets/css/components/navbar.css">
     <link rel="stylesheet" href="src/assets/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -31,10 +32,10 @@
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-    
+
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-    
+
                         <!-- Grupo Windows -->
                         <li class="nav-item mb-3">
                             <div class="nav-section-label text-muted small mb-1">WINDOWS</div>
@@ -71,7 +72,7 @@
                                 </li>
                             </ul>
                         </li>
-    
+
                         <!-- Grupo Linux -->
                         <li class="nav-item mb-3">
                             <div class="nav-section-label text-muted small mb-1">LINUX</div>
@@ -103,7 +104,7 @@
                                 </li>
                             </ul>
                         </li>
-    
+
                         <!-- Grupo macOS -->
                         <li class="nav-item mb-3">
                             <div class="nav-section-label text-muted small mb-1">macOS</div>
@@ -125,7 +126,7 @@
                                 </li>
                             </ul>
                         </li>
-    
+
                         <!-- Grupo Downloads -->
                         <li class="nav-item mb-3">
                             <div class="nav-section-label text-muted small mb-1">DOWNLOADS</div>
@@ -152,7 +153,7 @@
                                 </li>
                             </ul>
                         </li>
-    
+
                         <!-- Grupo Desenvolvimento -->
                         <li class="nav-item mb-3">
                             <div class="nav-section-label text-muted small mb-1">DESENVOLVIMENTO</div>
@@ -189,7 +190,7 @@
                                 </li>
                             </ul>
                         </li>
-    
+
                         <!-- Grupo IA -->
                         <li class="nav-item mb-3">
                             <div class="nav-section-label text-muted small mb-1">INTELIGÊNCIA ARTIFICIAL</div>
@@ -216,7 +217,7 @@
                                 </li>
                             </ul>
                         </li>
-    
+
                         <!-- Segurança Digital -->
                         <li class="nav-item mb-3">
                             <div class="nav-section-label text-muted small mb-1">SEGURANÇA DIGITAL</div>
@@ -258,7 +259,7 @@
                                 </li>
                             </ul>
                         </li>
-    
+
                         <!-- Grupo Hardware -->
                         <li class="nav-item mb-3">
                             <div class="nav-section-label text-muted small mb-1">HARDWARE</div>
@@ -285,7 +286,7 @@
                                 </li>
                             </ul>
                         </li>
-    
+
                         <!-- Grupo Redes -->
                         <li class="nav-item mb-3">
                             <div class="nav-section-label text-muted small mb-1">REDES</div>
@@ -307,7 +308,7 @@
                                 </li>
                             </ul>
                         </li>
-    
+
                         <!-- Grupo Tutoriais -->
                         <li class="nav-item">
                             <div class="nav-section-label text-muted small mb-1">TUTORIAIS</div>
@@ -334,40 +335,6 @@
             </div>
         </div>
     </nav>
-    
-    <style>
-        /* Largura personalizada para o offcanvas */
-        .offcanvas.offcanvas-end {
-            width: 750px;
-            max-width: 85%;
-        }
-        
-        .nav-section-label {
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-        
-        .nav-link {
-            padding: 8px 15px;
-            margin: 2px 0;
-            border-radius: 5px;
-            transition: all 0.2s;
-        }
-        
-        .nav-link:hover {
-            background-color: rgba(0, 0, 0, 0.05);
-        }
-        
-        .nav-link i {
-            width: 20px;
-            text-align: center;
-        }
-        
-        .offcanvas-body {
-            padding: 20px;
-        }
-    </style>
 
     <div class="text-center">
         <img src="src/assets/img/angels/ophanim.png" width="500px" class="img-fluid" alt="">
@@ -2108,6 +2075,459 @@
                                             target="_blank">Download</a>
                                         <a href="https://wiki.wireshark.org/SampleCaptures"
                                             class="btn btn-sm btn-outline-secondary" target="_blank">Exemplos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Utilitários de Sistema -->
+        <section class="mb-5" id="system-utilities">
+            <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-tools"></i> Utilitários de Sistema</h2>
+
+            <!-- Softwares de Limpeza -->
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-broom"></i> Limpeza e Otimização</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-light p-2 rounded me-3">
+                                    <span class="fw-bold text-primary">CC</span>
+                                </div>
+                                <div>
+                                    <h4 class="h5 mb-1">CCleaner</h4>
+                                    <p class="text-muted small mb-2">Limpeza de arquivos temporários e registro</p>
+                                    <div class="btn-group">
+                                        <a href="https://www.ccleaner.com/" class="btn btn-sm btn-outline-primary"
+                                            target="_blank">Site Oficial</a>
+                                        <a href="https://www.ccleaner.com/ccleaner/download"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-light p-2 rounded me-3">
+                                    <span class="fw-bold text-success">BB</span>
+                                </div>
+                                <div>
+                                    <h4 class="h5 mb-1">BleachBit</h4>
+                                    <p class="text-muted small mb-2">Alternativa open-source para limpeza</p>
+                                    <div class="btn-group">
+                                        <a href="https://www.bleachbit.org/" class="btn btn-sm btn-outline-success"
+                                            target="_blank">Site Oficial</a>
+                                        <a href="https://github.com/bleachbit/bleachbit"
+                                            class="btn btn-sm btn-outline-dark" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gerenciadores de Arquivos -->
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-folder"></i> Gerenciadores de Arquivos</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-light p-2 rounded me-3">
+                                    <span class="fw-bold">TC</span>
+                                </div>
+                                <div>
+                                    <h4 class="h5 mb-1">Total Commander</h4>
+                                    <p class="text-muted small mb-2">Gerenciador de arquivos avançado</p>
+                                    <div class="btn-group">
+                                        <a href="https://www.ghisler.com/" class="btn btn-sm btn-outline-primary"
+                                            target="_blank">Site Oficial</a>
+                                        <a href="https://www.ghisler.com/download.htm"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-light p-2 rounded me-3">
+                                    <span class="fw-bold">DC</span>
+                                </div>
+                                <div>
+                                    <h4 class="h5 mb-1">Double Commander</h4>
+                                    <p class="text-muted small mb-2">Alternativa open-source</p>
+                                    <div class="btn-group">
+                                        <a href="https://doublecmd.sourceforge.io/"
+                                            class="btn btn-sm btn-outline-success" target="_blank">Site Oficial</a>
+                                        <a href="https://github.com/doublecmd/doublecmd"
+                                            class="btn btn-sm btn-outline-dark" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferramentas de Backup -->
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-back"></i> Backup e Restauração</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-archive-fill text-primary"
+                                    style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">Macrium Reflect</h4>
+                                    <p class="text-muted small mb-2">Backup completo de sistema</p>
+                                    <div class="btn-group">
+                                        <a href="https://www.macrium.com/" class="btn btn-sm btn-outline-primary"
+                                            target="_blank">Site Oficial</a>
+                                        <a href="https://www.macrium.com/reflectfree"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank">Versão Gratuita</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-copy text-success" style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">Cobian Backup</h4>
+                                    <p class="text-muted small mb-2">Backup incremental e agendado</p>
+                                    <a href="http://www.cobiansoft.com/" class="btn btn-sm btn-outline-primary"
+                                        target="_blank">Site Oficial</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recuperação de Dados -->
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-hdd"></i> Recuperação de Dados</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-file-earmark-arrow-up text-warning"
+                                    style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">Recuva</h4>
+                                    <p class="text-muted small mb-2">Recuperação de arquivos deletados</p>
+                                    <div class="btn-group">
+                                        <a href="https://www.ccleaner.com/recuva" class="btn btn-sm btn-outline-primary"
+                                            target="_blank">Site Oficial</a>
+                                        <a href="https://www.ccleaner.com/recuva/download"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-hdd-rack text-danger" style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">TestDisk</h4>
+                                    <p class="text-muted small mb-2">Recuperação de partições</p>
+                                    <div class="btn-group">
+                                        <a href="https://www.cgsecurity.org/wiki/TestDisk"
+                                            class="btn btn-sm btn-outline-success" target="_blank">Site Oficial</a>
+                                        <a href="https://www.cgsecurity.org/wiki/TestDisk_Download"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monitoramento de Sistema -->
+            <div class="row g-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-speedometer2"></i> Monitoramento</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-pc-display text-info" style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">HWMonitor</h4>
+                                    <p class="text-muted small mb-2">Monitoramento de hardware</p>
+                                    <div class="btn-group">
+                                        <a href="https://www.cpuid.com/softwares/hwmonitor.html"
+                                            class="btn btn-sm btn-outline-primary" target="_blank">Site Oficial</a>
+                                        <a href="https://www.cpuid.com/downloads/hwmonitor/hwmonitor_1.49.exe"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-thermometer-half text-danger"
+                                    style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">Core Temp</h4>
+                                    <p class="text-muted small mb-2">Temperatura do processador</p>
+                                    <div class="btn-group">
+                                        <a href="https://www.alcpu.com/CoreTemp/" class="btn btn-sm btn-outline-primary"
+                                            target="_blank">Site Oficial</a>
+                                        <a href="https://www.alcpu.com/CoreTemp/CoreTempSetup.exe"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Extensões de Navegador -->
+        <section class="mb-5" id="browser-extensions">
+            <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-browser-edge"></i> Extensões Essenciais</h2>
+
+            <!-- Produtividade -->
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-lightning-charge"></i> Produtividade</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-stopwatch text-warning"
+                                    style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">Toggl Track</h4>
+                                    <p class="text-muted small mb-2">Gestão de tempo e produtividade</p>
+                                    <div class="btn-group">
+                                        <a href="https://chrome.google.com/webstore/detail/toggl-track-timer/oejgccbfbmkkpaidnkphaiaecficdnfn"
+                                            class="btn btn-sm btn-outline-primary" target="_blank">Chrome</a>
+                                        <a href="https://addons.mozilla.org/firefox/addon/toggl-button-time-tracker/"
+                                            class="btn btn-sm btn-outline-danger" target="_blank">Firefox</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-eye-slash text-success"
+                                    style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">StayFocusd</h4>
+                                    <p class="text-muted small mb-2">Bloqueio de sites distrativos</p>
+                                    <div class="btn-group">
+                                        <a href="https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji"
+                                            class="btn btn-sm btn-outline-primary" target="_blank">Chrome</a>
+                                        <a href="https://addons.mozilla.org/firefox/addon/stay-focused/"
+                                            class="btn btn-sm btn-outline-danger" target="_blank">Firefox</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segurança -->
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-shield-lock"></i> Segurança e Privacidade</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-shield-check text-primary"
+                                    style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">uBlock Origin</h4>
+                                    <p class="text-muted small mb-2">Bloqueador de anúncios eficiente</p>
+                                    <div class="btn-group">
+                                        <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm"
+                                            class="btn btn-sm btn-outline-primary" target="_blank">Chrome</a>
+                                        <a href="https://addons.mozilla.org/firefox/addon/ublock-origin/"
+                                            class="btn btn-sm btn-outline-danger" target="_blank">Firefox</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-lock-fill text-success"
+                                    style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">HTTPS Everywhere</h4>
+                                    <p class="text-muted small mb-2">Força conexões seguras</p>
+                                    <div class="btn-group">
+                                        <a href="https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp"
+                                            class="btn btn-sm btn-outline-primary" target="_blank">Chrome</a>
+                                        <a href="https://addons.mozilla.org/firefox/addon/https-everywhere/"
+                                            class="btn btn-sm btn-outline-danger" target="_blank">Firefox</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desenvolvimento -->
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-code-slash"></i> Desenvolvimento</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-braces text-info" style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">Web Developer</h4>
+                                    <p class="text-muted small mb-2">Kit completo de ferramentas</p>
+                                    <div class="btn-group">
+                                        <a href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm"
+                                            class="btn btn-sm btn-outline-primary" target="_blank">Chrome</a>
+                                        <a href="https://addons.mozilla.org/firefox/addon/web-developer/"
+                                            class="btn btn-sm btn-outline-danger" target="_blank">Firefox</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-filetype-jsx text-primary"
+                                    style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">React DevTools</h4>
+                                    <p class="text-muted small mb-2">Inspecionar aplicações React</p>
+                                    <div class="btn-group">
+                                        <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi"
+                                            class="btn btn-sm btn-outline-primary" target="_blank">Chrome</a>
+                                        <a href="https://addons.mozilla.org/firefox/addon/react-devtools/"
+                                            class="btn btn-sm btn-outline-danger" target="_blank">Firefox</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferramentas de Pesquisa -->
+            <div class="row g-4 mb-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-search"></i> Ferramentas de Pesquisa</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-mortarboard text-warning"
+                                    style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">Google Scholar Button</h4>
+                                    <p class="text-muted small mb-2">Acesso rápido a artigos acadêmicos</p>
+                                    <div class="btn-group">
+                                        <a href="https://chrome.google.com/webstore/detail/google-scholar-button/ldipcbpaocekfooobnbcddclnhejkcpn"
+                                            class="btn btn-sm btn-outline-primary" target="_blank">Chrome</a>
+                                        <a href="https://addons.mozilla.org/firefox/addon/google-scholar-button/"
+                                            class="btn btn-sm btn-outline-danger" target="_blank">Firefox</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gerenciamento de Cookies -->
+            <div class="row g-4">
+                <div class="col-12">
+                    <h3 class="h4"><i class="bi bi-shield-exclamation"></i> Privacidade Avançada</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-trash text-danger" style="font-size: 2rem; margin-right: 1rem;"></i>
+                                <div>
+                                    <h4 class="h5 mb-1">Cookie AutoDelete</h4>
+                                    <p class="text-muted small mb-2">Limpeza automática de cookies</p>
+                                    <div class="btn-group">
+                                        <a href="https://chrome.google.com/webstore/detail/cookie-autodelete/fhcgjolkccmbidfldomjliifgaodjagh"
+                                            class="btn btn-sm btn-outline-primary" target="_blank">Chrome</a>
+                                        <a href="https://addons.mozilla.org/firefox/addon/cookie-autodelete/"
+                                            class="btn btn-sm btn-outline-danger" target="_blank">Firefox</a>
                                     </div>
                                 </div>
                             </div>
