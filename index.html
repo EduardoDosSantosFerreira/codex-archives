@@ -16,37 +16,245 @@
     </div>
 
     <main class="container my-5">
-        <!-- Seção de Comandos CMD -->
-        <section class="mb-5">
-            <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-terminal"></i> Comandos CMD</h2>
 
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="h5 card-title">Desempenho do Sistema</h3>
-                            <div class="code-block mb-3">
-                                powercfg.exe /hibernate off
-                            </div>
-                            <div class="code-block">
-                                powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
-                            </div>
-                        </div>
+<!-- Seção de Comandos CMD -->
+<section class="mb-5">
+    <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-terminal"></i> Comandos CMD/PowerShell</h2>
+
+    <!-- Subseção: Gerenciamento do Sistema -->
+    <h3 class="h4 mt-4 mb-3"><i class="bi bi-pc-display"></i> Gerenciamento do Sistema</h3>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="h6 card-title">Desempenho do Sistema</h4>
+                    <div class="code-block mb-2">
+                        powercfg.exe /hibernate off <span class="text-muted"># Desativa hibernação para liberar espaço</span>
                     </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="h5 card-title">Atualização do Windows</h3>
-                            <div class="code-block mb-2">
-                                winget upgrade --all
-                            </div>
-                        </div>
+                    <div class="code-block mb-2">
+                        powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 <span class="text-muted"># Esquema Ultimate Performance</span>
+                    </div>
+                    <div class="code-block">
+                        wpr -cancel <span class="text-muted"># Para rastreamentos de desempenho em execução</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="h6 card-title">Atualizações e Pacotes</h4>
+                    <div class="code-block mb-2">
+                        winget upgrade --all <span class="text-muted"># Atualiza todos os pacotes instalados</span>
+                    </div>
+                    <div class="code-block mb-2">
+                        choco upgrade all <span class="text-muted"># Atualiza todos os pacotes Chocolatey</span>
+                    </div>
+                    <div class="code-block">
+                        sfc /scannow <span class="text-muted"># Verifica e repara arquivos do sistema</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subseção: Rede e Conectividade -->
+    <h3 class="h4 mt-5 mb-3"><i class="bi bi-wifi"></i> Rede e Conectividade</h3>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="h6 card-title">Diagnóstico de Rede</h4>
+                    <div class="code-block mb-2">
+                        ipconfig /all <span class="text-muted"># Mostra toda configuração de rede</span>
+                    </div>
+                    <div class="code-block mb-2">
+                        netsh wlan show profiles <span class="text-muted"># Lista redes Wi-Fi salvas</span>
+                    </div>
+                    <div class="code-block mb-2">
+                        ping google.com -t <span class="text-muted"># Ping contínuo (Ctrl+C para parar)</span>
+                    </div>
+                    <div class="code-block">
+                        tracert 8.8.8.8 <span class="text-muted"># Rastreia rota até o destino</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="h6 card-title">Gerenciamento de Rede</h4>
+                    <div class="code-block mb-2">
+                        netsh interface ip show config <span class="text-muted"># Mostra configurações IP</span>
+                    </div>
+                    <div class="code-block mb-2">
+                        netsh winsock reset <span class="text-muted"># Reseta catálogo Winsock</span>
+                    </div>
+                    <div class="code-block mb-2">
+                        netstat -ano <span class="text-muted"># Mostra conexões e ports abertos</span>
+                    </div>
+                    <div class="code-block">
+                        nslookup example.com <span class="text-muted"># Consulta DNS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subseção: Gerenciamento de Arquivos -->
+    <h3 class="h4 mt-5 mb-3"><i class="bi bi-folder"></i> Arquivos e Discos</h3>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="h6 card-title">Operações com Arquivos</h4>
+                    <div class="code-block mb-2">
+                        robocopy C:\origem D:\destino /MIR /NP /LOG:log.txt <span class="text-muted"># Cópia avançada</span>
+                    </div>
+                    <div class="code-block mb-2">
+                        del /S /Q *.tmp <span class="text-muted"># Remove todos arquivos .tmp</span>
+                    </div>
+                    <div class="code-block">
+                        tree /F /A > arvore.txt <span class="text-muted"># Gera árvore de diretórios</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="h6 card-title">Gerenciamento de Disco</h4>
+                    <div class="code-block mb-2">
+                        chkdsk /f /r C: <span class="text-muted"># Verifica e repara disco</span>
+                    </div>
+                    <div class="code-block mb-2">
+                        defrag C: /U /V <span class="text-muted"># Desfragmenta disco com relatório</span>
+                    </div>
+                    <div class="code-block">
+                        fsutil file createnew grande_arquivo.txt 1073741824 <span class="text-muted"># Cria arquivo de 1GB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subseção: Processos e Serviços -->
+    <h3 class="h4 mt-5 mb-3"><i class="bi bi-gear"></i> Processos e Serviços</h3>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="h6 card-title">Gerenciamento de Processos</h4>
+                    <div class="code-block mb-2">
+                        tasklist /svc <span class="text-muted"># Lista processos e serviços</span>
+                    </div>
+                    <div class="code-block mb-2">
+                        taskkill /IM chrome.exe /F <span class="text-muted"># Força fechamento do Chrome</span>
+                    </div>
+                    <div class="code-block">
+                        wmic process get name,processid,commandline <span class="text-muted"># Lista detalhada de processos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="h6 card-title">Controle de Serviços</h4>
+                    <div class="code-block mb-2">
+                        sc queryex type= service state= all <span class="text-muted"># Lista todos serviços</span>
+                    </div>
+                    <div class="code-block mb-2">
+                        net start <span class="text-muted"># Lista serviços em execução</span>
+                    </div>
+                    <div class="code-block">
+                        sc config "servicename" start= delayed-auto <span class="text-muted"># Configura serviço</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subseção: Utilitários Avançados -->
+    <h3 class="h4 mt-5 mb-3"><i class="bi bi-tools"></i> Utilitários Avançados</h3>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="h6 card-title">Informações do Sistema</h4>
+                    <div class="code-block mb-2">
+                        systeminfo <span class="text-muted"># Detalhes completos do sistema</span>
+                    </div>
+                    <div class="code-block mb-2">
+                        wmic bios get serialnumber <span class="text-muted"># Número de série da BIOS</span>
+                    </div>
+                    <div class="code-block">
+                        powercfg /energy <span class="text-muted"># Diagnóstico de energia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="h6 card-title">Comandos Úteis Diversos</h4>
+                    <div class="code-block mb-2">
+                        shutdown /r /t 0 <span class="text-muted"># Reinicia o PC imediatamente</span>
+                    </div>
+                    <div class="code-block mb-2">
+                        cipher /w:C <span class="text-muted"># Sobrescreve espaço livre no disco</span>
+                    </div>
+                    <div class="code-block">
+                        whoami /all <span class="text-muted"># Mostra informações do usuário atual</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subseção: PowerShell -->
+    <h3 class="h4 mt-5 mb-3"><i class="bi bi-filetype-psd1"></i> Comandos PowerShell</h3>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="h6 card-title">Administração do Sistema</h4>
+                    <div class="code-block mb-2">
+                        Get-WindowsUpdateLog <span class="text-muted"># Log de atualizações</span>
+                    </div>
+                    <div class="code-block mb-2">
+                        Get-Process | Sort-Object CPU -Descending <span class="text-muted"># Processos por uso CPU</span>
+                    </div>
+                    <div class="code-block">
+                        Get-NetTCPConnection -State Established <span class="text-muted"># Conexões ativas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="h6 card-title">Utilitários PowerShell</h4>
+                    <div class="code-block mb-2">
+                        Get-ChildItem -Recurse | Measure-Object -Property Length -Sum <span class="text-muted"># Tamanho total de arquivos</span>
+                    </div>
+                    <div class="code-block mb-2">
+                        Test-NetConnection google.com -Port 80 <span class="text-muted"># Testa porta específica</span>
+                    </div>
+                    <div class="code-block">
+                        Get-HotFix | Sort-Object InstalledOn -Descending <span class="text-muted"># Updates instalados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- Seção de Ativação do Windows -->
         <section class="mb-5">
