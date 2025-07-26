@@ -1,31 +1,40 @@
-        /* Largura personalizada para o offcanvas */
-        .offcanvas.offcanvas-end {
-            width: 750px;
-            max-width: 85%;
-        }
+/* Corpo do menu offcanvas */
+.offcanvas-body {
+    background: #fff;
+    overflow-y: auto;
+    padding: 1rem;
+}
 
-        .nav-section-label {
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
+/* Estilo base dos links */
+.nav-link {
+    color: #343a40;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    display: flex;
+    align-items: center;
+}
 
-        .nav-link {
-            padding: 8px 15px;
-            margin: 2px 0;
-            border-radius: 5px;
-            transition: all 0.2s;
-        }
+/* Ícones dentro do link */
+.nav-link i {
+    font-size: 1.3rem;
+    margin-right: 0.6rem;
+}
 
-        .nav-link:hover {
-            background-color: rgba(0, 0, 0, 0.05);
-        }
+/* Ícone de seta para colapsar */
+.nav-link i.bi-chevron-down {
+    margin-left: auto;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
 
-        .nav-link i {
-            width: 20px;
-            text-align: center;
-        }
+/* Animação da seta ao expandir o grupo */
+.nav-link:not(.collapsed) i.bi-chevron-down {
+    transform: rotate(180deg);
+}
 
-        .offcanvas-body {
-            padding: 20px;
-        }
+/* Hover nos links */
+.nav-link:hover {
+    background-color: #f8f9fa;
+    color: #000;
+}

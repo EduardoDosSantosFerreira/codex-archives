@@ -4,8 +4,13 @@
 body,
 * {
   font-family: 'Poppins', sans-serif !important;
+
 }
 
 body {
   padding-top: 5vh;
+}
+
+img{
+  width: 100px;
 }
