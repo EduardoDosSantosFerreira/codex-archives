@@ -169,12 +169,29 @@
                                     Avançada</a>
                             </div>
                         </li>
-
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const offcanvasEl = document.getElementById('offcanvasNavbar');
+            const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
+
+            offcanvasEl.querySelectorAll('a.nav-link').forEach(link => {
+                link.addEventListener('click', function () {
+
+                    // Se o link abre um collapse, NÃO fecha o offcanvas
+                    if (this.hasAttribute('data-bs-toggle')) return;
+
+                    // Fecha apenas links finais
+                    offcanvas.hide();
+                });
+            });
+        });
+    </script>
 
     <div class="text-center">
         <img src="src/assets/img/angels/ophanim.png" style="max-width: 100%; width: 500px !important;" class="img-fluid"
@@ -441,6 +458,18 @@
             <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-windows"></i> Ativação do Windows</h2>
 
             <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="h5 card-title">All Activators Codes</h3>
+
+                            <a href="src/assets/dist/ultimate_activator.txt" class="btn btn-primary mt-3" download>
+                                <i class="bi bi-download"></i> Baixar Script
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body text-center">

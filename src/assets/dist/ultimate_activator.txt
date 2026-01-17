@@ -1,0 +1,141 @@
+ULTIMATE ACTIVATOR
+==================
+
+--------------------------------------------------
+WINDOWS 11
+--------------------------------------------------
+SERIAIS PARA CADA VERSÃO DO WINDOWS 11
+
+Windows 11 Pro                          W269N-WFGWX-YVC9B-4J6C9-T83GX  
+Windows 11 Home                         TX9XD-98N7V-6WMQ6-BX7FG-H8Q99  
+Windows 11 Enterprise                   NPPR9-FWDCX-D2C8J-H872K-2YT43  
+Windows 11 Education                    6TP4R-GNPTD-KYYHQ-7B7DP-J447Y  
+Windows 11 Pro for Workstations         NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J  
+
+Ativação Windows 11:
+slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX  
+slmgr /skms kms8.msguides.com  
+slmgr /ato
+
+--------------------------------------------------
+WINDOWS 10
+--------------------------------------------------
+SERIAIS PARA CADA VERSÃO DO WINDOWS 10
+
+Windows 10 Home Single Language            NTRHT-XTHTG-GBWCG-4MTMP-HH64C  
+Windows 10 Home Single Language            7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH  
+Windows 10 Home Single Language            BT79Q-G7N6G-PGBYW-4YWX6-6F4BT  
+Windows 10 Home Edition                    TX9XD-98N7V-6WMQ6-BX7FG-H8Q99  
+Windows 10 Home                            TX9XD-98N7V-6WMQ6-BX7FG-H8Q99  
+Windows 10 Home                            YTMG3-N6DKC-DKB77-7M9GH-8HVX7  
+Windows 10 Pro                             VK7JG-NPHTM-C97JM-9MPGT-3V66T  
+Windows 10 Pro                             W269N-WFGWX-YVC9B-4J6C9-T83GX  
+Windows 10 Pro                             NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J  
+Windows 10 Workstations                    NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J  
+Windows 10 Pro for Workstations            NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J  
+Windows 10 Pro N for Workstations          9FNHH-K3HBT-3W4TD-6383H-6XYWF  
+Windows 10 Education                       NW6C2-QMPVW-D7KKK-3GKT6-VCFB2  
+Windows 10 Education N                     2WH4N-8QGBV-H22JP-CT43Q-MDWWJ  
+Windows 10 Pro Education                   6TP4R-GNPTD-KYYHQ-7B7DP-J447Y  
+Windows 10 Pro Education N                 YVWGF-BXNMC-HTQYQ-CPQ99-66QFC  
+Windows 10 Enterprise                      NPPR9-FWDCX-D2C8J-H872K-2YT43  
+Windows 10 Enterprise G                    YYVX9-NTFWV-6MDM3-9PT4T-4M68B  
+Windows 10 Enterprise G N                  44RPN-FTY23-9VTTB-MP9BX-T84FV  
+Windows 10 Enterprise N                    DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4  
+Windows 10 Enterprise S                    FWN7H-PF93Q-4GGP8-M8RF3-MDWWW  
+Windows 10 Enterprise LTSC 2019            M7XTQ-FN8P6-TTKYV-9D4CC-J462D  
+Windows 10 Enterprise N LTSC 2019          92NFX-8DJQP-P6BBQ-THF9C-7CG2H  
+Windows Server 2019 Datacenter             WMDGN-G9PQG-XVVXX-R3X43-63DFG  
+Windows Server 2019 Standard               N69G4-B89J2-4G8F4-WWYCC-J464C  
+Windows Server 2019 Essentials             WVDHN-86M7X-466P6-VHXV7-YY726  
+Windows 10 Enterprise LTSB 2016            DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ
+
+slmgr /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+slmgr /skms kms8.msguides.com  
+slmgr /ato
+
+--------------------------------------------------
+WINDOWS 7
+--------------------------------------------------
+Mais Seriais Genéricos para Windows 7
+
+ Windows 7 Home Premium                        RHPQ2-RMFJH-74XYM-BH4JX-XM76F                                                        
+ Windows 7 Home Basic                          YGFVB-QTFXQ-3H233-PTWTJ-YRYRV                                                        
+ Windows 7 Starter                             Y76XT-RXGXK-8TG6W-2B7Q8-42BB6                                                        
+ Windows 7 Ultimate                            Y9NXP-XT8MV-PT9BJ-YR4TR-3PG4V                                                    
+ Windows 7 Professional                        VKMK7-DRM7M-447QB-G3R9G-772W4                                                 
+ Windows 7 Enterprise                          33PXH-7Y6KF-2VJC9-XBBR8-HVTHH                             
+ Windows 7 Ultimate N                          BTK2V-DMT9J-RV8M9-G3TV4-FRH3B                                                        
+ Windows 7 Professional K                      MRPKT-YTG23-K7D7T-X2JMM-QY7MG 
+ Windows 7 Enterprise E                        C29WB-22CC8-VJ326-GHFJW-H9DH4                                                       
+ Windows 7 Home Premium N                      6P99N-YF42M-TPGBG-9VMJP-YKHCF                                                       
+
+---
+
+slmgr /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+slmgr /ato
+
+--------------------------------------------------
+WINDOWS 8.1
+--------------------------------------------------
+Windows 8.1 Product Keys (Genéricos para Instalação):
+
+ Windows 8.1 (Core)                          334NH-RXG76-64THK-C7CKG-D3VPT                                                   
+ Windows 8.1 Pro                             XHQ8N-C3MCJ-RQXB6-WCHYG-C9WKB                                                   
+ Windows 8.1 Pro N                           JRBBN-4Q997-H4RM2-H3B7W-Q68KC                                                   
+ Windows 8.1 Enterprise                      MHF9N-XY6XB-WVXMC-BTDCT-MKKG7                                                   
+ Windows 8.1 Enterprise N                    TT4HM-HN7YT-62K67-RGRQJ-JFFXW                                                   
+ Windows 8.1 (Single Language)               Y9NXP-XT8MV-PT9BJ-YR4TR-3PG4V                                                   
+ Windows 8.1 (China only)                    N2434-X9D7W-8PF6X-8DV9T-8TYMD                                                   
+ Windows 8.1 Professional with Media Center  GBFNG-2X3TC-8R27F-RMKYB-JK7QT                                                   
+ Windows 8.1 Pro VL                          GCRJD-8NW9H-F2CDX-CCM8D-9D6T9                                                   
+ Windows 8.1 Standard                        FB4WR-32NVD-4RW79-XQFWH-CYQG3
+
+
+slmgr /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+slmgr /ato
+
+--------------------------------------------------
+WINDOWS 98
+--------------------------------------------------
+
+Chaves do Windows 98:
+
+ PRDDH-83JD9-G6PK4-684GF-6Y73B
+ RW9MG-QR4G3-2WRR9-TG7BH-33GXB
+ GYXX7-K377D-BMV7H-KGHC2-9W2Q3
+ K4HVD-Q9TJ9-6CRX9-C9G68-RQ2D3
+ K4HVD-GM4Y6-GR26C-WYR22-R9FVK
+ DMYPV-72GKC-RHR86-W8W3F-JX2F8
+ WTT2Y-HDMY4-G94GV-X2Y2F-WHY6F
+ W98TT-2Y8W2-9T3CT-GPFW9-9W9VX
+ K49VD-9TC26-D89MJ-B4FWW-F9WBB
+ WJGXV-3H4F2-6QXJY-PPY6Q-HMBD9
+ KJQ49-C9TCW-7BW48-Y4G3X-RJ6BM
+ VYKVD-9TC26-D89MJ-B4FWW-F9WBB
+ R3J9J-KRKWY-YRK3Y-C9K4Y-J97G6
+ MVP3G-7JY9X-Y2JQB-DYQ6R-BG2GJ
+ CT6TJ-RWR2D-M3YBH-27BBM-BKWWJ
+ KGMPT-GQ6XF-DM3VM-HW6PR-DX9GJ
+ F9J2P-9TTC6-B68Y8-GBB27-T2VYQ
+ X9X3F-2H7RV-FJQBM-6RD6T-HMB2J
+ W3FBC-TG27Y-YKRT2-YB9YK-B8VDR
+ YPWVD-BT4MC-JX93F-DJH7P-28R2J
+ RQG42-V8X8M-HB7MB-C6F2Y-XM8BJ
+ H7V4C-DP7C6-VRYHW-GC99Y-H2KD3
+ BF4HG-DVY76-PXG9B-XC4YY-WHB2T
+ DWYBW-C7T9J-62TCB-3YF9J-D7CHX
+ GJQ9D-2P6CB-V9TD2-KY3R8-28G6X
+ 9D9JB-GJ97F-J7B43-RX26D-6C7YB
+ B8MFR-CFTGQ-C9PBW-VHG3J-3R3YW
+
+--------------------------------------------------
+WINDOWS SERVER 22
+--------------------------------------------------
+
+Chaves do Windows Server:
+
+ Datacenter     WX4NM-KYWYW-QJJR4-XV3QB-6VM33 
+ Standard       VDYBN-27WPP-V4HQT-9VMD4-VMK7H 
+ Essentials     NJCF7-PW8QT-3324D-688JX-2YV66 
+ Azure Edition  YDFWN-MJ9JR-3DYRK-FXXRW-78VHK
