@@ -1,4 +1,15 @@
  ATIVAÇÃO DO PACOTE OFFICE 2024
 
-Comando PowerShell:
+Comando PowerShell para ativação:
 irm https://massgrave.dev/get | iex
+
+📌 LINKS IMPORTANTES:
+🔹 Site oficial 1  https://www.microsoft.com/en-us/downl...
+🔹 Site oficial 2  https://config.office.com/deployments...
+
+💻 COMANDOS CMD:
+
+cd\
+cd C:\Office
+
+setup.exe /configure configuração.xml
