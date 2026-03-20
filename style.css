@@ -41,9 +41,7 @@ body {
   color: var(--gray-text);
 }
 
-/* ========================================
-   NAVBAR
-   ======================================== */
+/*navbar*/
 
 .navbar {
   background-color: var(--white) !important;
@@ -108,9 +106,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* ========================================
-   TÍTULOS
-   ======================================== */
+/*TÍTULOS*/
 
 h2 {
   color: var(--black);
