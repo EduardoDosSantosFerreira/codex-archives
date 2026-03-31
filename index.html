@@ -200,686 +200,703 @@
 
     <main class="container my-5">
 
-<!-- Seção de Comandos CMD -->
-<section id="sec1" class="mb-5">
-    <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-terminal"></i> Comandos CMD/PowerShell</h2>
+        <!-- Seção de Comandos CMD -->
+        <section id="sec1" class="mb-5">
+            <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-terminal"></i> Comandos CMD/PowerShell</h2>
 
-    <!-- Subseção: Gerenciamento do Sistema -->
-    <h3 class="h4 mt-4 mb-3"><i class="bi bi-pc-display"></i> Gerenciamento do Sistema</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Desempenho do Sistema</h4>
-                    <div class="code-block mb-2">
-                        <code>powercfg.exe /hibernate off</code>
-                        <button class="copy-btn" data-code="powercfg.exe /hibernate off">Copiar</button>
-                        <span class="text-muted d-block small"># Desativa hibernação para liberar espaço</span>
+            <!-- Subseção: Gerenciamento do Sistema -->
+            <h3 class="h4 mt-4 mb-3"><i class="bi bi-pc-display"></i> Gerenciamento do Sistema</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Desempenho do Sistema</h4>
+                            <div class="code-block mb-2">
+                                <code>powercfg.exe /hibernate off</code>
+                                <button class="copy-btn" data-code="powercfg.exe /hibernate off">Copiar</button>
+                                <span class="text-muted d-block small"># Desativa hibernação para liberar espaço</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</code>
+                                <button class="copy-btn"
+                                    data-code="powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61">Copiar</button>
+                                <span class="text-muted d-block small"># Esquema Ultimate Performance</span>
+                            </div>
+                            <div class="code-block">
+                                <code>wpr -cancel</code>
+                                <button class="copy-btn" data-code="wpr -cancel">Copiar</button>
+                                <span class="text-muted d-block small"># Para rastreamentos de desempenho em
+                                    execução</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        <code>powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</code>
-                        <button class="copy-btn" data-code="powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61">Copiar</button>
-                        <span class="text-muted d-block small"># Esquema Ultimate Performance</span>
-                    </div>
-                    <div class="code-block">
-                        <code>wpr -cancel</code>
-                        <button class="copy-btn" data-code="wpr -cancel">Copiar</button>
-                        <span class="text-muted d-block small"># Para rastreamentos de desempenho em execução</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Atualizações e Pacotes</h4>
+                            <div class="code-block mb-2">
+                                <code>winget upgrade --all</code>
+                                <button class="copy-btn" data-code="winget upgrade --all">Copiar</button>
+                                <span class="text-muted d-block small"># Atualiza todos os pacotes instalados</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>choco upgrade all</code>
+                                <button class="copy-btn" data-code="choco upgrade all">Copiar</button>
+                                <span class="text-muted d-block small"># Atualiza todos os pacotes Chocolatey</span>
+                            </div>
+                            <div class="code-block">
+                                <code>sfc /scannow</code>
+                                <button class="copy-btn" data-code="sfc /scannow">Copiar</button>
+                                <span class="text-muted d-block small"># Verifica e repara arquivos do sistema</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Atualizações e Pacotes</h4>
-                    <div class="code-block mb-2">
-                        <code>winget upgrade --all</code>
-                        <button class="copy-btn" data-code="winget upgrade --all">Copiar</button>
-                        <span class="text-muted d-block small"># Atualiza todos os pacotes instalados</span>
+            <!-- Subseção: Rede e Conectividade -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-wifi"></i> Rede e Conectividade</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Diagnóstico de Rede</h4>
+                            <div class="code-block mb-2">
+                                <code>ipconfig /all</code>
+                                <button class="copy-btn" data-code="ipconfig /all">Copiar</button>
+                                <span class="text-muted d-block small"># Mostra toda configuração de rede</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>netsh wlan show profiles</code>
+                                <button class="copy-btn" data-code="netsh wlan show profiles">Copiar</button>
+                                <span class="text-muted d-block small"># Lista redes Wi-Fi salvas</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>ping google.com -t</code>
+                                <button class="copy-btn" data-code="ping google.com -t">Copiar</button>
+                                <span class="text-muted d-block small"># Ping contínuo (Ctrl+C para parar)</span>
+                            </div>
+                            <div class="code-block">
+                                <code>tracert 8.8.8.8</code>
+                                <button class="copy-btn" data-code="tracert 8.8.8.8">Copiar</button>
+                                <span class="text-muted d-block small"># Rastreia rota até o destino</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        <code>choco upgrade all</code>
-                        <button class="copy-btn" data-code="choco upgrade all">Copiar</button>
-                        <span class="text-muted d-block small"># Atualiza todos os pacotes Chocolatey</span>
-                    </div>
-                    <div class="code-block">
-                        <code>sfc /scannow</code>
-                        <button class="copy-btn" data-code="sfc /scannow">Copiar</button>
-                        <span class="text-muted d-block small"># Verifica e repara arquivos do sistema</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Gerenciamento de Rede</h4>
+                            <div class="code-block mb-2">
+                                <code>netsh interface ip show config</code>
+                                <button class="copy-btn" data-code="netsh interface ip show config">Copiar</button>
+                                <span class="text-muted d-block small"># Mostra configurações IP</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>netsh winsock reset</code>
+                                <button class="copy-btn" data-code="netsh winsock reset">Copiar</button>
+                                <span class="text-muted d-block small"># Reseta catálogo Winsock</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>netstat -ano</code>
+                                <button class="copy-btn" data-code="netstat -ano">Copiar</button>
+                                <span class="text-muted d-block small"># Mostra conexões e ports abertos</span>
+                            </div>
+                            <div class="code-block">
+                                <code>nslookup example.com</code>
+                                <button class="copy-btn" data-code="nslookup example.com">Copiar</button>
+                                <span class="text-muted d-block small"># Consulta DNS</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Subseção: Rede e Conectividade -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-wifi"></i> Rede e Conectividade</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Diagnóstico de Rede</h4>
-                    <div class="code-block mb-2">
-                        <code>ipconfig /all</code>
-                        <button class="copy-btn" data-code="ipconfig /all">Copiar</button>
-                        <span class="text-muted d-block small"># Mostra toda configuração de rede</span>
+            <!-- Subseção: Gerenciamento de Arquivos -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-folder"></i> Arquivos e Discos</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Operações com Arquivos</h4>
+                            <div class="code-block mb-2">
+                                <code>robocopy C:\origem D:\destino /MIR /NP /LOG:log.txt</code>
+                                <button class="copy-btn"
+                                    data-code="robocopy C:\origem D:\destino /MIR /NP /LOG:log.txt">Copiar</button>
+                                <span class="text-muted d-block small"># Cópia avançada</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>del /S /Q *.tmp</code>
+                                <button class="copy-btn" data-code="del /S /Q *.tmp">Copiar</button>
+                                <span class="text-muted d-block small"># Remove todos arquivos .tmp</span>
+                            </div>
+                            <div class="code-block">
+                                <code>tree /F /A > arvore.txt</code>
+                                <button class="copy-btn" data-code="tree /F /A > arvore.txt">Copiar</button>
+                                <span class="text-muted d-block small"># Gera árvore de diretórios</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        <code>netsh wlan show profiles</code>
-                        <button class="copy-btn" data-code="netsh wlan show profiles">Copiar</button>
-                        <span class="text-muted d-block small"># Lista redes Wi-Fi salvas</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>ping google.com -t</code>
-                        <button class="copy-btn" data-code="ping google.com -t">Copiar</button>
-                        <span class="text-muted d-block small"># Ping contínuo (Ctrl+C para parar)</span>
-                    </div>
-                    <div class="code-block">
-                        <code>tracert 8.8.8.8</code>
-                        <button class="copy-btn" data-code="tracert 8.8.8.8">Copiar</button>
-                        <span class="text-muted d-block small"># Rastreia rota até o destino</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Gerenciamento de Disco</h4>
+                            <div class="code-block mb-2">
+                                <code>chkdsk /f /r C:</code>
+                                <button class="copy-btn" data-code="chkdsk /f /r C:">Copiar</button>
+                                <span class="text-muted d-block small"># Verifica e repara disco</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>defrag C: /U /V</code>
+                                <button class="copy-btn" data-code="defrag C: /U /V">Copiar</button>
+                                <span class="text-muted d-block small"># Desfragmenta disco com relatório</span>
+                            </div>
+                            <div class="code-block">
+                                <code>fsutil file createnew grande_arquivo.txt 1073741824</code>
+                                <button class="copy-btn"
+                                    data-code="fsutil file createnew grande_arquivo.txt 1073741824">Copiar</button>
+                                <span class="text-muted d-block small"># Cria arquivo de 1GB</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Gerenciamento de Rede</h4>
-                    <div class="code-block mb-2">
-                        <code>netsh interface ip show config</code>
-                        <button class="copy-btn" data-code="netsh interface ip show config">Copiar</button>
-                        <span class="text-muted d-block small"># Mostra configurações IP</span>
+            <!-- Subseção: Processos e Serviços -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-gear"></i> Processos e Serviços</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Gerenciamento de Processos</h4>
+                            <div class="code-block mb-2">
+                                <code>tasklist /svc</code>
+                                <button class="copy-btn" data-code="tasklist /svc">Copiar</button>
+                                <span class="text-muted d-block small"># Lista processos e serviços</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>taskkill /IM chrome.exe /F</code>
+                                <button class="copy-btn" data-code="taskkill /IM chrome.exe /F">Copiar</button>
+                                <span class="text-muted d-block small"># Força fechamento do Chrome</span>
+                            </div>
+                            <div class="code-block">
+                                <code>wmic process get name,processid,commandline</code>
+                                <button class="copy-btn"
+                                    data-code="wmic process get name,processid,commandline">Copiar</button>
+                                <span class="text-muted d-block small"># Lista detalhada de processos</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        <code>netsh winsock reset</code>
-                        <button class="copy-btn" data-code="netsh winsock reset">Copiar</button>
-                        <span class="text-muted d-block small"># Reseta catálogo Winsock</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>netstat -ano</code>
-                        <button class="copy-btn" data-code="netstat -ano">Copiar</button>
-                        <span class="text-muted d-block small"># Mostra conexões e ports abertos</span>
-                    </div>
-                    <div class="code-block">
-                        <code>nslookup example.com</code>
-                        <button class="copy-btn" data-code="nslookup example.com">Copiar</button>
-                        <span class="text-muted d-block small"># Consulta DNS</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Controle de Serviços</h4>
+                            <div class="code-block mb-2">
+                                <code>sc queryex type= service state= all</code>
+                                <button class="copy-btn" data-code="sc queryex type= service state= all">Copiar</button>
+                                <span class="text-muted d-block small"># Lista todos serviços</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>net start</code>
+                                <button class="copy-btn" data-code="net start">Copiar</button>
+                                <span class="text-muted d-block small"># Lista serviços em execução</span>
+                            </div>
+                            <div class="code-block">
+                                <code>sc config "servicename" start= delayed-auto</code>
+                                <button class="copy-btn" data-code="sc config " servicename"
+                                    start=delayed-auto">Copiar</button>
+                                <span class="text-muted d-block small"># Configura serviço</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Subseção: Gerenciamento de Arquivos -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-folder"></i> Arquivos e Discos</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Operações com Arquivos</h4>
-                    <div class="code-block mb-2">
-                        <code>robocopy C:\origem D:\destino /MIR /NP /LOG:log.txt</code>
-                        <button class="copy-btn" data-code="robocopy C:\origem D:\destino /MIR /NP /LOG:log.txt">Copiar</button>
-                        <span class="text-muted d-block small"># Cópia avançada</span>
+            <!-- Subseção: Utilitários Avançados -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-tools"></i> Utilitários Avançados</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Informações do Sistema</h4>
+                            <div class="code-block mb-2">
+                                <code>systeminfo</code>
+                                <button class="copy-btn" data-code="systeminfo">Copiar</button>
+                                <span class="text-muted d-block small"># Detalhes completos do sistema</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>wmic bios get serialnumber</code>
+                                <button class="copy-btn" data-code="wmic bios get serialnumber">Copiar</button>
+                                <span class="text-muted d-block small"># Número de série da BIOS</span>
+                            </div>
+                            <div class="code-block">
+                                <code>powercfg /energy</code>
+                                <button class="copy-btn" data-code="powercfg /energy">Copiar</button>
+                                <span class="text-muted d-block small"># Diagnóstico de energia</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        <code>del /S /Q *.tmp</code>
-                        <button class="copy-btn" data-code="del /S /Q *.tmp">Copiar</button>
-                        <span class="text-muted d-block small"># Remove todos arquivos .tmp</span>
-                    </div>
-                    <div class="code-block">
-                        <code>tree /F /A > arvore.txt</code>
-                        <button class="copy-btn" data-code="tree /F /A > arvore.txt">Copiar</button>
-                        <span class="text-muted d-block small"># Gera árvore de diretórios</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Comandos Úteis Diversos</h4>
+                            <div class="code-block mb-2">
+                                <code>shutdown /r /t 0</code>
+                                <button class="copy-btn" data-code="shutdown /r /t 0">Copiar</button>
+                                <span class="text-muted d-block small"># Reinicia o PC imediatamente</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>cipher /w:C</code>
+                                <button class="copy-btn" data-code="cipher /w:C">Copiar</button>
+                                <span class="text-muted d-block small"># Sobrescreve espaço livre no disco</span>
+                            </div>
+                            <div class="code-block">
+                                <code>whoami /all</code>
+                                <button class="copy-btn" data-code="whoami /all">Copiar</button>
+                                <span class="text-muted d-block small"># Mostra informações do usuário atual</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Gerenciamento de Disco</h4>
-                    <div class="code-block mb-2">
-                        <code>chkdsk /f /r C:</code>
-                        <button class="copy-btn" data-code="chkdsk /f /r C:">Copiar</button>
-                        <span class="text-muted d-block small"># Verifica e repara disco</span>
+            <!-- Subseção: PowerShell -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-filetype-psd1"></i> Comandos PowerShell</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Administração do Sistema</h4>
+                            <div class="code-block mb-2">
+                                <code>Get-WindowsUpdateLog</code>
+                                <button class="copy-btn" data-code="Get-WindowsUpdateLog">Copiar</button>
+                                <span class="text-muted d-block small"># Log de atualizações</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>Get-Process | Sort-Object CPU -Descending</code>
+                                <button class="copy-btn"
+                                    data-code="Get-Process | Sort-Object CPU -Descending">Copiar</button>
+                                <span class="text-muted d-block small"># Processos por uso CPU</span>
+                            </div>
+                            <div class="code-block">
+                                <code>Get-NetTCPConnection -State Established</code>
+                                <button class="copy-btn"
+                                    data-code="Get-NetTCPConnection -State Established">Copiar</button>
+                                <span class="text-muted d-block small"># Conexões ativas</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        <code>defrag C: /U /V</code>
-                        <button class="copy-btn" data-code="defrag C: /U /V">Copiar</button>
-                        <span class="text-muted d-block small"># Desfragmenta disco com relatório</span>
-                    </div>
-                    <div class="code-block">
-                        <code>fsutil file createnew grande_arquivo.txt 1073741824</code>
-                        <button class="copy-btn" data-code="fsutil file createnew grande_arquivo.txt 1073741824">Copiar</button>
-                        <span class="text-muted d-block small"># Cria arquivo de 1GB</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Utilitários PowerShell</h4>
+                            <div class="code-block mb-2">
+                                <code>Get-ChildItem -Recurse | Measure-Object -Property Length -Sum</code>
+                                <button class="copy-btn"
+                                    data-code="Get-ChildItem -Recurse | Measure-Object -Property Length -Sum">Copiar</button>
+                                <span class="text-muted d-block small"># Tamanho total de arquivos</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>Test-NetConnection google.com -Port 80</code>
+                                <button class="copy-btn"
+                                    data-code="Test-NetConnection google.com -Port 80">Copiar</button>
+                                <span class="text-muted d-block small"># Testa porta específica</span>
+                            </div>
+                            <div class="code-block">
+                                <code>Get-HotFix | Sort-Object InstalledOn -Descending</code>
+                                <button class="copy-btn"
+                                    data-code="Get-HotFix | Sort-Object InstalledOn -Descending">Copiar</button>
+                                <span class="text-muted d-block small"># Updates instalados</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Subseção: Processos e Serviços -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-gear"></i> Processos e Serviços</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Gerenciamento de Processos</h4>
-                    <div class="code-block mb-2">
-                        <code>tasklist /svc</code>
-                        <button class="copy-btn" data-code="tasklist /svc">Copiar</button>
-                        <span class="text-muted d-block small"># Lista processos e serviços</span>
+        <!-- Seção de Scripts Debian -->
+        <section id="sec2" class="mb-5">
+            <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-ubuntu"></i> Scripts Debian/Ubuntu</h2>
+
+            <!-- Subseção: Gerenciamento do Sistema -->
+            <h3 class="h4 mt-4 mb-3"><i class="bi bi-pc-display"></i> Gerenciamento do Sistema</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Informações do Sistema</h4>
+                            <div class="code-block mb-2">
+                                <code>uname -a</code>
+                                <button class="copy-btn" data-code="uname -a">Copiar</button>
+                                <span class="text-muted d-block small"># Mostra informações do kernel</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>lsb_release -a</code>
+                                <button class="copy-btn" data-code="lsb_release -a">Copiar</button>
+                                <span class="text-muted d-block small"># Mostra versão da distribuição</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>cat /etc/os-release</code>
+                                <button class="copy-btn" data-code="cat /etc/os-release">Copiar</button>
+                                <span class="text-muted d-block small"># Informações do SO</span>
+                            </div>
+                            <div class="code-block">
+                                <code>htop</code>
+                                <button class="copy-btn" data-code="htop">Copiar</button>
+                                <span class="text-muted d-block small"># Monitor de processos interativo</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        <code>taskkill /IM chrome.exe /F</code>
-                        <button class="copy-btn" data-code="taskkill /IM chrome.exe /F">Copiar</button>
-                        <span class="text-muted d-block small"># Força fechamento do Chrome</span>
-                    </div>
-                    <div class="code-block">
-                        <code>wmic process get name,processid,commandline</code>
-                        <button class="copy-btn" data-code="wmic process get name,processid,commandline">Copiar</button>
-                        <span class="text-muted d-block small"># Lista detalhada de processos</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Gerenciamento de Pacotes (APT)</h4>
+                            <div class="code-block mb-2">
+                                <code>sudo apt update</code>
+                                <button class="copy-btn" data-code="sudo apt update">Copiar</button>
+                                <span class="text-muted d-block small"># Atualiza lista de pacotes</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>sudo apt upgrade -y</code>
+                                <button class="copy-btn" data-code="sudo apt upgrade -y">Copiar</button>
+                                <span class="text-muted d-block small"># Atualiza todos os pacotes</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>sudo apt install nome-pacote</code>
+                                <button class="copy-btn" data-code="sudo apt install nome-pacote">Copiar</button>
+                                <span class="text-muted d-block small"># Instala pacote</span>
+                            </div>
+                            <div class="code-block">
+                                <code>sudo apt autoremove</code>
+                                <button class="copy-btn" data-code="sudo apt autoremove">Copiar</button>
+                                <span class="text-muted d-block small"># Remove pacotes não utilizados</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Controle de Serviços</h4>
-                    <div class="code-block mb-2">
-                        <code>sc queryex type= service state= all</code>
-                        <button class="copy-btn" data-code="sc queryex type= service state= all">Copiar</button>
-                        <span class="text-muted d-block small"># Lista todos serviços</span>
+            <!-- Subseção: Rede e Conectividade -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-wifi"></i> Rede e Conectividade</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Diagnóstico de Rede</h4>
+                            <div class="code-block mb-2">
+                                <code>ip addr show</code>
+                                <button class="copy-btn" data-code="ip addr show">Copiar</button>
+                                <span class="text-muted d-block small"># Mostra configurações de rede</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>ping -c 4 google.com</code>
+                                <button class="copy-btn" data-code="ping -c 4 google.com">Copiar</button>
+                                <span class="text-muted d-block small"># Testa conectividade</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>traceroute 8.8.8.8</code>
+                                <button class="copy-btn" data-code="traceroute 8.8.8.8">Copiar</button>
+                                <span class="text-muted d-block small"># Rastreia rota</span>
+                            </div>
+                            <div class="code-block">
+                                <code>netstat -tulpn</code>
+                                <button class="copy-btn" data-code="netstat -tulpn">Copiar</button>
+                                <span class="text-muted d-block small"># Mostra portas abertas</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        <code>net start</code>
-                        <button class="copy-btn" data-code="net start">Copiar</button>
-                        <span class="text-muted d-block small"># Lista serviços em execução</span>
-                    </div>
-                    <div class="code-block">
-                        <code>sc config "servicename" start= delayed-auto</code>
-                        <button class="copy-btn" data-code="sc config "servicename" start= delayed-auto">Copiar</button>
-                        <span class="text-muted d-block small"># Configura serviço</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Firewall (UFW)</h4>
+                            <div class="code-block mb-2">
+                                <code>sudo ufw status</code>
+                                <button class="copy-btn" data-code="sudo ufw status">Copiar</button>
+                                <span class="text-muted d-block small"># Verifica status do firewall</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>sudo ufw allow 22/tcp</code>
+                                <button class="copy-btn" data-code="sudo ufw allow 22/tcp">Copiar</button>
+                                <span class="text-muted d-block small"># Libera porta SSH</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>sudo ufw enable</code>
+                                <button class="copy-btn" data-code="sudo ufw enable">Copiar</button>
+                                <span class="text-muted d-block small"># Ativa firewall</span>
+                            </div>
+                            <div class="code-block">
+                                <code>sudo ufw delete allow 80</code>
+                                <button class="copy-btn" data-code="sudo ufw delete allow 80">Copiar</button>
+                                <span class="text-muted d-block small"># Remove regra</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Subseção: Utilitários Avançados -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-tools"></i> Utilitários Avançados</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Informações do Sistema</h4>
-                    <div class="code-block mb-2">
-                        <code>systeminfo</code>
-                        <button class="copy-btn" data-code="systeminfo">Copiar</button>
-                        <span class="text-muted d-block small"># Detalhes completos do sistema</span>
+            <!-- Subseção: Gerenciamento de Arquivos -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-folder"></i> Arquivos e Discos</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Operações com Arquivos</h4>
+                            <div class="code-block mb-2">
+                                <code>find / -name "*.conf" 2>/dev/null</code>
+                                <button class="copy-btn" data-code='find / -name "*.conf" 2>/dev/null'>Copiar</button>
+                                <span class="text-muted d-block small"># Busca arquivos</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>grep -r "texto" /diretorio/</code>
+                                <button class="copy-btn" data-code='grep -r "texto" /diretorio/'>Copiar</button>
+                                <span class="text-muted d-block small"># Busca texto em arquivos</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>du -sh /home/*</code>
+                                <button class="copy-btn" data-code="du -sh /home/*">Copiar</button>
+                                <span class="text-muted d-block small"># Mostra uso de disco</span>
+                            </div>
+                            <div class="code-block">
+                                <code>rsync -avz origem/ destino/</code>
+                                <button class="copy-btn" data-code="rsync -avz origem/ destino/">Copiar</button>
+                                <span class="text-muted d-block small"># Sincronização avançada</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        <code>wmic bios get serialnumber</code>
-                        <button class="copy-btn" data-code="wmic bios get serialnumber">Copiar</button>
-                        <span class="text-muted d-block small"># Número de série da BIOS</span>
-                    </div>
-                    <div class="code-block">
-                        <code>powercfg /energy</code>
-                        <button class="copy-btn" data-code="powercfg /energy">Copiar</button>
-                        <span class="text-muted d-block small"># Diagnóstico de energia</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Gerenciamento de Disco</h4>
+                            <div class="code-block mb-2">
+                                <code>df -h</code>
+                                <button class="copy-btn" data-code="df -h">Copiar</button>
+                                <span class="text-muted d-block small"># Espaço em disco</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>lsblk</code>
+                                <button class="copy-btn" data-code="lsblk">Copiar</button>
+                                <span class="text-muted d-block small"># Lista dispositivos de bloco</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>sudo fdisk -l</code>
+                                <button class="copy-btn" data-code="sudo fdisk -l">Copiar</button>
+                                <span class="text-muted d-block small"># Mostra tabela de partições</span>
+                            </div>
+                            <div class="code-block">
+                                <code>mount | column -t</code>
+                                <button class="copy-btn" data-code="mount | column -t">Copiar</button>
+                                <span class="text-muted d-block small"># Mostra sistemas montados</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Comandos Úteis Diversos</h4>
-                    <div class="code-block mb-2">
-                        <code>shutdown /r /t 0</code>
-                        <button class="copy-btn" data-code="shutdown /r /t 0">Copiar</button>
-                        <span class="text-muted d-block small"># Reinicia o PC imediatamente</span>
+            <!-- Subseção: Processos e Serviços -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-gear"></i> Processos e Serviços (Systemd)</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Gerenciamento de Processos</h4>
+                            <div class="code-block mb-2">
+                                <code>ps aux</code>
+                                <button class="copy-btn" data-code="ps aux">Copiar</button>
+                                <span class="text-muted d-block small"># Lista todos os processos</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>top -u usuario</code>
+                                <button class="copy-btn" data-code="top -u usuario">Copiar</button>
+                                <span class="text-muted d-block small"># Monitora processos do usuário</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>kill -9 PID</code>
+                                <button class="copy-btn" data-code="kill -9 PID">Copiar</button>
+                                <span class="text-muted d-block small"># Mata processo</span>
+                            </div>
+                            <div class="code-block">
+                                <code>nice -n 19 comando</code>
+                                <button class="copy-btn" data-code="nice -n 19 comando">Copiar</button>
+                                <span class="text-muted d-block small"># Executa com baixa prioridade</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        <code>cipher /w:C</code>
-                        <button class="copy-btn" data-code="cipher /w:C">Copiar</button>
-                        <span class="text-muted d-block small"># Sobrescreve espaço livre no disco</span>
-                    </div>
-                    <div class="code-block">
-                        <code>whoami /all</code>
-                        <button class="copy-btn" data-code="whoami /all">Copiar</button>
-                        <span class="text-muted d-block small"># Mostra informações do usuário atual</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Controle de Serviços (Systemd)</h4>
+                            <div class="code-block mb-2">
+                                <code>systemctl list-units --type=service</code>
+                                <button class="copy-btn" data-code="systemctl list-units --type=service">Copiar</button>
+                                <span class="text-muted d-block small"># Lista serviços</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>sudo systemctl start nome-servico</code>
+                                <button class="copy-btn" data-code="sudo systemctl start nome-servico">Copiar</button>
+                                <span class="text-muted d-block small"># Inicia serviço</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>sudo systemctl enable nome-servico</code>
+                                <button class="copy-btn" data-code="sudo systemctl enable nome-servico">Copiar</button>
+                                <span class="text-muted d-block small"># Habilita no boot</span>
+                            </div>
+                            <div class="code-block">
+                                <code>journalctl -u nome-servico -f</code>
+                                <button class="copy-btn" data-code="journalctl -u nome-servico -f">Copiar</button>
+                                <span class="text-muted d-block small"># Logs do serviço</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Subseção: PowerShell -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-filetype-psd1"></i> Comandos PowerShell</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Administração do Sistema</h4>
-                    <div class="code-block mb-2">
-                        <code>Get-WindowsUpdateLog</code>
-                        <button class="copy-btn" data-code="Get-WindowsUpdateLog">Copiar</button>
-                        <span class="text-muted d-block small"># Log de atualizações</span>
+            <!-- Subseção: Scripts de Automação -->
+            <h3 class="h4 mt-5 mb-3"><i class="bi bi-filetype-sh"></i> Scripts de Automação</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Backup e Manutenção</h4>
+                            <div class="code-block mb-2">
+                                <code>tar -czf backup-$(date +%Y%m%d).tar.gz /etc/</code>
+                                <button class="copy-btn"
+                                    data-code="tar -czf backup-$(date +%Y%m%d).tar.gz /etc/">Copiar</button>
+                                <span class="text-muted d-block small"># Backup do diretório /etc</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>find /var/log -name "*.log" -mtime +30 -delete</code>
+                                <button class="copy-btn"
+                                    data-code='find /var/log -name "*.log" -mtime +30 -delete'>Copiar</button>
+                                <span class="text-muted d-block small"># Remove logs com mais de 30 dias</span>
+                            </div>
+                            <div class="code-block">
+                                <code>echo "Uso de CPU: $(top -bn1 | grep 'Cpu(s)' | awk '{print $2}')%"</code>
+                                <button class="copy-btn"
+                                    data-code='echo "Uso de CPU: $(top -bn1 | grep "Cpu(s)" | awk "{print $2}")%"'>Copiar</button>
+                                <span class="text-muted d-block small"># Mostra uso atual da CPU</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-block mb-2">
-                        <code>Get-Process | Sort-Object CPU -Descending</code>
-                        <button class="copy-btn" data-code="Get-Process | Sort-Object CPU -Descending">Copiar</button>
-                        <span class="text-muted d-block small"># Processos por uso CPU</span>
-                    </div>
-                    <div class="code-block">
-                        <code>Get-NetTCPConnection -State Established</code>
-                        <button class="copy-btn" data-code="Get-NetTCPConnection -State Established">Copiar</button>
-                        <span class="text-muted d-block small"># Conexões ativas</span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="h6 card-title">Instalação de Software</h4>
+                            <div class="code-block mb-2">
+                                <code>curl -fsSL https://get.docker.com | sudo sh</code>
+                                <button class="copy-btn"
+                                    data-code="curl -fsSL https://get.docker.com | sudo sh">Copiar</button>
+                                <span class="text-muted d-block small"># Instala Docker automaticamente</span>
+                            </div>
+                            <div class="code-block mb-2">
+                                <code>sudo add-apt-repository ppa:ondrej/php -y</code>
+                                <button class="copy-btn"
+                                    data-code="sudo add-apt-repository ppa:ondrej/php -y">Copiar</button>
+                                <span class="text-muted d-block small"># Adiciona repositório PHP moderno</span>
+                            </div>
+                            <div class="code-block">
+                                <code>sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y</code>
+                                <button class="copy-btn"
+                                    data-code="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y">Copiar</button>
+                                <span class="text-muted d-block small"># Atualização completa do sistema</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Utilitários PowerShell</h4>
-                    <div class="code-block mb-2">
-                        <code>Get-ChildItem -Recurse | Measure-Object -Property Length -Sum</code>
-                        <button class="copy-btn" data-code="Get-ChildItem -Recurse | Measure-Object -Property Length -Sum">Copiar</button>
-                        <span class="text-muted d-block small"># Tamanho total de arquivos</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>Test-NetConnection google.com -Port 80</code>
-                        <button class="copy-btn" data-code="Test-NetConnection google.com -Port 80">Copiar</button>
-                        <span class="text-muted d-block small"># Testa porta específica</span>
-                    </div>
-                    <div class="code-block">
-                        <code>Get-HotFix | Sort-Object InstalledOn -Descending</code>
-                        <button class="copy-btn" data-code="Get-HotFix | Sort-Object InstalledOn -Descending">Copiar</button>
-                        <span class="text-muted d-block small"># Updates instalados</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        <style>
+            .code-block {
+                position: relative;
+                background-color: #f8f9fa;
+                border-radius: 6px;
+                padding: 10px;
+                margin-bottom: 10px;
+                font-family: 'Courier New', monospace;
+                font-size: 13px;
+                border: 1px solid #dee2e6;
+            }
 
-<!-- Seção de Scripts Debian -->
-<section id="sec2" class="mb-5">
-    <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-ubuntu"></i> Scripts Debian/Ubuntu</h2>
+            .code-block code {
+                display: block;
+                white-space: pre-wrap;
+                word-break: break-all;
+                padding-right: 80px;
+                color: black;
+            }
 
-    <!-- Subseção: Gerenciamento do Sistema -->
-    <h3 class="h4 mt-4 mb-3"><i class="bi bi-pc-display"></i> Gerenciamento do Sistema</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Informações do Sistema</h4>
-                    <div class="code-block mb-2">
-                        <code>uname -a</code>
-                        <button class="copy-btn" data-code="uname -a">Copiar</button>
-                        <span class="text-muted d-block small"># Mostra informações do kernel</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>lsb_release -a</code>
-                        <button class="copy-btn" data-code="lsb_release -a">Copiar</button>
-                        <span class="text-muted d-block small"># Mostra versão da distribuição</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>cat /etc/os-release</code>
-                        <button class="copy-btn" data-code="cat /etc/os-release">Copiar</button>
-                        <span class="text-muted d-block small"># Informações do SO</span>
-                    </div>
-                    <div class="code-block">
-                        <code>htop</code>
-                        <button class="copy-btn" data-code="htop">Copiar</button>
-                        <span class="text-muted d-block small"># Monitor de processos interativo</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+            .copy-btn {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                padding: 4px 12px;
+                font-size: 12px;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
 
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Gerenciamento de Pacotes (APT)</h4>
-                    <div class="code-block mb-2">
-                        <code>sudo apt update</code>
-                        <button class="copy-btn" data-code="sudo apt update">Copiar</button>
-                        <span class="text-muted d-block small"># Atualiza lista de pacotes</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>sudo apt upgrade -y</code>
-                        <button class="copy-btn" data-code="sudo apt upgrade -y">Copiar</button>
-                        <span class="text-muted d-block small"># Atualiza todos os pacotes</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>sudo apt install nome-pacote</code>
-                        <button class="copy-btn" data-code="sudo apt install nome-pacote">Copiar</button>
-                        <span class="text-muted d-block small"># Instala pacote</span>
-                    </div>
-                    <div class="code-block">
-                        <code>sudo apt autoremove</code>
-                        <button class="copy-btn" data-code="sudo apt autoremove">Copiar</button>
-                        <span class="text-muted d-block small"># Remove pacotes não utilizados</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            .copy-btn:hover {
+                background-color: #0056b3;
+            }
 
-    <!-- Subseção: Rede e Conectividade -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-wifi"></i> Rede e Conectividade</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Diagnóstico de Rede</h4>
-                    <div class="code-block mb-2">
-                        <code>ip addr show</code>
-                        <button class="copy-btn" data-code="ip addr show">Copiar</button>
-                        <span class="text-muted d-block small"># Mostra configurações de rede</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>ping -c 4 google.com</code>
-                        <button class="copy-btn" data-code="ping -c 4 google.com">Copiar</button>
-                        <span class="text-muted d-block small"># Testa conectividade</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>traceroute 8.8.8.8</code>
-                        <button class="copy-btn" data-code="traceroute 8.8.8.8">Copiar</button>
-                        <span class="text-muted d-block small"># Rastreia rota</span>
-                    </div>
-                    <div class="code-block">
-                        <code>netstat -tulpn</code>
-                        <button class="copy-btn" data-code="netstat -tulpn">Copiar</button>
-                        <span class="text-muted d-block small"># Mostra portas abertas</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+            .text-muted {
+                font-size: 11px;
+                margin-top: 5px;
+            }
+        </style>
 
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Firewall (UFW)</h4>
-                    <div class="code-block mb-2">
-                        <code>sudo ufw status</code>
-                        <button class="copy-btn" data-code="sudo ufw status">Copiar</button>
-                        <span class="text-muted d-block small"># Verifica status do firewall</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>sudo ufw allow 22/tcp</code>
-                        <button class="copy-btn" data-code="sudo ufw allow 22/tcp">Copiar</button>
-                        <span class="text-muted d-block small"># Libera porta SSH</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>sudo ufw enable</code>
-                        <button class="copy-btn" data-code="sudo ufw enable">Copiar</button>
-                        <span class="text-muted d-block small"># Ativa firewall</span>
-                    </div>
-                    <div class="code-block">
-                        <code>sudo ufw delete allow 80</code>
-                        <button class="copy-btn" data-code="sudo ufw delete allow 80">Copiar</button>
-                        <span class="text-muted d-block small"># Remove regra</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <script>
+            // Função para copiar texto para a área de transferência
+            function copyToClipboard(text, button) {
+                navigator.clipboard.writeText(text).then(() => {
+                    const originalText = button.textContent;
+                    button.textContent = '✓ Copiado!';
+                    setTimeout(() => {
+                        button.textContent = originalText;
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Erro ao copiar: ', err);
+                    button.textContent = '✗ Erro!';
+                    setTimeout(() => {
+                        button.textContent = 'Copiar';
+                    }, 2000);
+                });
+            }
 
-    <!-- Subseção: Gerenciamento de Arquivos -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-folder"></i> Arquivos e Discos</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Operações com Arquivos</h4>
-                    <div class="code-block mb-2">
-                        <code>find / -name "*.conf" 2>/dev/null</code>
-                        <button class="copy-btn" data-code='find / -name "*.conf" 2>/dev/null'>Copiar</button>
-                        <span class="text-muted d-block small"># Busca arquivos</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>grep -r "texto" /diretorio/</code>
-                        <button class="copy-btn" data-code='grep -r "texto" /diretorio/'>Copiar</button>
-                        <span class="text-muted d-block small"># Busca texto em arquivos</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>du -sh /home/*</code>
-                        <button class="copy-btn" data-code="du -sh /home/*">Copiar</button>
-                        <span class="text-muted d-block small"># Mostra uso de disco</span>
-                    </div>
-                    <div class="code-block">
-                        <code>rsync -avz origem/ destino/</code>
-                        <button class="copy-btn" data-code="rsync -avz origem/ destino/">Copiar</button>
-                        <span class="text-muted d-block small"># Sincronização avançada</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Gerenciamento de Disco</h4>
-                    <div class="code-block mb-2">
-                        <code>df -h</code>
-                        <button class="copy-btn" data-code="df -h">Copiar</button>
-                        <span class="text-muted d-block small"># Espaço em disco</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>lsblk</code>
-                        <button class="copy-btn" data-code="lsblk">Copiar</button>
-                        <span class="text-muted d-block small"># Lista dispositivos de bloco</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>sudo fdisk -l</code>
-                        <button class="copy-btn" data-code="sudo fdisk -l">Copiar</button>
-                        <span class="text-muted d-block small"># Mostra tabela de partições</span>
-                    </div>
-                    <div class="code-block">
-                        <code>mount | column -t</code>
-                        <button class="copy-btn" data-code="mount | column -t">Copiar</button>
-                        <span class="text-muted d-block small"># Mostra sistemas montados</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Subseção: Processos e Serviços -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-gear"></i> Processos e Serviços (Systemd)</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Gerenciamento de Processos</h4>
-                    <div class="code-block mb-2">
-                        <code>ps aux</code>
-                        <button class="copy-btn" data-code="ps aux">Copiar</button>
-                        <span class="text-muted d-block small"># Lista todos os processos</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>top -u usuario</code>
-                        <button class="copy-btn" data-code="top -u usuario">Copiar</button>
-                        <span class="text-muted d-block small"># Monitora processos do usuário</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>kill -9 PID</code>
-                        <button class="copy-btn" data-code="kill -9 PID">Copiar</button>
-                        <span class="text-muted d-block small"># Mata processo</span>
-                    </div>
-                    <div class="code-block">
-                        <code>nice -n 19 comando</code>
-                        <button class="copy-btn" data-code="nice -n 19 comando">Copiar</button>
-                        <span class="text-muted d-block small"># Executa com baixa prioridade</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Controle de Serviços (Systemd)</h4>
-                    <div class="code-block mb-2">
-                        <code>systemctl list-units --type=service</code>
-                        <button class="copy-btn" data-code="systemctl list-units --type=service">Copiar</button>
-                        <span class="text-muted d-block small"># Lista serviços</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>sudo systemctl start nome-servico</code>
-                        <button class="copy-btn" data-code="sudo systemctl start nome-servico">Copiar</button>
-                        <span class="text-muted d-block small"># Inicia serviço</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>sudo systemctl enable nome-servico</code>
-                        <button class="copy-btn" data-code="sudo systemctl enable nome-servico">Copiar</button>
-                        <span class="text-muted d-block small"># Habilita no boot</span>
-                    </div>
-                    <div class="code-block">
-                        <code>journalctl -u nome-servico -f</code>
-                        <button class="copy-btn" data-code="journalctl -u nome-servico -f">Copiar</button>
-                        <span class="text-muted d-block small"># Logs do serviço</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Subseção: Scripts de Automação -->
-    <h3 class="h4 mt-5 mb-3"><i class="bi bi-filetype-sh"></i> Scripts de Automação</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Backup e Manutenção</h4>
-                    <div class="code-block mb-2">
-                        <code>tar -czf backup-$(date +%Y%m%d).tar.gz /etc/</code>
-                        <button class="copy-btn" data-code="tar -czf backup-$(date +%Y%m%d).tar.gz /etc/">Copiar</button>
-                        <span class="text-muted d-block small"># Backup do diretório /etc</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>find /var/log -name "*.log" -mtime +30 -delete</code>
-                        <button class="copy-btn" data-code='find /var/log -name "*.log" -mtime +30 -delete'>Copiar</button>
-                        <span class="text-muted d-block small"># Remove logs com mais de 30 dias</span>
-                    </div>
-                    <div class="code-block">
-                        <code>echo "Uso de CPU: $(top -bn1 | grep 'Cpu(s)' | awk '{print $2}')%"</code>
-                        <button class="copy-btn" data-code='echo "Uso de CPU: $(top -bn1 | grep "Cpu(s)" | awk "{print $2}")%"'>Copiar</button>
-                        <span class="text-muted d-block small"># Mostra uso atual da CPU</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h4 class="h6 card-title">Instalação de Software</h4>
-                    <div class="code-block mb-2">
-                        <code>curl -fsSL https://get.docker.com | sudo sh</code>
-                        <button class="copy-btn" data-code="curl -fsSL https://get.docker.com | sudo sh">Copiar</button>
-                        <span class="text-muted d-block small"># Instala Docker automaticamente</span>
-                    </div>
-                    <div class="code-block mb-2">
-                        <code>sudo add-apt-repository ppa:ondrej/php -y</code>
-                        <button class="copy-btn" data-code="sudo add-apt-repository ppa:ondrej/php -y">Copiar</button>
-                        <span class="text-muted d-block small"># Adiciona repositório PHP moderno</span>
-                    </div>
-                    <div class="code-block">
-                        <code>sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y</code>
-                        <button class="copy-btn" data-code="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y">Copiar</button>
-                        <span class="text-muted d-block small"># Atualização completa do sistema</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-.code-block {
-    position: relative;
-    background-color: #f8f9fa;
-    border-radius: 6px;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family: 'Courier New', monospace;
-    font-size: 13px;
-    border: 1px solid #dee2e6;
-}
-
-.code-block code {
-    display: block;
-    white-space: pre-wrap;
-    word-break: break-all;
-    padding-right: 80px;
-    color: black;
-}
-
-.copy-btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 4px 12px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.copy-btn:hover {
-    background-color: #0056b3;
-}
-
-.text-muted {
-    font-size: 11px;
-    margin-top: 5px;
-}
-</style>
-
-<script>
-// Função para copiar texto para a área de transferência
-function copyToClipboard(text, button) {
-    navigator.clipboard.writeText(text).then(() => {
-        const originalText = button.textContent;
-        button.textContent = '✓ Copiado!';
-        setTimeout(() => {
-            button.textContent = originalText;
-        }, 2000);
-    }).catch(err => {
-        console.error('Erro ao copiar: ', err);
-        button.textContent = '✗ Erro!';
-        setTimeout(() => {
-            button.textContent = 'Copiar';
-        }, 2000);
-    });
-}
-
-// Adicionar evento de clique para cada botão de copiar
-document.querySelectorAll('.copy-btn').forEach(button => {
-    button.addEventListener('click', function() {
-        const code = this.getAttribute('data-code');
-        copyToClipboard(code, this);
-    });
-});
-</script>
+            // Adicionar evento de clique para cada botão de copiar
+            document.querySelectorAll('.copy-btn').forEach(button => {
+                button.addEventListener('click', function () {
+                    const code = this.getAttribute('data-code');
+                    copyToClipboard(code, this);
+                });
+            });
+        </script>
 
         <!-- Seção de Ativação do Windows -->
         <section id="sec2" class="mb-5">
