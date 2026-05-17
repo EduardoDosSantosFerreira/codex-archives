@@ -5,28 +5,22 @@
     <!-- Metadados essenciais para codificação e responsividade -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Título da página -->
     <title>Codex | Archives</title>
-
     <!-- Bootstrap CSS via CDN (prioridade para garantir o layout base) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <!-- CSS customizado do projeto (ordem pode sobrescrever Bootstrap se necessário) -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="src/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/assets/css/components/navbar.css">
-
     <!-- Fonte Poppins do Google Fonts (usada no layout) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
     <!-- Ícones do Bootstrap (usados nos menus e botões) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body style="background-color: #fffefa;">
-
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -44,7 +38,6 @@
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
                 <div class="offcanvas-body py-3">
                     <ul class="nav flex-column">
                         <!-- Menu Item (Grupo) -->
@@ -61,7 +54,6 @@
                                 <a href="#sec3" class="nav-link"><i class="bi bi-microsoft me-2"></i>Microsoft</a>
                             </div>
                         </li>
-
                         <!-- Linux -->
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center justify-content-between collapsed"
@@ -74,7 +66,6 @@
                                         class="bi bi-distribute-vertical me-2"></i>Distribuições</a>
                             </div>
                         </li>
-
                         <!-- Downloads -->
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center justify-content-between collapsed"
@@ -86,7 +77,6 @@
                                 <a href="#sec5" class="nav-link"><i class="bi bi-box-seam me-2"></i>Essenciais</a>
                             </div>
                         </li>
-
                         <!-- Desenvolvimento -->
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center justify-content-between collapsed"
@@ -98,7 +88,6 @@
                                 <a href="#sec6" class="nav-link"><i class="bi bi-tools me-2"></i>Ferramentas</a>
                             </div>
                         </li>
-
                         <!-- IA -->
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center justify-content-between collapsed"
@@ -110,7 +99,6 @@
                                 <a href="#sec7" class="nav-link"><i class="bi bi-cpu me-2"></i>Assistentes</a>
                             </div>
                         </li>
-
                         <!-- Segurança -->
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center justify-content-between collapsed"
@@ -127,7 +115,6 @@
                                 <a href="#sec8.5" class="nav-link"><i class="bi bi-bug-fill me-2"></i>PenTest</a>
                             </div>
                         </li>
-
                         <!-- Utilitários do Sistema -->
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center justify-content-between collapsed"
@@ -148,7 +135,6 @@
                                         class="bi bi-graph-up-arrow me-2"></i>Monitoramento</a>
                             </div>
                         </li>
-
                         <!-- Extensões Essenciais -->
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center justify-content-between collapsed"
@@ -174,36 +160,28 @@
             </div>
         </div>
     </nav>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const offcanvasEl = document.getElementById('offcanvasNavbar');
             const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
-
             offcanvasEl.querySelectorAll('a.nav-link').forEach(link => {
                 link.addEventListener('click', function () {
-
                     // Se o link abre um collapse, NÃO fecha o offcanvas
                     if (this.hasAttribute('data-bs-toggle')) return;
-
                     // Fecha apenas links finais
                     offcanvas.hide();
                 });
             });
         });
     </script>
-
     <div class="text-center">
         <img src="src/assets/img/angels/ophanim.png" style="max-width: 100%; width: 500px !important;" class="img-fluid"
             alt="Ophanim">
     </div>
-
     <main class="container my-5">
-
         <!-- Seção de Comandos CMD -->
         <section id="sec1" class="mb-5">
             <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-terminal"></i> Comandos CMD/PowerShell</h2>
-
             <!-- Subseção: Gerenciamento do Sistema -->
             <h3 class="h4 mt-4 mb-3"><i class="bi bi-pc-display"></i> Gerenciamento do Sistema</h3>
             <div class="row g-4">
@@ -231,7 +209,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -255,7 +232,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Rede e Conectividade -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-wifi"></i> Rede e Conectividade</h3>
             <div class="row g-4">
@@ -286,7 +262,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -315,7 +290,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Gerenciamento de Arquivos -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-folder"></i> Arquivos e Discos</h3>
             <div class="row g-4">
@@ -342,7 +316,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -367,7 +340,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Processos e Serviços -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-gear"></i> Processos e Serviços</h3>
             <div class="row g-4">
@@ -394,7 +366,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -419,7 +390,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Utilitários Avançados -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-tools"></i> Utilitários Avançados</h3>
             <div class="row g-4">
@@ -445,7 +415,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -469,7 +438,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: PowerShell -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-filetype-psd1"></i> Comandos PowerShell</h3>
             <div class="row g-4">
@@ -497,7 +465,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -525,11 +492,9 @@
                 </div>
             </div>
         </section>
-
         <!-- Seção de Scripts Debian -->
         <section class="mb-5">
             <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-ubuntu"></i> Scripts Debian/Ubuntu</h2>
-
             <!-- Subseção: Gerenciamento do Sistema -->
             <h3 class="h4 mt-4 mb-3"><i class="bi bi-pc-display"></i> Gerenciamento do Sistema</h3>
             <div class="row g-4">
@@ -560,7 +525,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -589,7 +553,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Rede e Conectividade -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-wifi"></i> Rede e Conectividade</h3>
             <div class="row g-4">
@@ -620,7 +583,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -649,7 +611,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Gerenciamento de Arquivos -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-folder"></i> Arquivos e Discos</h3>
             <div class="row g-4">
@@ -680,7 +641,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -709,7 +669,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Processos e Serviços -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-gear"></i> Processos e Serviços (Systemd)</h3>
             <div class="row g-4">
@@ -740,7 +699,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -769,7 +727,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Scripts de Automação -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-filetype-sh"></i> Scripts de Automação</h3>
             <div class="row g-4">
@@ -798,7 +755,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -826,7 +782,6 @@
                 </div>
             </div>
         </section>
-
         <style>
             .code-block {
                 position: relative;
@@ -870,7 +825,6 @@
                 margin-top: 5px;
             }
         </style>
-
         <script>
             // Função para copiar texto para a área de transferência
             function copyToClipboard(text, button) {
@@ -888,7 +842,6 @@
                     }, 2000);
                 });
             }
-
             // Adicionar evento de clique para cada botão de copiar
             document.querySelectorAll('.copy-btn').forEach(button => {
                 button.addEventListener('click', function () {
@@ -897,89 +850,74 @@
                 });
             });
         </script>
-
         <!-- Seção de Ativação do Windows -->
         <section id="sec2" class="mb-5">
             <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-windows"></i> Ativação do Windows</h2>
-
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <h3 class="h5 card-title">All Activators Codes</h3>
-
                             <a href="src/assets/dist/ultimate_activator.txt" class="btn btn-primary mt-3" download>
                                 <i class="bi bi-download"></i> Baixar Script
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <h3 class="h5 card-title">Windows 7</h3>
-
                             <a href="src/assets/dist/ativação_windows_7.txt" class="btn btn-primary mt-3" download>
                                 <i class="bi bi-download"></i> Baixar Script
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <h3 class="h5 card-title">Windows 8.1</h3>
-
                             <a href="src/assets/dist/ativação_windows_8.1.txt" class="btn btn-primary mt-3" download>
                                 <i class="bi bi-download"></i> Baixar Script
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <h3 class="h5 card-title">Windows 10</h3>
-
                             <a href="src/assets/dist/ativação_windows_10.txt" class="btn btn-primary mt-3" download>
                                 <i class="bi bi-download"></i> Baixar Script
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <h3 class="h5 card-title">Windows 11</h3>
-
                             <a href="src/assets/dist/ativação_windows_11.txt" class="btn btn-primary mt-3" download>
                                 <i class="bi bi-download"></i> Baixar Script
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <h3 class="h5 card-title">Windows 98</h3>
-
                             <a href="src/assets/dist/ativação_windows_98.txt" class="btn btn-primary mt-3" download>
                                 <i class="bi bi-download"></i> Baixar Script
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
                             <h3 class="h5 card-title">Windows Server 2022</h3>
-
                             <a href="src/assets/dist/ativação_windows_server_2022.txt" class="btn btn-primary mt-3"
                                 download>
                                 <i class="bi bi-download"></i> Baixar Script
@@ -989,11 +927,9 @@
                 </div>
             </div>
         </section>
-
         <!-- Seção de Windows e Ferramentas Microsoft -->
         <section id="sec3" class="mb-5">
             <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-windows"></i> Windows Microsoft</h2>
-
             <!-- Subseção: Versões do Windows -->
             <h3 class="h4 mt-4 mb-3"><i class="bi bi-pc-display"></i> Versões do Windows</h3>
             <div class="row g-4">
@@ -1014,7 +950,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Windows 10 -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1032,7 +967,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Windows Server -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1046,7 +980,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Windows 7 -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1060,7 +993,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Windows 8.1 -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1074,7 +1006,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Windows 98 -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1089,13 +1020,10 @@
                     </div>
                 </div>
             </div>
-
         </section>
-
         <!-- Seção de Distribuições Linux -->
         <section id="sec4" class="mb-5">
             <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-ubuntu"></i> Distribuições Linux</h2>
-
             <!-- Subseção: Para Iniciantes -->
             <h3 class="h4 mt-4 mb-3"><i class="bi bi-person-fill"></i> Para Iniciantes</h3>
             <div class="row g-4">
@@ -1112,7 +1040,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Linux Mint -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1126,7 +1053,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Zorin OS -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1141,7 +1067,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Avançadas/Power Users -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-terminal"></i> Para Avançados</h3>
             <div class="row g-4">
@@ -1158,7 +1083,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Gentoo -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1172,7 +1096,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Slackware -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1187,7 +1110,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Leves e Rápidas -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-speedometer2"></i> Leves & Rápidas</h3>
             <div class="row g-4">
@@ -1204,7 +1126,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Puppy Linux -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1218,7 +1139,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- AntiX -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1233,7 +1153,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Privacidade & Segurança -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-shield-lock"></i> Privacidade & Segurança</h3>
             <div class="row g-4">
@@ -1250,7 +1169,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Kali Linux -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1264,7 +1182,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Qubes OS -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1279,7 +1196,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Alternativas Específicas -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-star"></i> Especiais</h3>
             <div class="row g-4">
@@ -1296,7 +1212,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Fedora (Inovação) -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1310,7 +1225,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- NixOS (Reproducibilidade) -->
                 <div class="col-md-4 col-6">
                     <div class="card h-100">
@@ -1326,11 +1240,9 @@
                 </div>
             </div>
         </section>
-
         <!-- Seção de Downloads -->
         <section id="sec5" class="mb-5">
             <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-download"></i> Downloads</h2>
-
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100">
@@ -1343,7 +1255,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1355,7 +1266,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1367,7 +1277,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1380,7 +1289,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1393,7 +1301,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1409,11 +1316,9 @@
                 </div>
             </div>
         </section>
-
         <!-- Seção de Ferramentas para Desenvolvedores -->
         <section id="sec6" class="mb-5">
             <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-code-square"></i> Ferramentas para Devs</h2>
-
             <!-- Subseção: Editores de Código -->
             <h3 class="h4 mt-4 mb-3"><i class="bi bi-file-earmark-code"></i> Editores & IDEs</h3>
             <div class="row g-4">
@@ -1430,7 +1335,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1444,7 +1348,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1458,7 +1361,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1473,7 +1375,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Controle de Versão -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-git"></i> Controle de Versão</h3>
             <div class="row g-4">
@@ -1490,7 +1391,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1504,7 +1404,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1518,7 +1417,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1533,7 +1431,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Ambientes de Execução -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-cpu"></i> Ambientes de Execução</h3>
             <div class="row g-4">
@@ -1550,7 +1447,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1564,7 +1460,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1577,7 +1472,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1592,7 +1486,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Bancos de Dados -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-database"></i> Bancos de Dados</h3>
             <div class="row g-4">
@@ -1609,7 +1502,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1623,7 +1515,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1637,7 +1528,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1652,7 +1542,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Ferramentas de Teste -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-bug"></i> Testes & Debug</h3>
             <div class="row g-4">
@@ -1669,7 +1558,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1683,7 +1571,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1696,7 +1583,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1711,7 +1597,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Subseção: Utilitários -->
             <h3 class="h4 mt-5 mb-3"><i class="bi bi-tools"></i> Utilitários</h3>
             <div class="row g-4">
@@ -1728,7 +1613,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1742,7 +1626,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1756,7 +1639,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-6">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -1772,11 +1654,9 @@
                 </div>
             </div>
         </section>
-
         <!-- Seção de IA e Assistentes Virtuais -->
         <section id="sec7" class="mb-5">
             <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-robot"></i> Inteligência Artificial e Assistentes</h2>
-
             <div class="row g-4">
                 <!-- Categoria: Assistentes de Conversação -->
                 <div class="col-md-6">
@@ -1835,7 +1715,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Categoria: IA para Desenvolvimento -->
                 <div class="col-md-6">
                     <div class="card h-100">
@@ -1893,7 +1772,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Categoria: IA para Design e Criatividade -->
                 <div class="col-md-6">
                     <div class="card h-100">
@@ -1951,7 +1829,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Categoria: IA para Produtividade -->
                 <div class="col-md-6">
                     <div class="card h-100">
@@ -2009,7 +1886,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Categoria: IA para Pesquisa e Análise -->
                 <div class="col-md-6">
                     <div class="card h-100">
@@ -2066,7 +1942,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Categoria: IA para Negócios -->
                 <div class="col-md-6">
                     <div class="card h-100">
@@ -2123,7 +1998,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Categoria: IA Especializada -->
                 <div class="col-md-6">
                     <div class="card h-100">
@@ -2180,7 +2054,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Categoria: IA Open Source -->
                 <div class="col-md-6">
                     <div class="card h-100">
@@ -2238,17 +2111,14 @@
                 </div>
             </div>
         </section>
-
         <!-- Seção de Segurança Cibernética -->
         <section id="sec8" class="mb-5" id="cybersecurity">
             <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-shield-lock"></i> Segurança Digital</h2>
-
             <!-- Antivírus -->
             <div id="sec8.1" class="row g-4 mb-4">
                 <div class="col-12">
                     <h3 class="h4"><i class="bi bi-shield-check"></i> Antivírus Gratuitos</h3>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2265,7 +2135,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2283,13 +2152,11 @@
                     </div>
                 </div>
             </div>
-
             <!-- VPNs -->
             <div id="sec8.2" class="row g-4 mb-4">
                 <div class="col-12">
                     <h3 class="h4"><i class="bi bi-lock"></i> VPNs Confiáveis</h3>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -2301,7 +2168,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -2313,7 +2179,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div class="card-body text-center">
@@ -2326,13 +2191,11 @@
                     </div>
                 </div>
             </div>
-
             <!-- Gerenciadores de Senhas -->
             <div id="sec8.3" class="row g-4 mb-4">
                 <div class="col-12">
                     <h3 class="h4"><i class="bi bi-key"></i> Gerenciadores de Senhas</h3>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2353,7 +2216,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2371,13 +2233,11 @@
                     </div>
                 </div>
             </div>
-
             <!-- Ferramentas de Encriptação -->
             <div id="sec8.4" class="row g-4 mb-4">
                 <div class="col-12">
                     <h3 class="h4"><i class="bi bi-file-lock"></i> Encriptação</h3>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2398,7 +2258,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2407,7 +2266,6 @@
                                     style="font-size: 2rem; margin-right: 1rem;"></i>
                                 <img src="src/assets/img/securaty/Cryptomator.png" height="30" class="me-3 img-fluid"
                                     alt="VeraCrypt">
-
                                 <div>
                                     <h4 class="h5 mb-1">Cryptomator</h4>
                                     <p class="text-muted small mb-2">Encriptação para nuvem</p>
@@ -2419,13 +2277,11 @@
                     </div>
                 </div>
             </div>
-
             <!-- Detecção de Vulnerabilidades -->
             <div id="sec8.5" class="row g-4">
                 <div class="col-12">
                     <h3 class="h4"><i class="bi bi-bug"></i> Análise de Rede</h3>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2446,7 +2302,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2469,17 +2324,14 @@
                 </div>
             </div>
         </section>
-
         <!-- Seção de Utilitários de Sistema -->
         <section id="sec9" class="mb-5" id="system-utilities">
             <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-tools"></i> Utilitários de Sistema</h2>
-
             <!-- Softwares de Limpeza -->
             <div id="sec9.1" class="row g-4 mb-4">
                 <div class="col-12">
                     <h3 class="h4"><i class="bi bi-broom"></i> Limpeza e Otimização</h3>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2502,7 +2354,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2524,7 +2375,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2547,13 +2397,11 @@
                     </div>
                 </div>
             </div>
-
             <!-- Gerenciadores de Arquivos -->
             <div id="sec9.2" class="row g-4 mb-4">
                 <div class="col-12">
                     <h3 class="h4"><i class="bi bi-folder"></i> Gerenciadores de Arquivos</h3>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2575,7 +2423,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2598,13 +2445,11 @@
                     </div>
                 </div>
             </div>
-
             <!-- Ferramentas de Backup -->
             <div id="sec9.3" class="row g-4 mb-4">
                 <div class="col-12">
                     <h3 class="h4"><i class="bi bi-back"></i> Backup e Restauração</h3>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2625,7 +2470,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2642,13 +2486,11 @@
                     </div>
                 </div>
             </div>
-
             <!-- Recuperação de Dados -->
             <div id="sec9.4" class="row g-4 mb-4">
                 <div class="col-12">
                     <h3 class="h4"><i class="bi bi-hdd"></i> Recuperação de Dados</h3>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2669,7 +2511,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -2690,820 +2531,595 @@
                     </div>
                 </div>
             </div>
-
             <!-- Monitoramento de Sistema -->
             <div id="sec9.5" class="row g-4 mb-5">
-
                 <div class="col-12">
                     <h3 class="h4 d-flex align-items-center gap-2" id="monitoramento-sistema">
-
                         <i class="bi bi-speedometer2 text-primary"></i>
                         Monitoramento de Sistema
                     </h3>
-
                     <p class="text-muted mb-0">
                         Ferramentas essenciais para acompanhar temperatura,
                         desempenho, uso de hardware, estabilidade e saúde do sistema.
                     </p>
                 </div>
-
                 <!-- HWMonitor -->
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0" id="hwmonitor">
-
                         <div class="card-body">
-
                             <div class="d-flex align-items-start">
-
                                 <i class="bi bi-pc-display text-info" style="font-size: 2.2rem; margin-right: 1rem;"
                                     id="icon-hwmonitor"></i>
-
                                 <div class="w-100">
-
                                     <div class="d-flex justify-content-between align-items-start">
-
                                         <div>
                                             <h4 class="h5 mb-1" id="hwmonitor-title">
                                                 HWMonitor
                                             </h4>
-
                                             <span class="badge bg-info text-dark mb-2">
                                                 Hardware
                                             </span>
                                         </div>
-
                                         <span class="text-success small fw-semibold">
                                             Recomendado
                                         </span>
                                     </div>
-
                                     <p class="text-muted small mb-3" id="hwmonitor-desc">
-
                                         Monitore temperaturas, voltagens, consumo
                                         energético e velocidade dos coolers em tempo real.
                                     </p>
-
                                     <ul class="small text-muted ps-3 mb-3">
                                         <li>Monitoramento completo do hardware</li>
                                         <li>Temperaturas da CPU e GPU</li>
                                         <li>Leitura de voltagens e fans</li>
                                         <li>Interface leve e simples</li>
                                     </ul>
-
                                     <div class="btn-group" id="hwmonitor-btns">
-
                                         <a href="https://www.cpuid.com/softwares/hwmonitor.html"
                                             class="btn btn-sm btn-outline-primary" target="_blank" id="hwmonitor-site">
-
                                             <i class="bi bi-globe"></i>
                                             Site Oficial
                                         </a>
-
                                         <a href="https://www.cpuid.com/downloads/hwmonitor/hwmonitor_1.49.exe"
                                             class="btn btn-sm btn-outline-secondary" target="_blank"
                                             id="hwmonitor-download">
-
                                             <i class="bi bi-download"></i>
                                             Download
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
                 <!-- Core Temp -->
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0" id="core-temp">
-
                         <div class="card-body">
-
                             <div class="d-flex align-items-start">
-
                                 <i class="bi bi-thermometer-half text-danger"
                                     style="font-size: 2.2rem; margin-right: 1rem;" id="icon-core-temp"></i>
-
                                 <div class="w-100">
-
                                     <div class="d-flex justify-content-between align-items-start">
-
                                         <div>
                                             <h4 class="h5 mb-1" id="core-temp-title">
                                                 Core Temp
                                             </h4>
-
                                             <span class="badge bg-danger mb-2">
                                                 Temperatura
                                             </span>
                                         </div>
-
                                         <span class="text-success small fw-semibold">
                                             Popular
                                         </span>
                                     </div>
-
                                     <p class="text-muted small mb-3" id="core-temp-desc">
-
                                         Ferramenta especializada no monitoramento
                                         detalhado da temperatura do processador.
                                     </p>
-
                                     <ul class="small text-muted ps-3 mb-3">
                                         <li>Temperatura em tempo real</li>
                                         <li>Leitura individual por núcleo</li>
                                         <li>Baixíssimo consumo de recursos</li>
                                         <li>Alertas térmicos personalizados</li>
                                     </ul>
-
                                     <div class="btn-group" id="core-temp-btns">
-
                                         <a href="https://www.alcpu.com/CoreTemp/" class="btn btn-sm btn-outline-primary"
                                             target="_blank" id="core-temp-site">
-
                                             <i class="bi bi-globe"></i>
                                             Site Oficial
                                         </a>
-
                                         <a href="https://www.alcpu.com/CoreTemp/CoreTempSetup.exe"
                                             class="btn btn-sm btn-outline-secondary" target="_blank"
                                             id="core-temp-download">
-
                                             <i class="bi bi-download"></i>
                                             Download
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
                 <!-- MSI Afterburner -->
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0" id="msi-afterburner">
-
                         <div class="card-body">
-
                             <div class="d-flex align-items-start">
-
                                 <i class="bi bi-gpu-card text-warning" style="font-size: 2.2rem; margin-right: 1rem;"
                                     id="icon-msi-afterburner"></i>
-
                                 <div class="w-100">
-
                                     <h4 class="h5 mb-1" id="msi-afterburner-title">
                                         MSI Afterburner
                                     </h4>
-
                                     <span class="badge bg-warning text-dark mb-2">
                                         GPU
                                     </span>
-
                                     <p class="text-muted small mb-3" id="msi-afterburner-desc">
-
                                         Monitoramento avançado e controle de placas
                                         de vídeo com suporte a overclock.
                                     </p>
-
                                     <ul class="small text-muted ps-3 mb-3">
                                         <li>Monitoramento de GPU em tempo real</li>
                                         <li>Controle de ventoinhas</li>
                                         <li>Overclock seguro</li>
                                         <li>Overlay durante jogos</li>
                                     </ul>
-
                                     <div class="btn-group" id="msi-afterburner-btns">
-
                                         <a href="https://www.msi.com/Landing/afterburner"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
                                             id="msi-afterburner-site">
-
                                             <i class="bi bi-globe"></i>
                                             Site Oficial
                                         </a>
-
                                         <a href="https://www.msi.com/Landing/afterburner/graphics-cards"
                                             class="btn btn-sm btn-outline-secondary" target="_blank"
                                             id="msi-afterburner-download">
-
                                             <i class="bi bi-download"></i>
                                             Download
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
                 <!-- Open Hardware Monitor -->
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0" id="open-hardware-monitor">
-
                         <div class="card-body">
-
                             <div class="d-flex align-items-start">
-
                                 <i class="bi bi-cpu-fill text-success" style="font-size: 2.2rem; margin-right: 1rem;"
                                     id="icon-open-hardware-monitor"></i>
-
                                 <div class="w-100">
-
                                     <h4 class="h5 mb-1" id="open-hardware-monitor-title">
                                         Open Hardware Monitor
                                     </h4>
-
                                     <span class="badge bg-success mb-2">
                                         Open Source
                                     </span>
-
                                     <p class="text-muted small mb-3" id="open-hardware-monitor-desc">
-
                                         Software open source para monitoramento
                                         completo de sensores do sistema.
                                     </p>
-
                                     <ul class="small text-muted ps-3 mb-3">
                                         <li>Monitoramento gratuito</li>
                                         <li>Leitura de sensores avançados</li>
                                         <li>CPU, GPU, RAM e disco</li>
                                         <li>Projeto open source</li>
                                     </ul>
-
                                     <div class="btn-group" id="open-hardware-monitor-btns">
-
                                         <a href="https://openhardwaremonitor.org/"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
                                             id="open-hardware-monitor-site">
-
                                             <i class="bi bi-globe"></i>
                                             Site Oficial
                                         </a>
-
                                         <a href="https://openhardwaremonitor.org/downloads/"
                                             class="btn btn-sm btn-outline-secondary" target="_blank"
                                             id="open-hardware-monitor-download">
-
                                             <i class="bi bi-download"></i>
                                             Download
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </section>
-
         <!-- Seção de Extensões de Navegador -->
         <section id="sec10" class="mb-5" id="browser-extensions">
             <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-browser-edge"></i> Extensões Essenciais</h2>
-
             <!-- Produtividade -->
             <div id="sec10.1" class="row g-4 mb-5">
-
                 <div class="col-12">
                     <h3 class="h4 d-flex align-items-center gap-2" id="produtividade">
                         <i class="bi bi-lightning-charge-fill text-warning"></i>
                         Produtividade
                     </h3>
-
                     <p class="text-muted mb-0">
                         Extensões para foco, organização, gerenciamento de tarefas,
                         escrita e otimização do fluxo de trabalho.
                     </p>
                 </div>
-
                 <!-- Toggl Track -->
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0" id="toggl-track">
-
                         <div class="card-body">
-
                             <div class="d-flex align-items-start">
-
                                 <i class="bi bi-stopwatch-fill text-warning"
                                     style="font-size: 2.2rem; margin-right: 1rem;" id="icon-toggl-track"></i>
-
                                 <div class="w-100">
-
                                     <div class="d-flex justify-content-between align-items-start">
-
                                         <div>
                                             <h4 class="h5 mb-1" id="toggl-track-title">
                                                 Toggl Track
                                             </h4>
-
                                             <span class="badge bg-warning text-dark mb-2">
                                                 Gestão de Tempo
                                             </span>
                                         </div>
-
                                         <span class="text-success small fw-semibold">
                                             Popular
                                         </span>
                                     </div>
-
                                     <p class="text-muted small mb-3" id="toggl-track-desc">
                                         Monitore tempo gasto em tarefas, projetos e estudos
                                         com relatórios detalhados de produtividade.
                                     </p>
-
                                     <ul class="small text-muted ps-3 mb-3">
                                         <li>Controle de horas em tempo real</li>
                                         <li>Relatórios automáticos</li>
                                         <li>Integração com Notion, Trello e Asana</li>
                                         <li>Ideal para freelancers e estudantes</li>
                                     </ul>
-
                                     <div class="btn-group" id="toggl-track-btns">
-
                                         <a href="https://chrome.google.com/webstore/detail/toggl-track-timer/oejgccbfbmkkpaidnkphaiaecficdnfn"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
                                             id="toggl-track-chrome">
-
                                             <i class="bi bi-browser-chrome"></i>
                                             Chrome
                                         </a>
-
                                         <a href="https://addons.mozilla.org/firefox/addon/toggl-button-time-tracker/"
                                             class="btn btn-sm btn-outline-danger" target="_blank"
                                             id="toggl-track-firefox">
-
                                             <i class="bi bi-browser-firefox"></i>
                                             Firefox
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
                 <!-- StayFocusd -->
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0" id="stayfocusd">
-
                         <div class="card-body">
-
                             <div class="d-flex align-items-start">
-
                                 <i class="bi bi-eye-slash-fill text-success"
                                     style="font-size: 2.2rem; margin-right: 1rem;" id="icon-stayfocusd"></i>
-
                                 <div class="w-100">
-
                                     <div class="d-flex justify-content-between align-items-start">
-
                                         <div>
                                             <h4 class="h5 mb-1" id="stayfocusd-title">
                                                 StayFocusd
                                             </h4>
-
                                             <span class="badge bg-success mb-2">
                                                 Foco
                                             </span>
                                         </div>
-
                                         <span class="text-success small fw-semibold">
                                             Recomendado
                                         </span>
                                     </div>
-
                                     <p class="text-muted small mb-3" id="stayfocusd-desc">
                                         Bloqueie sites distrativos e aumente sua
                                         concentração durante estudos ou trabalho.
                                     </p>
-
                                     <ul class="small text-muted ps-3 mb-3">
                                         <li>Bloqueio de redes sociais</li>
                                         <li>Temporizador de navegação</li>
                                         <li>Listas personalizadas de sites</li>
                                         <li>Modo rigoroso anti-distração</li>
                                     </ul>
-
                                     <div class="btn-group" id="stayfocusd-btns">
-
                                         <a href="https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
                                             id="stayfocusd-chrome">
-
                                             <i class="bi bi-browser-chrome"></i>
                                             Chrome
                                         </a>
-
                                         <a href="https://addons.mozilla.org/firefox/addon/stay-focused/"
                                             class="btn btn-sm btn-outline-danger" target="_blank"
                                             id="stayfocusd-firefox">
-
                                             <i class="bi bi-browser-firefox"></i>
                                             Firefox
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
                 <!-- Notion Web Clipper -->
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0" id="notion-web-clipper">
-
                         <div class="card-body">
-
                             <div class="d-flex align-items-start">
-
                                 <i class="bi bi-journal-richtext text-dark"
                                     style="font-size: 2.2rem; margin-right: 1rem;" id="icon-notion-web-clipper"></i>
-
                                 <div class="w-100">
-
                                     <h4 class="h5 mb-1" id="notion-web-clipper-title">
                                         Notion Web Clipper
                                     </h4>
-
                                     <span class="badge bg-dark mb-2">
                                         Organização
                                     </span>
-
                                     <p class="text-muted small mb-3" id="notion-web-clipper-desc">
                                         Salve páginas, artigos e referências diretamente no
                                         Notion com apenas um clique.
                                     </p>
-
                                     <ul class="small text-muted ps-3 mb-3">
                                         <li>Salvar páginas completas</li>
                                         <li>Organização automática</li>
                                         <li>Sincronização instantânea</li>
                                         <li>Ótimo para estudos e pesquisas</li>
                                     </ul>
-
                                     <div class="btn-group" id="notion-web-clipper-btns">
-
                                         <a href="https://chrome.google.com/webstore/detail/notion-web-clipper/jlooaafbdfmcmfcfnmpkhohkiijnfikn"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
                                             id="notion-web-clipper-chrome">
-
                                             <i class="bi bi-browser-chrome"></i>
                                             Chrome
                                         </a>
-
                                         <a href="https://addons.mozilla.org/firefox/addon/notion-web-clipper/"
                                             class="btn btn-sm btn-outline-danger" target="_blank"
                                             id="notion-web-clipper-firefox">
-
                                             <i class="bi bi-browser-firefox"></i>
                                             Firefox
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
                 <!-- Grammarly -->
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0" id="grammarly">
-
                         <div class="card-body">
-
                             <div class="d-flex align-items-start">
-
                                 <i class="bi bi-spellcheck text-info" style="font-size: 2.2rem; margin-right: 1rem;"
                                     id="icon-grammarly"></i>
-
                                 <div class="w-100">
-
                                     <h4 class="h5 mb-1" id="grammarly-title">
                                         Grammarly
                                     </h4>
-
                                     <span class="badge bg-info text-dark mb-2">
                                         Escrita
                                     </span>
-
                                     <p class="text-muted small mb-3" id="grammarly-desc">
                                         Corrija gramática, ortografia e melhore textos
                                         automaticamente enquanto escreve.
                                     </p>
-
                                     <ul class="small text-muted ps-3 mb-3">
                                         <li>Correção em tempo real</li>
                                         <li>Sugestões de clareza</li>
                                         <li>Compatível com Gmail e Docs</li>
                                         <li>Suporte para inglês avançado</li>
                                     </ul>
-
                                     <div class="btn-group" id="grammarly-btns">
-
                                         <a href="https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
                                             id="grammarly-chrome">
-
                                             <i class="bi bi-browser-chrome"></i>
                                             Chrome
                                         </a>
-
                                         <a href="https://addons.mozilla.org/firefox/addon/grammarly-1/"
                                             class="btn btn-sm btn-outline-danger" target="_blank"
                                             id="grammarly-firefox">
-
                                             <i class="bi bi-browser-firefox"></i>
                                             Firefox
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
             </div>
-
             <!-- Segurança e Privacidade -->
             <div class="row g-4 mb-5" id="sec10.2">
-
                 <div class="col-12">
                     <h3 class="h4 d-flex align-items-center gap-2" id="seguranca-privacidade">
-
                         <i class="bi bi-shield-lock-fill text-primary"></i>
                         Segurança e Privacidade
                     </h3>
-
                     <p class="text-muted mb-0">
                         Extensões essenciais para proteção contra ameaças online,
                         rastreamento, vazamento de dados, phishing e navegação insegura.
                     </p>
                 </div>
-
                 <!-- uBlock Origin -->
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0" id="ublock-origin">
-
                         <div class="card-body">
-
                             <div class="d-flex align-items-start">
-
                                 <i class="bi bi-shield-check text-primary"
                                     style="font-size: 2.2rem; margin-right: 1rem;" id="icon-ublock-origin"></i>
-
                                 <div class="w-100">
-
                                     <div class="d-flex justify-content-between align-items-start">
-
                                         <div>
                                             <h4 class="h5 mb-1" id="ublock-origin-title">
                                                 uBlock Origin
                                             </h4>
-
                                             <span class="badge bg-primary mb-2">
                                                 Anti-Anúncios
                                             </span>
                                         </div>
-
                                         <span class="text-success small fw-semibold">
                                             Essencial
                                         </span>
                                     </div>
-
                                     <p class="text-muted small mb-3" id="ublock-origin-desc">
-
                                         Bloqueador avançado de anúncios, rastreadores,
                                         scripts maliciosos e pop-ups invasivos.
                                     </p>
-
                                     <ul class="small text-muted ps-3 mb-3">
                                         <li>Bloqueio eficiente de anúncios</li>
                                         <li>Redução de rastreamento online</li>
                                         <li>Melhora desempenho do navegador</li>
                                         <li>Baixo consumo de memória RAM</li>
                                     </ul>
-
                                     <div class="btn-group" id="ublock-origin-btns">
-
                                         <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
                                             id="ublock-origin-chrome">
-
                                             <i class="bi bi-browser-chrome"></i>
                                             Chrome
                                         </a>
-
                                         <a href="https://addons.mozilla.org/firefox/addon/ublock-origin/"
                                             class="btn btn-sm btn-outline-danger" target="_blank"
                                             id="ublock-origin-firefox">
-
                                             <i class="bi bi-browser-firefox"></i>
                                             Firefox
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
                 <!-- HTTPS Everywhere -->
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0" id="https-everywhere">
-
                         <div class="card-body">
-
                             <div class="d-flex align-items-start">
-
                                 <i class="bi bi-lock-fill text-success" style="font-size: 2.2rem; margin-right: 1rem;"
                                     id="icon-https-everywhere"></i>
-
                                 <div class="w-100">
-
                                     <div class="d-flex justify-content-between align-items-start">
-
                                         <div>
                                             <h4 class="h5 mb-1" id="https-everywhere-title">
                                                 HTTPS Everywhere
                                             </h4>
-
                                             <span class="badge bg-success mb-2">
                                                 Navegação Segura
                                             </span>
                                         </div>
-
                                         <span class="text-success small fw-semibold">
                                             Recomendado
                                         </span>
                                     </div>
-
                                     <p class="text-muted small mb-3" id="https-everywhere-desc">
-
                                         Força conexões HTTPS criptografadas automaticamente
                                         para aumentar a segurança da navegação.
                                     </p>
-
                                     <ul class="small text-muted ps-3 mb-3">
                                         <li>Criptografia automática de conexões</li>
                                         <li>Proteção contra interceptação</li>
                                         <li>Evita conexões HTTP inseguras</li>
                                         <li>Projeto desenvolvido pela EFF</li>
                                     </ul>
-
                                     <div class="btn-group" id="https-everywhere-btns">
-
                                         <a href="https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
                                             id="https-everywhere-chrome">
-
                                             <i class="bi bi-browser-chrome"></i>
                                             Chrome
                                         </a>
-
                                         <a href="https://addons.mozilla.org/firefox/addon/https-everywhere/"
                                             class="btn btn-sm btn-outline-danger" target="_blank"
                                             id="https-everywhere-firefox">
-
                                             <i class="bi bi-browser-firefox"></i>
                                             Firefox
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
                 <!-- Bitwarden -->
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0" id="bitwarden">
-
                         <div class="card-body">
-
                             <div class="d-flex align-items-start">
-
                                 <i class="bi bi-key-fill text-dark" style="font-size: 2.2rem; margin-right: 1rem;"
                                     id="icon-bitwarden"></i>
-
                                 <div class="w-100">
-
                                     <h4 class="h5 mb-1" id="bitwarden-title">
                                         Bitwarden
                                     </h4>
-
                                     <span class="badge bg-dark mb-2">
                                         Senhas
                                     </span>
-
                                     <p class="text-muted small mb-3" id="bitwarden-desc">
-
                                         Gerenciador de senhas seguro e open source
                                         com sincronização entre dispositivos.
                                     </p>
-
                                     <ul class="small text-muted ps-3 mb-3">
                                         <li>Armazenamento criptografado</li>
                                         <li>Gerador de senhas fortes</li>
                                         <li>Autopreenchimento inteligente</li>
                                         <li>Sincronização multiplataforma</li>
                                     </ul>
-
                                     <div class="btn-group" id="bitwarden-btns">
-
                                         <a href="https://chrome.google.com/webstore/detail/bitwarden-free-password/nngceckbapebfimnlniiiahkandclblb"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
                                             id="bitwarden-chrome">
-
                                             <i class="bi bi-browser-chrome"></i>
                                             Chrome
                                         </a>
-
                                         <a href="https://addons.mozilla.org/firefox/addon/bitwarden-password-manager/"
                                             class="btn btn-sm btn-outline-danger" target="_blank"
                                             id="bitwarden-firefox">
-
                                             <i class="bi bi-browser-firefox"></i>
                                             Firefox
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
                 <!-- DuckDuckGo Privacy Essentials -->
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0" id="duckduckgo-privacy">
-
                         <div class="card-body">
-
                             <div class="d-flex align-items-start">
-
                                 <i class="bi bi-incognito text-warning" style="font-size: 2.2rem; margin-right: 1rem;"
                                     id="icon-duckduckgo-privacy"></i>
-
                                 <div class="w-100">
-
                                     <h4 class="h5 mb-1" id="duckduckgo-privacy-title">
                                         DuckDuckGo Privacy Essentials
                                     </h4>
-
                                     <span class="badge bg-warning text-dark mb-2">
                                         Anti-Tracking
                                     </span>
-
                                     <p class="text-muted small mb-3" id="duckduckgo-privacy-desc">
-
                                         Proteção integrada contra rastreamento,
                                         scripts ocultos e coleta de dados online.
                                     </p>
-
                                     <ul class="small text-muted ps-3 mb-3">
                                         <li>Bloqueio automático de trackers</li>
                                         <li>Força conexões HTTPS</li>
                                         <li>Proteção de privacidade integrada</li>
                                         <li>Classificação de segurança dos sites</li>
                                     </ul>
-
                                     <div class="btn-group" id="duckduckgo-privacy-btns">
-
                                         <a href="https://chrome.google.com/webstore/detail/duckduckgo-privacy-essent/bkdgflcldnnnapblkhphbgpggdiikppg"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
                                             id="duckduckgo-privacy-chrome">
-
                                             <i class="bi bi-browser-chrome"></i>
                                             Chrome
                                         </a>
-
                                         <a href="https://addons.mozilla.org/firefox/addon/duckduckgo-for-firefox/"
                                             class="btn btn-sm btn-outline-danger" target="_blank"
                                             id="duckduckgo-privacy-firefox">
-
                                             <i class="bi bi-browser-firefox"></i>
                                             Firefox
                                         </a>
@@ -3514,13 +3130,11 @@
                     </div>
                 </div>
             </div>
-
             <!-- Desenvolvimento -->
             <div class="row g-4 mb-4" id="sec10.3">
                 <div class="col-12">
                     <h3 class="h4" id="desenvolvimento"><i class="bi bi-code-slash"></i> Desenvolvimento</h3>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100" id="web-developer">
                         <div class="card-body">
@@ -3544,7 +3158,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="card h-100" id="react-devtools">
                         <div class="card-body">
@@ -3569,7 +3182,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Ferramentas de Pesquisa -->
             <div class="row g-4 mb-4" id="sec10.4">
                 <div class="col-12">
@@ -3577,7 +3189,6 @@
                         <i class="bi bi-search"></i> Ferramentas de Pesquisa
                     </h3>
                 </div>
-
                 <!-- Google Scholar Button -->
                 <div class="col-md-6">
                     <div class="card h-100" id="google-scholar-button">
@@ -3585,24 +3196,19 @@
                             <div class="d-flex align-items-center">
                                 <i class="bi bi-mortarboard text-warning" style="font-size: 2rem; margin-right: 1rem;"
                                     id="icon-google-scholar-button"></i>
-
                                 <div>
                                     <h4 class="h5 mb-1" id="google-scholar-button-title">
                                         Google Scholar Button
                                     </h4>
-
                                     <p class="text-muted small mb-2" id="google-scholar-button-desc">
                                         Acesso rápido a artigos acadêmicos
                                     </p>
-
                                     <div class="btn-group" id="google-scholar-button-btns">
-
                                         <a href="https://chrome.google.com/webstore/detail/google-scholar-button/ldipcbpaocekfooobnbcddclnhejkcpn"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
                                             id="google-scholar-button-chrome">
                                             Chrome
                                         </a>
-
                                         <a href="https://addons.mozilla.org/firefox/addon/google-scholar-button/"
                                             class="btn btn-sm btn-outline-danger" target="_blank"
                                             id="google-scholar-button-firefox">
@@ -3614,7 +3220,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Zotero Connector -->
                 <div class="col-md-6">
                     <div class="card h-100" id="zotero-connector">
@@ -3622,18 +3227,14 @@
                             <div class="d-flex align-items-center">
                                 <i class="bi bi-journal-bookmark text-primary"
                                     style="font-size: 2rem; margin-right: 1rem;" id="icon-zotero-connector"></i>
-
                                 <div>
                                     <h4 class="h5 mb-1" id="zotero-connector-title">
                                         Zotero Connector
                                     </h4>
-
                                     <p class="text-muted small mb-2" id="zotero-connector-desc">
                                         Salve referências e organize pesquisas acadêmicas
                                     </p>
-
                                     <div class="btn-group" id="zotero-connector-btns">
-
                                         <a href="https://www.zotero.org/download/connectors"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
                                             id="zotero-connector-download">
@@ -3645,7 +3246,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Semantic Scholar -->
                 <div class="col-md-6">
                     <div class="card h-100" id="semantic-scholar">
@@ -3653,18 +3253,14 @@
                             <div class="d-flex align-items-center">
                                 <i class="bi bi-diagram-3 text-success" style="font-size: 2rem; margin-right: 1rem;"
                                     id="icon-semantic-scholar"></i>
-
                                 <div>
                                     <h4 class="h5 mb-1" id="semantic-scholar-title">
                                         Semantic Scholar
                                     </h4>
-
                                     <p class="text-muted small mb-2" id="semantic-scholar-desc">
                                         Busca acadêmica com IA e análise de citações
                                     </p>
-
                                     <div class="btn-group" id="semantic-scholar-btns">
-
                                         <a href="https://www.semanticscholar.org/"
                                             class="btn btn-sm btn-outline-success" target="_blank"
                                             id="semantic-scholar-access">
@@ -3676,7 +3272,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Research Rabbit -->
                 <div class="col-md-6">
                     <div class="card h-100" id="research-rabbit">
@@ -3684,18 +3279,14 @@
                             <div class="d-flex align-items-center">
                                 <i class="bi bi-bezier2 text-info" style="font-size: 2rem; margin-right: 1rem;"
                                     id="icon-research-rabbit"></i>
-
                                 <div>
                                     <h4 class="h5 mb-1" id="research-rabbit-title">
                                         Research Rabbit
                                     </h4>
-
                                     <p class="text-muted small mb-2" id="research-rabbit-desc">
                                         Descubra artigos relacionados visualmente
                                     </p>
-
                                     <div class="btn-group" id="research-rabbit-btns">
-
                                         <a href="https://www.researchrabbit.ai/" class="btn btn-sm btn-outline-info"
                                             target="_blank" id="research-rabbit-access">
                                             Acessar
@@ -3706,7 +3297,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Connected Papers -->
                 <div class="col-md-6">
                     <div class="card h-100" id="connected-papers">
@@ -3714,18 +3304,14 @@
                             <div class="d-flex align-items-center">
                                 <i class="bi bi-share text-secondary" style="font-size: 2rem; margin-right: 1rem;"
                                     id="icon-connected-papers"></i>
-
                                 <div>
                                     <h4 class="h5 mb-1" id="connected-papers-title">
                                         Connected Papers
                                     </h4>
-
                                     <p class="text-muted small mb-2" id="connected-papers-desc">
                                         Explore conexões entre artigos científicos
                                     </p>
-
                                     <div class="btn-group" id="connected-papers-btns">
-
                                         <a href="https://www.connectedpapers.com/"
                                             class="btn btn-sm btn-outline-secondary" target="_blank"
                                             id="connected-papers-access">
@@ -3737,7 +3323,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Scite -->
                 <div class="col-md-6">
                     <div class="card h-100" id="scite">
@@ -3745,18 +3330,14 @@
                             <div class="d-flex align-items-center">
                                 <i class="bi bi-bar-chart-line text-danger" style="font-size: 2rem; margin-right: 1rem;"
                                     id="icon-scite"></i>
-
                                 <div>
                                     <h4 class="h5 mb-1" id="scite-title">
                                         Scite
                                     </h4>
-
                                     <p class="text-muted small mb-2" id="scite-desc">
                                         Analise como artigos foram citados
                                     </p>
-
                                     <div class="btn-group" id="scite-btns">
-
                                         <a href="https://scite.ai/" class="btn btn-sm btn-outline-danger"
                                             target="_blank" id="scite-access">
                                             Acessar
@@ -3768,17 +3349,14 @@
                     </div>
                 </div>
             </div>
-
             <!-- Gerenciamento de Cookies -->
             <div class="row g-4" id="sec10.5">
                 <div class="col-12">
                     <h3 class="h4" id="privacidade-avancada"><i class="bi bi-shield-exclamation"></i> Privacidade
                         Avançada</h3>
                 </div>
-
                 <!-- Ferramentas de Privacidade -->
                 <div class="row g-4 mb-4" id="sec10.5">
-
                     <!-- Cookie AutoDelete -->
                     <div class="col-md-6">
                         <div class="card h-100" id="cookie-autodelete">
@@ -3786,24 +3364,19 @@
                                 <div class="d-flex align-items-center">
                                     <i class="bi bi-trash text-danger" style="font-size: 2rem; margin-right: 1rem;"
                                         id="icon-cookie-autodelete"></i>
-
                                     <div>
                                         <h4 class="h5 mb-1" id="cookie-autodelete-title">
                                             Cookie AutoDelete
                                         </h4>
-
                                         <p class="text-muted small mb-2" id="cookie-autodelete-desc">
                                             Limpeza automática de cookies
                                         </p>
-
                                         <div class="btn-group" id="cookie-autodelete-btns">
-
                                             <a href="https://chrome.google.com/webstore/detail/cookie-autodelete/fhcgjolkccmbidfldomjliifgaodjagh"
                                                 class="btn btn-sm btn-outline-primary" target="_blank"
                                                 id="cookie-autodelete-chrome">
                                                 Chrome
                                             </a>
-
                                             <a href="https://addons.mozilla.org/firefox/addon/cookie-autodelete/"
                                                 class="btn btn-sm btn-outline-danger" target="_blank"
                                                 id="cookie-autodelete-firefox">
@@ -3815,7 +3388,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Privacy Badger -->
                     <div class="col-md-6">
                         <div class="card h-100" id="privacy-badger">
@@ -3823,24 +3395,19 @@
                                 <div class="d-flex align-items-center">
                                     <i class="bi bi-shield-lock text-warning"
                                         style="font-size: 2rem; margin-right: 1rem;" id="icon-privacy-badger"></i>
-
                                     <div>
                                         <h4 class="h5 mb-1" id="privacy-badger-title">
                                             Privacy Badger
                                         </h4>
-
                                         <p class="text-muted small mb-2" id="privacy-badger-desc">
                                             Bloqueio inteligente de rastreadores
                                         </p>
-
                                         <div class="btn-group" id="privacy-badger-btns">
-
                                             <a href="https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp"
                                                 class="btn btn-sm btn-outline-primary" target="_blank"
                                                 id="privacy-badger-chrome">
                                                 Chrome
                                             </a>
-
                                             <a href="https://addons.mozilla.org/firefox/addon/privacy-badger17/"
                                                 class="btn btn-sm btn-outline-danger" target="_blank"
                                                 id="privacy-badger-firefox">
@@ -3852,7 +3419,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- uBlock Origin -->
                     <div class="col-md-6">
                         <div class="card h-100" id="ublock-origin">
@@ -3860,24 +3426,19 @@
                                 <div class="d-flex align-items-center">
                                     <i class="bi bi-shield-check text-success"
                                         style="font-size: 2rem; margin-right: 1rem;" id="icon-ublock-origin"></i>
-
                                     <div>
                                         <h4 class="h5 mb-1" id="ublock-origin-title">
                                             uBlock Origin
                                         </h4>
-
                                         <p class="text-muted small mb-2" id="ublock-origin-desc">
                                             Bloqueador leve e eficiente de anúncios
                                         </p>
-
                                         <div class="btn-group" id="ublock-origin-btns">
-
                                             <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm"
                                                 class="btn btn-sm btn-outline-primary" target="_blank"
                                                 id="ublock-origin-chrome">
                                                 Chrome
                                             </a>
-
                                             <a href="https://addons.mozilla.org/firefox/addon/ublock-origin/"
                                                 class="btn btn-sm btn-outline-danger" target="_blank"
                                                 id="ublock-origin-firefox">
@@ -3889,7 +3450,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Decentraleyes -->
                     <div class="col-md-6">
                         <div class="card h-100" id="decentraleyes">
@@ -3897,24 +3457,19 @@
                                 <div class="d-flex align-items-center">
                                     <i class="bi bi-hdd-network text-info" style="font-size: 2rem; margin-right: 1rem;"
                                         id="icon-decentraleyes"></i>
-
                                     <div>
                                         <h4 class="h5 mb-1" id="decentraleyes-title">
                                             Decentraleyes
                                         </h4>
-
                                         <p class="text-muted small mb-2" id="decentraleyes-desc">
                                             Proteção contra rastreamento por CDN
                                         </p>
-
                                         <div class="btn-group" id="decentraleyes-btns">
-
                                             <a href="https://chrome.google.com/webstore/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj"
                                                 class="btn btn-sm btn-outline-primary" target="_blank"
                                                 id="decentraleyes-chrome">
                                                 Chrome
                                             </a>
-
                                             <a href="https://addons.mozilla.org/firefox/addon/decentraleyes/"
                                                 class="btn btn-sm btn-outline-danger" target="_blank"
                                                 id="decentraleyes-firefox">
@@ -3926,7 +3481,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- ClearURLs -->
                     <div class="col-md-6">
                         <div class="card h-100" id="clearurls">
@@ -3934,24 +3488,19 @@
                                 <div class="d-flex align-items-center">
                                     <i class="bi bi-link-45deg text-secondary"
                                         style="font-size: 2rem; margin-right: 1rem;" id="icon-clearurls"></i>
-
                                     <div>
                                         <h4 class="h5 mb-1" id="clearurls-title">
                                             ClearURLs
                                         </h4>
-
                                         <p class="text-muted small mb-2" id="clearurls-desc">
                                             Remove rastreadores de URLs automaticamente
                                         </p>
-
                                         <div class="btn-group" id="clearurls-btns">
-
                                             <a href="https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk"
                                                 class="btn btn-sm btn-outline-primary" target="_blank"
                                                 id="clearurls-chrome">
                                                 Chrome
                                             </a>
-
                                             <a href="https://addons.mozilla.org/firefox/addon/clearurls/"
                                                 class="btn btn-sm btn-outline-danger" target="_blank"
                                                 id="clearurls-firefox">
@@ -3963,7 +3512,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- HTTPS Everywhere -->
                     <div class="col-md-6">
                         <div class="card h-100" id="https-everywhere">
@@ -3971,18 +3519,14 @@
                                 <div class="d-flex align-items-center">
                                     <i class="bi bi-lock text-primary" style="font-size: 2rem; margin-right: 1rem;"
                                         id="icon-https-everywhere"></i>
-
                                     <div>
                                         <h4 class="h5 mb-1" id="https-everywhere-title">
                                             HTTPS Everywhere
                                         </h4>
-
                                         <p class="text-muted small mb-2" id="https-everywhere-desc">
                                             Força conexões seguras HTTPS automaticamente
                                         </p>
-
                                         <div class="btn-group" id="https-everywhere-btns">
-
                                             <a href="https://www.eff.org/https-everywhere"
                                                 class="btn btn-sm btn-outline-primary" target="_blank"
                                                 id="https-everywhere-site">
@@ -3994,14 +3538,10 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
-
     </main>
-
     <br>
     <div class="text-center">
         <img src="src/assets/img/angels/Jophiel.jpg" style="max-width: 100%; width: 500px !important;" class="img-fluid"
