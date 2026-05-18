@@ -2691,310 +2691,279 @@
                 </div>
             </div>
 
-<!-- Monitoramento de Sistema -->
-<div id="sec9.5" class="row g-4 mb-5">
+            <!-- Monitoramento de Sistema -->
+            <div id="sec9.5" class="row g-4 mb-5">
 
-    <div class="col-12">
-        <h3 class="h4 d-flex align-items-center gap-2"
-            id="monitoramento-sistema">
+                <div class="col-12">
+                    <h3 class="h4 d-flex align-items-center gap-2" id="monitoramento-sistema">
 
-            <i class="bi bi-speedometer2 text-primary"></i>
-            Monitoramento de Sistema
-        </h3>
+                        <i class="bi bi-speedometer2 text-primary"></i>
+                        Monitoramento de Sistema
+                    </h3>
 
-        <p class="text-muted mb-0">
-            Ferramentas essenciais para acompanhar temperatura,
-            desempenho, uso de hardware, estabilidade e saúde do sistema.
-        </p>
-    </div>
+                    <p class="text-muted mb-0">
+                        Ferramentas essenciais para acompanhar temperatura,
+                        desempenho, uso de hardware, estabilidade e saúde do sistema.
+                    </p>
+                </div>
 
-    <!-- HWMonitor -->
-    <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0"
-            id="hwmonitor">
+                <!-- HWMonitor -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0" id="hwmonitor">
 
-            <div class="card-body">
+                        <div class="card-body">
 
-                <div class="d-flex align-items-start">
+                            <div class="d-flex align-items-start">
 
-                    <i class="bi bi-pc-display text-info"
-                        style="font-size: 2.2rem; margin-right: 1rem;"
-                        id="icon-hwmonitor"></i>
+                                <i class="bi bi-pc-display text-info" style="font-size: 2.2rem; margin-right: 1rem;"
+                                    id="icon-hwmonitor"></i>
 
-                    <div class="w-100">
+                                <div class="w-100">
 
-                        <div class="d-flex justify-content-between align-items-start">
+                                    <div class="d-flex justify-content-between align-items-start">
 
-                            <div>
-                                <h4 class="h5 mb-1"
-                                    id="hwmonitor-title">
-                                    HWMonitor
-                                </h4>
+                                        <div>
+                                            <h4 class="h5 mb-1" id="hwmonitor-title">
+                                                HWMonitor
+                                            </h4>
 
-                                <span class="badge bg-info text-dark mb-2">
-                                    Hardware
-                                </span>
+                                            <span class="badge bg-info text-dark mb-2">
+                                                Hardware
+                                            </span>
+                                        </div>
+
+                                        <span class="text-success small fw-semibold">
+                                            Recomendado
+                                        </span>
+                                    </div>
+
+                                    <p class="text-muted small mb-3" id="hwmonitor-desc">
+
+                                        Monitore temperaturas, voltagens, consumo
+                                        energético e velocidade dos coolers em tempo real.
+                                    </p>
+
+                                    <ul class="small text-muted ps-3 mb-3">
+                                        <li>Monitoramento completo do hardware</li>
+                                        <li>Temperaturas da CPU e GPU</li>
+                                        <li>Leitura de voltagens e fans</li>
+                                        <li>Interface leve e simples</li>
+                                    </ul>
+
+                                    <div class="btn-group" id="hwmonitor-btns">
+
+                                        <a href="https://www.cpuid.com/softwares/hwmonitor.html"
+                                            class="btn btn-sm btn-outline-primary" target="_blank" id="hwmonitor-site">
+
+                                            <i class="bi bi-globe"></i>
+                                            Site Oficial
+                                        </a>
+
+                                        <a href="https://www.cpuid.com/downloads/hwmonitor/hwmonitor_1.49.exe"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank"
+                                            id="hwmonitor-download">
+
+                                            <i class="bi bi-download"></i>
+                                            Download
+                                        </a>
+                                    </div>
+
+                                </div>
                             </div>
 
-                            <span class="text-success small fw-semibold">
-                                Recomendado
-                            </span>
                         </div>
-
-                        <p class="text-muted small mb-3"
-                            id="hwmonitor-desc">
-
-                            Monitore temperaturas, voltagens, consumo
-                            energético e velocidade dos coolers em tempo real.
-                        </p>
-
-                        <ul class="small text-muted ps-3 mb-3">
-                            <li>Monitoramento completo do hardware</li>
-                            <li>Temperaturas da CPU e GPU</li>
-                            <li>Leitura de voltagens e fans</li>
-                            <li>Interface leve e simples</li>
-                        </ul>
-
-                        <div class="btn-group"
-                            id="hwmonitor-btns">
-
-                            <a href="https://www.cpuid.com/softwares/hwmonitor.html"
-                                class="btn btn-sm btn-outline-primary"
-                                target="_blank"
-                                id="hwmonitor-site">
-
-                                <i class="bi bi-globe"></i>
-                                Site Oficial
-                            </a>
-
-                            <a href="https://www.cpuid.com/downloads/hwmonitor/hwmonitor_1.49.exe"
-                                class="btn btn-sm btn-outline-secondary"
-                                target="_blank"
-                                id="hwmonitor-download">
-
-                                <i class="bi bi-download"></i>
-                                Download
-                            </a>
-                        </div>
-
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </div>
+                <!-- Core Temp -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0" id="core-temp">
 
-    <!-- Core Temp -->
-    <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0"
-            id="core-temp">
+                        <div class="card-body">
 
-            <div class="card-body">
+                            <div class="d-flex align-items-start">
 
-                <div class="d-flex align-items-start">
+                                <i class="bi bi-thermometer-half text-danger"
+                                    style="font-size: 2.2rem; margin-right: 1rem;" id="icon-core-temp"></i>
 
-                    <i class="bi bi-thermometer-half text-danger"
-                        style="font-size: 2.2rem; margin-right: 1rem;"
-                        id="icon-core-temp"></i>
+                                <div class="w-100">
 
-                    <div class="w-100">
+                                    <div class="d-flex justify-content-between align-items-start">
 
-                        <div class="d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <h4 class="h5 mb-1" id="core-temp-title">
+                                                Core Temp
+                                            </h4>
 
-                            <div>
-                                <h4 class="h5 mb-1"
-                                    id="core-temp-title">
-                                    Core Temp
-                                </h4>
+                                            <span class="badge bg-danger mb-2">
+                                                Temperatura
+                                            </span>
+                                        </div>
 
-                                <span class="badge bg-danger mb-2">
-                                    Temperatura
-                                </span>
+                                        <span class="text-success small fw-semibold">
+                                            Popular
+                                        </span>
+                                    </div>
+
+                                    <p class="text-muted small mb-3" id="core-temp-desc">
+
+                                        Ferramenta especializada no monitoramento
+                                        detalhado da temperatura do processador.
+                                    </p>
+
+                                    <ul class="small text-muted ps-3 mb-3">
+                                        <li>Temperatura em tempo real</li>
+                                        <li>Leitura individual por núcleo</li>
+                                        <li>Baixíssimo consumo de recursos</li>
+                                        <li>Alertas térmicos personalizados</li>
+                                    </ul>
+
+                                    <div class="btn-group" id="core-temp-btns">
+
+                                        <a href="https://www.alcpu.com/CoreTemp/" class="btn btn-sm btn-outline-primary"
+                                            target="_blank" id="core-temp-site">
+
+                                            <i class="bi bi-globe"></i>
+                                            Site Oficial
+                                        </a>
+
+                                        <a href="https://www.alcpu.com/CoreTemp/CoreTempSetup.exe"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank"
+                                            id="core-temp-download">
+
+                                            <i class="bi bi-download"></i>
+                                            Download
+                                        </a>
+                                    </div>
+
+                                </div>
                             </div>
 
-                            <span class="text-success small fw-semibold">
-                                Popular
-                            </span>
                         </div>
+                    </div>
+                </div>
 
-                        <p class="text-muted small mb-3"
-                            id="core-temp-desc">
+                <!-- MSI Afterburner -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0" id="msi-afterburner">
 
-                            Ferramenta especializada no monitoramento
-                            detalhado da temperatura do processador.
-                        </p>
+                        <div class="card-body">
 
-                        <ul class="small text-muted ps-3 mb-3">
-                            <li>Temperatura em tempo real</li>
-                            <li>Leitura individual por núcleo</li>
-                            <li>Baixíssimo consumo de recursos</li>
-                            <li>Alertas térmicos personalizados</li>
-                        </ul>
+                            <div class="d-flex align-items-start">
 
-                        <div class="btn-group"
-                            id="core-temp-btns">
+                                <i class="bi bi-gpu-card text-warning" style="font-size: 2.2rem; margin-right: 1rem;"
+                                    id="icon-msi-afterburner"></i>
 
-                            <a href="https://www.alcpu.com/CoreTemp/"
-                                class="btn btn-sm btn-outline-primary"
-                                target="_blank"
-                                id="core-temp-site">
+                                <div class="w-100">
 
-                                <i class="bi bi-globe"></i>
-                                Site Oficial
-                            </a>
+                                    <h4 class="h5 mb-1" id="msi-afterburner-title">
+                                        MSI Afterburner
+                                    </h4>
 
-                            <a href="https://www.alcpu.com/CoreTemp/CoreTempSetup.exe"
-                                class="btn btn-sm btn-outline-secondary"
-                                target="_blank"
-                                id="core-temp-download">
+                                    <span class="badge bg-warning text-dark mb-2">
+                                        GPU
+                                    </span>
 
-                                <i class="bi bi-download"></i>
-                                Download
-                            </a>
+                                    <p class="text-muted small mb-3" id="msi-afterburner-desc">
+
+                                        Monitoramento avançado e controle de placas
+                                        de vídeo com suporte a overclock.
+                                    </p>
+
+                                    <ul class="small text-muted ps-3 mb-3">
+                                        <li>Monitoramento de GPU em tempo real</li>
+                                        <li>Controle de ventoinhas</li>
+                                        <li>Overclock seguro</li>
+                                        <li>Overlay durante jogos</li>
+                                    </ul>
+
+                                    <div class="btn-group" id="msi-afterburner-btns">
+
+                                        <a href="https://www.msi.com/Landing/afterburner"
+                                            class="btn btn-sm btn-outline-primary" target="_blank"
+                                            id="msi-afterburner-site">
+
+                                            <i class="bi bi-globe"></i>
+                                            Site Oficial
+                                        </a>
+
+                                        <a href="https://www.msi.com/Landing/afterburner/graphics-cards"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank"
+                                            id="msi-afterburner-download">
+
+                                            <i class="bi bi-download"></i>
+                                            Download
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
+                    </div>
+                </div>
 
+                <!-- Open Hardware Monitor -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0" id="open-hardware-monitor">
+
+                        <div class="card-body">
+
+                            <div class="d-flex align-items-start">
+
+                                <i class="bi bi-cpu-fill text-success" style="font-size: 2.2rem; margin-right: 1rem;"
+                                    id="icon-open-hardware-monitor"></i>
+
+                                <div class="w-100">
+
+                                    <h4 class="h5 mb-1" id="open-hardware-monitor-title">
+                                        Open Hardware Monitor
+                                    </h4>
+
+                                    <span class="badge bg-success mb-2">
+                                        Open Source
+                                    </span>
+
+                                    <p class="text-muted small mb-3" id="open-hardware-monitor-desc">
+
+                                        Software open source para monitoramento
+                                        completo de sensores do sistema.
+                                    </p>
+
+                                    <ul class="small text-muted ps-3 mb-3">
+                                        <li>Monitoramento gratuito</li>
+                                        <li>Leitura de sensores avançados</li>
+                                        <li>CPU, GPU, RAM e disco</li>
+                                        <li>Projeto open source</li>
+                                    </ul>
+
+                                    <div class="btn-group" id="open-hardware-monitor-btns">
+
+                                        <a href="https://openhardwaremonitor.org/"
+                                            class="btn btn-sm btn-outline-primary" target="_blank"
+                                            id="open-hardware-monitor-site">
+
+                                            <i class="bi bi-globe"></i>
+                                            Site Oficial
+                                        </a>
+
+                                        <a href="https://openhardwaremonitor.org/downloads/"
+                                            class="btn btn-sm btn-outline-secondary" target="_blank"
+                                            id="open-hardware-monitor-download">
+
+                                            <i class="bi bi-download"></i>
+                                            Download
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </div>
-    </div>
-
-    <!-- MSI Afterburner -->
-    <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0"
-            id="msi-afterburner">
-
-            <div class="card-body">
-
-                <div class="d-flex align-items-start">
-
-                    <i class="bi bi-gpu-card text-warning"
-                        style="font-size: 2.2rem; margin-right: 1rem;"
-                        id="icon-msi-afterburner"></i>
-
-                    <div class="w-100">
-
-                        <h4 class="h5 mb-1"
-                            id="msi-afterburner-title">
-                            MSI Afterburner
-                        </h4>
-
-                        <span class="badge bg-warning text-dark mb-2">
-                            GPU
-                        </span>
-
-                        <p class="text-muted small mb-3"
-                            id="msi-afterburner-desc">
-
-                            Monitoramento avançado e controle de placas
-                            de vídeo com suporte a overclock.
-                        </p>
-
-                        <ul class="small text-muted ps-3 mb-3">
-                            <li>Monitoramento de GPU em tempo real</li>
-                            <li>Controle de ventoinhas</li>
-                            <li>Overclock seguro</li>
-                            <li>Overlay durante jogos</li>
-                        </ul>
-
-                        <div class="btn-group"
-                            id="msi-afterburner-btns">
-
-                            <a href="https://www.msi.com/Landing/afterburner"
-                                class="btn btn-sm btn-outline-primary"
-                                target="_blank"
-                                id="msi-afterburner-site">
-
-                                <i class="bi bi-globe"></i>
-                                Site Oficial
-                            </a>
-
-                            <a href="https://www.msi.com/Landing/afterburner/graphics-cards"
-                                class="btn btn-sm btn-outline-secondary"
-                                target="_blank"
-                                id="msi-afterburner-download">
-
-                                <i class="bi bi-download"></i>
-                                Download
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Open Hardware Monitor -->
-    <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0"
-            id="open-hardware-monitor">
-
-            <div class="card-body">
-
-                <div class="d-flex align-items-start">
-
-                    <i class="bi bi-cpu-fill text-success"
-                        style="font-size: 2.2rem; margin-right: 1rem;"
-                        id="icon-open-hardware-monitor"></i>
-
-                    <div class="w-100">
-
-                        <h4 class="h5 mb-1"
-                            id="open-hardware-monitor-title">
-                            Open Hardware Monitor
-                        </h4>
-
-                        <span class="badge bg-success mb-2">
-                            Open Source
-                        </span>
-
-                        <p class="text-muted small mb-3"
-                            id="open-hardware-monitor-desc">
-
-                            Software open source para monitoramento
-                            completo de sensores do sistema.
-                        </p>
-
-                        <ul class="small text-muted ps-3 mb-3">
-                            <li>Monitoramento gratuito</li>
-                            <li>Leitura de sensores avançados</li>
-                            <li>CPU, GPU, RAM e disco</li>
-                            <li>Projeto open source</li>
-                        </ul>
-
-                        <div class="btn-group"
-                            id="open-hardware-monitor-btns">
-
-                            <a href="https://openhardwaremonitor.org/"
-                                class="btn btn-sm btn-outline-primary"
-                                target="_blank"
-                                id="open-hardware-monitor-site">
-
-                                <i class="bi bi-globe"></i>
-                                Site Oficial
-                            </a>
-
-                            <a href="https://openhardwaremonitor.org/downloads/"
-                                class="btn btn-sm btn-outline-secondary"
-                                target="_blank"
-                                id="open-hardware-monitor-download">
-
-                                <i class="bi bi-download"></i>
-                                Download
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</div>
 
         </section>
 
