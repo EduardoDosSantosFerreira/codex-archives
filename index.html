@@ -2745,58 +2745,274 @@
             <h2 class="mb-4 border-bottom pb-2"><i class="bi bi-browser-edge"></i> Extensões Essenciais</h2>
 
             <!-- Produtividade -->
-            <div id="sec10.1" class="row g-4 mb-4">
+            <div id="sec10.1" class="row g-4 mb-5">
+
                 <div class="col-12">
-                    <h3 class="h4" id="produtividade"><i class="bi bi-lightning-charge"></i> Produtividade</h3>
+                    <h3 class="h4 d-flex align-items-center gap-2" id="produtividade">
+                        <i class="bi bi-lightning-charge-fill text-warning"></i>
+                        Produtividade
+                    </h3>
+
+                    <p class="text-muted mb-0">
+                        Extensões para foco, organização, gerenciamento de tarefas,
+                        escrita e otimização do fluxo de trabalho.
+                    </p>
                 </div>
 
+                <!-- Toggl Track -->
                 <div class="col-md-6">
-                    <div class="card h-100" id="toggl-track">
+                    <div class="card h-100 shadow-sm border-0" id="toggl-track">
+
                         <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <i class="bi bi-stopwatch text-warning" style="font-size: 2rem; margin-right: 1rem;"
-                                    id="icon-toggl-track"></i>
-                                <div>
-                                    <h4 class="h5 mb-1" id="toggl-track-title">Toggl Track</h4>
-                                    <p class="text-muted small mb-2" id="toggl-track-desc">Gestão de tempo e
-                                        produtividade</p>
+
+                            <div class="d-flex align-items-start">
+
+                                <i class="bi bi-stopwatch-fill text-warning"
+                                    style="font-size: 2.2rem; margin-right: 1rem;" id="icon-toggl-track"></i>
+
+                                <div class="w-100">
+
+                                    <div class="d-flex justify-content-between align-items-start">
+
+                                        <div>
+                                            <h4 class="h5 mb-1" id="toggl-track-title">
+                                                Toggl Track
+                                            </h4>
+
+                                            <span class="badge bg-warning text-dark mb-2">
+                                                Gestão de Tempo
+                                            </span>
+                                        </div>
+
+                                        <span class="text-success small fw-semibold">
+                                            Popular
+                                        </span>
+                                    </div>
+
+                                    <p class="text-muted small mb-3" id="toggl-track-desc">
+                                        Monitore tempo gasto em tarefas, projetos e estudos
+                                        com relatórios detalhados de produtividade.
+                                    </p>
+
+                                    <ul class="small text-muted ps-3 mb-3">
+                                        <li>Controle de horas em tempo real</li>
+                                        <li>Relatórios automáticos</li>
+                                        <li>Integração com Notion, Trello e Asana</li>
+                                        <li>Ideal para freelancers e estudantes</li>
+                                    </ul>
+
                                     <div class="btn-group" id="toggl-track-btns">
+
                                         <a href="https://chrome.google.com/webstore/detail/toggl-track-timer/oejgccbfbmkkpaidnkphaiaecficdnfn"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
-                                            id="toggl-track-chrome">Chrome</a>
+                                            id="toggl-track-chrome">
+
+                                            <i class="bi bi-browser-chrome"></i>
+                                            Chrome
+                                        </a>
+
                                         <a href="https://addons.mozilla.org/firefox/addon/toggl-button-time-tracker/"
                                             class="btn btn-sm btn-outline-danger" target="_blank"
-                                            id="toggl-track-firefox">Firefox</a>
+                                            id="toggl-track-firefox">
+
+                                            <i class="bi bi-browser-firefox"></i>
+                                            Firefox
+                                        </a>
                                     </div>
+
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
 
+                <!-- StayFocusd -->
                 <div class="col-md-6">
-                    <div class="card h-100" id="stayfocusd">
+                    <div class="card h-100 shadow-sm border-0" id="stayfocusd">
+
                         <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <i class="bi bi-eye-slash text-success" style="font-size: 2rem; margin-right: 1rem;"
-                                    id="icon-stayfocusd"></i>
-                                <div>
-                                    <h4 class="h5 mb-1" id="stayfocusd-title">StayFocusd</h4>
-                                    <p class="text-muted small mb-2" id="stayfocusd-desc">Bloqueio de sites distrativos
+
+                            <div class="d-flex align-items-start">
+
+                                <i class="bi bi-eye-slash-fill text-success"
+                                    style="font-size: 2.2rem; margin-right: 1rem;" id="icon-stayfocusd"></i>
+
+                                <div class="w-100">
+
+                                    <div class="d-flex justify-content-between align-items-start">
+
+                                        <div>
+                                            <h4 class="h5 mb-1" id="stayfocusd-title">
+                                                StayFocusd
+                                            </h4>
+
+                                            <span class="badge bg-success mb-2">
+                                                Foco
+                                            </span>
+                                        </div>
+
+                                        <span class="text-success small fw-semibold">
+                                            Recomendado
+                                        </span>
+                                    </div>
+
+                                    <p class="text-muted small mb-3" id="stayfocusd-desc">
+                                        Bloqueie sites distrativos e aumente sua
+                                        concentração durante estudos ou trabalho.
                                     </p>
+
+                                    <ul class="small text-muted ps-3 mb-3">
+                                        <li>Bloqueio de redes sociais</li>
+                                        <li>Temporizador de navegação</li>
+                                        <li>Listas personalizadas de sites</li>
+                                        <li>Modo rigoroso anti-distração</li>
+                                    </ul>
+
                                     <div class="btn-group" id="stayfocusd-btns">
+
                                         <a href="https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji"
                                             class="btn btn-sm btn-outline-primary" target="_blank"
-                                            id="stayfocusd-chrome">Chrome</a>
+                                            id="stayfocusd-chrome">
+
+                                            <i class="bi bi-browser-chrome"></i>
+                                            Chrome
+                                        </a>
+
                                         <a href="https://addons.mozilla.org/firefox/addon/stay-focused/"
                                             class="btn btn-sm btn-outline-danger" target="_blank"
-                                            id="stayfocusd-firefox">Firefox</a>
+                                            id="stayfocusd-firefox">
+
+                                            <i class="bi bi-browser-firefox"></i>
+                                            Firefox
+                                        </a>
                                     </div>
+
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
+
+                <!-- Notion Web Clipper -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0" id="notion-web-clipper">
+
+                        <div class="card-body">
+
+                            <div class="d-flex align-items-start">
+
+                                <i class="bi bi-journal-richtext text-dark"
+                                    style="font-size: 2.2rem; margin-right: 1rem;" id="icon-notion-web-clipper"></i>
+
+                                <div class="w-100">
+
+                                    <h4 class="h5 mb-1" id="notion-web-clipper-title">
+                                        Notion Web Clipper
+                                    </h4>
+
+                                    <span class="badge bg-dark mb-2">
+                                        Organização
+                                    </span>
+
+                                    <p class="text-muted small mb-3" id="notion-web-clipper-desc">
+                                        Salve páginas, artigos e referências diretamente no
+                                        Notion com apenas um clique.
+                                    </p>
+
+                                    <ul class="small text-muted ps-3 mb-3">
+                                        <li>Salvar páginas completas</li>
+                                        <li>Organização automática</li>
+                                        <li>Sincronização instantânea</li>
+                                        <li>Ótimo para estudos e pesquisas</li>
+                                    </ul>
+
+                                    <div class="btn-group" id="notion-web-clipper-btns">
+
+                                        <a href="https://chrome.google.com/webstore/detail/notion-web-clipper/jlooaafbdfmcmfcfnmpkhohkiijnfikn"
+                                            class="btn btn-sm btn-outline-primary" target="_blank"
+                                            id="notion-web-clipper-chrome">
+
+                                            <i class="bi bi-browser-chrome"></i>
+                                            Chrome
+                                        </a>
+
+                                        <a href="https://addons.mozilla.org/firefox/addon/notion-web-clipper/"
+                                            class="btn btn-sm btn-outline-danger" target="_blank"
+                                            id="notion-web-clipper-firefox">
+
+                                            <i class="bi bi-browser-firefox"></i>
+                                            Firefox
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grammarly -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0" id="grammarly">
+
+                        <div class="card-body">
+
+                            <div class="d-flex align-items-start">
+
+                                <i class="bi bi-spellcheck text-info" style="font-size: 2.2rem; margin-right: 1rem;"
+                                    id="icon-grammarly"></i>
+
+                                <div class="w-100">
+
+                                    <h4 class="h5 mb-1" id="grammarly-title">
+                                        Grammarly
+                                    </h4>
+
+                                    <span class="badge bg-info text-dark mb-2">
+                                        Escrita
+                                    </span>
+
+                                    <p class="text-muted small mb-3" id="grammarly-desc">
+                                        Corrija gramática, ortografia e melhore textos
+                                        automaticamente enquanto escreve.
+                                    </p>
+
+                                    <ul class="small text-muted ps-3 mb-3">
+                                        <li>Correção em tempo real</li>
+                                        <li>Sugestões de clareza</li>
+                                        <li>Compatível com Gmail e Docs</li>
+                                        <li>Suporte para inglês avançado</li>
+                                    </ul>
+
+                                    <div class="btn-group" id="grammarly-btns">
+
+                                        <a href="https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen"
+                                            class="btn btn-sm btn-outline-primary" target="_blank"
+                                            id="grammarly-chrome">
+
+                                            <i class="bi bi-browser-chrome"></i>
+                                            Chrome
+                                        </a>
+
+                                        <a href="https://addons.mozilla.org/firefox/addon/grammarly-1/"
+                                            class="btn btn-sm btn-outline-danger" target="_blank"
+                                            id="grammarly-firefox">
+
+                                            <i class="bi bi-browser-firefox"></i>
+                                            Firefox
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Segurança -->
