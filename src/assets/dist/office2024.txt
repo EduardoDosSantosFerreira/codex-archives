@@ -10,9 +10,4 @@ Video 02 (Error cod 0-2048 (0)):https://www.youtube.com/watch?v=HacOfQcFZDg&list
 🔹 Site oficial 1  https://www.microsoft.com/en-us/download/details.aspx?id=49117
 🔹 Site oficial 2  https://config.office.com/deploymentsettings
 
-💻 COMANDOS CMD:
-
-cd\
-cd C:\Office
-
 setup.exe /configure configuração.xml
